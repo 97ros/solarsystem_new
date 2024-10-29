@@ -1,7 +1,10 @@
 using UnityEngine;
-
+using Unity.Cinemachine;
 public class PlayerSpaceship : MonoBehaviour
 {
+
+    [Header("Managers")]
+    public CameraManager cameraManager;
 
     Rigidbody spaceshipRB;
 
@@ -30,6 +33,14 @@ public class PlayerSpaceship : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            cameraManager.SwitchCamera(cameraManager.thirdPersonVirtCam);
+        }
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            cameraManager.SwitchCamera(cameraManager.firstPersonVirtCam);
+        }
         verticalMove = Input.GetAxis("Vertical");
         horizontalMove = Input.GetAxis("Horizontal");
         rollInput = Input.GetAxis("Roll");

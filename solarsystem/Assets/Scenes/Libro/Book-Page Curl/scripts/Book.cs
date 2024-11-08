@@ -284,7 +284,7 @@ public class Book : MonoBehaviour {
 
 
         NextPageClip.rectTransform.pivot = new Vector2(0, 0.12f);
-        ClippingPlane.rectTransform.pivot = new Vector2(1, 0.01f);
+        ClippingPlane.rectTransform.pivot = new Vector2(1, 0.35f);
 
         Left.gameObject.SetActive(true);
         Left.rectTransform.pivot = new Vector2(0, 0);
@@ -319,7 +319,7 @@ public class Book : MonoBehaviour {
         f = point;
 
         NextPageClip.rectTransform.pivot = new Vector2(1, 0.12f);
-        ClippingPlane.rectTransform.pivot = new Vector2(0, 0.01f);
+        ClippingPlane.rectTransform.pivot = new Vector2(0, 0.35f);
 
         Right.gameObject.SetActive(true);
         Right.transform.position = LeftNext.transform.position;
@@ -450,7 +450,7 @@ public class Book : MonoBehaviour {
 
     
     // Metodo per ottenere la posizione corrente della pagina in movimento
-   /* public Vector3 GetCurrentPagePosition(FlipMode mode)
+    public Vector3 GetCurrentPagePosition(FlipMode mode)
     {
         if (mode == FlipMode.RightToLeft)
         {
@@ -482,5 +482,5 @@ public class Book : MonoBehaviour {
     {
         throw new NotImplementedException();
     }
-    */
-    }
+}
+

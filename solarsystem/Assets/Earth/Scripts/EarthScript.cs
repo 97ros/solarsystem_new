@@ -1,4 +1,4 @@
-﻿/*
+/*
 The MIT License(MIT)
 Copyright(c) 2016 Digital Ruby, LLC
 http://www.digitalruby.com
@@ -27,6 +27,7 @@ namespace DigitalRuby.Earth
 
         [Tooltip("The sun, defaults to first dir light")]
         public Light Sun;
+        public Light Spaceship;
 
         private MeshRenderer meshRenderer;
         private MaterialPropertyBlock materialBlock;
@@ -35,7 +36,8 @@ namespace DigitalRuby.Earth
         {
             meshRenderer = GetComponent<MeshRenderer>();
             materialBlock = new MaterialPropertyBlock();
-            Sun = (Sun == null ? Light.GetLights(LightType.Directional, -1)[0] : Sun);
+            Sun = (Sun == null ? Light.GetLights(LightType.Point, -1)[0] : Sun);
+            Spaceship = (Spaceship == null ? Light.GetLights(LightType.Rectangle, -1)[0] : Spaceship);
             if (Axis == Vector3.zero)
             {
                 Axis = transform.up;

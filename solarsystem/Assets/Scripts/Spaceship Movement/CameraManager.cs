@@ -7,6 +7,7 @@ public class CameraManager : MonoBehaviour
 
     public CinemachineVirtualCamera thirdPersonVirtCam;
     public CinemachineVirtualCamera firstPersonVirtCam;
+    public CinemachineVirtualCamera thirdPersonVirtCamFOV;
 
     public CinemachineVirtualCamera startCamera;
     private CinemachineVirtualCamera currentCam;
@@ -30,11 +31,13 @@ public class CameraManager : MonoBehaviour
     public void SwitchCamera(CinemachineVirtualCamera newCam)
     {
         currentCam = newCam;
-        currentCam.Priority = 20;
-
         for (int i = 0; i < cameras.Length; i++)
         {
-            if (cameras[i] != currentCam)
+            if (cameras[i] == currentCam)
+            {
+                cameras[i].Priority = 20;
+            }
+            else
             {
                 cameras[i].Priority = 10;
             }

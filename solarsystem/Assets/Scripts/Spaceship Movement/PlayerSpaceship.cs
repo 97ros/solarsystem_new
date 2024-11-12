@@ -41,6 +41,10 @@ public class PlayerSpaceship : MonoBehaviour
         {
             cameraManager.SwitchCamera(cameraManager.firstPersonVirtCam);
         }
+        if (Input.GetKeyDown(KeyCode.J))
+        {
+            cameraManager.SwitchCamera(cameraManager.thirdPersonVirtCamFOV);
+        }
         verticalMove = Input.GetAxis("Vertical");
         horizontalMove = Input.GetAxis("Horizontal");
         rollInput = Input.GetAxis("Roll");

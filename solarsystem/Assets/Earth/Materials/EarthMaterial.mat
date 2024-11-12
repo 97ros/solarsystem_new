@@ -19,7 +19,7 @@ Material:
   - _SPECGLOSSMAP
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
+  m_DoubleSidedGI: 1
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
@@ -115,7 +115,7 @@ Material:
     m_Floats:
     - _AtmosFalloff: 14
     - _BumpScale: 1
-    - _CloudIntensityMin: 0.01
+    - _CloudIntensityMin: 0.24
     - _Cutoff: 0.5
     - _DetailIntensity: 0
     - _DetailIntensityMin: 0.01
@@ -128,15 +128,15 @@ Material:
     - _Mode: 0
     - _NightIntensity: 0.6
     - _NightTransitionVariable: 4
-    - _NormalMapIntensity: 0.5
+    - _NormalMapIntensity: 0.55
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _RimIntensity: 10
     - _RimPower: 12
     - _Shininess: 0.03
-    - _Smoothness: 0.4
-    - _SpecularIntensity: 2
-    - _SpecularPower: 64
+    - _Smoothness: 0.2
+    - _SpecularIntensity: 0
+    - _SpecularPower: 1024
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1

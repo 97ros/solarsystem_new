@@ -4,14 +4,14 @@ using System.Collections;
 public class AutoFlip : MonoBehaviour {
     public FlipMode Mode;
     public float PageFlipTime = 1;
-    public float TimeBetweenPages = 1;
+    public float TimeBetweenPages = 0.5f;
     public float DelayBeforeStarting = 0;
     public bool AutoStartFlip=true;
     public Book ControledBook;
     public int AnimationFramesCount = 130;
     bool isFlipping = false;
 
-    public float holdTimeToFlip = 0.5f;  // Tempo in secondi per considerare un "hold"
+    public float holdTimeToFlip = 0.1f;  // Tempo in secondi per considerare un "hold"
 private float holdTime = 0f;          // Tempo attuale di pressione del tasto
 private bool isHoldingRight = false;  // Stato di pressione del tasto destro
 private bool isHoldingLeft = false;   // Stato di pressione del tasto sinistro
@@ -39,26 +39,27 @@ private bool isHoldingLeft = false;   // Stato di pressione del tasto sinistro
     }
 
     // Flip one page to the right
-    public void FlipRightPage() {
+    public void FlipRightPage(bool fromKeyboard = false) {
         if (isFlipping || ControledBook.currentPage >= ControledBook.TotalPageCount) return;
         isFlipping = true;
+            isKeyboardFlip = fromKeyboard;  // Attiva l'opzione per il flip da tastiera
         float frameTime = PageFlipTime / AnimationFramesCount;
         float xc = (ControledBook.EndBottomRight.x + ControledBook.EndBottomLeft.x) / 2;
-        float xl = ((ControledBook.EndBottomRight.x - ControledBook.EndBottomLeft.x) / 2) * 0.9f;
-        float h = Mathf.Abs(ControledBook.EndBottomRight.y) * 0.9f;
-        float dx = (xl) * 2.325f / AnimationFramesCount;
+        float xl = ((ControledBook.EndBottomRight.x - ControledBook.EndBottomLeft.x) / 2) * 0.8f;
+        float h = Mathf.Abs(ControledBook.EndBottomRight.y) * 0.8f;
+        float dx = (xl) * 3 / AnimationFramesCount;
         StartCoroutine(FlipRTL(xc, xl, h, frameTime, dx));
     }
 
     // Flip one page to the left
-    public void FlipLeftPage() {
+    public void FlipLeftPage(bool fromKeyboard = false) {
         if (isFlipping || ControledBook.currentPage <= 0) return;
         isFlipping = true;
         float frameTime = PageFlipTime / AnimationFramesCount;
         float xc = (ControledBook.EndBottomRight.x + ControledBook.EndBottomLeft.x) / 2;
-        float xl = ((ControledBook.EndBottomRight.x - ControledBook.EndBottomLeft.x) / 2) * 0.9f;
-        float h = Mathf.Abs(ControledBook.EndBottomRight.y) * 0.9f;
-        float dx = (xl) * 2.325f / AnimationFramesCount;
+        float xl = ((ControledBook.EndBottomRight.x - ControledBook.EndBottomLeft.x) / 2) * 0.8f;
+        float h = Mathf.Abs(ControledBook.EndBottomRight.y) * 0.8f;
+        float dx = (xl) * 3 / AnimationFramesCount;
         StartCoroutine(FlipLTR(xc, xl, h, frameTime, dx));
     }
 
@@ -67,9 +68,9 @@ private bool isHoldingLeft = false;   // Stato di pressione del tasto sinistro
         yield return new WaitForSeconds(DelayBeforeStarting);
         float frameTime = PageFlipTime / AnimationFramesCount;
         float xc = (ControledBook.EndBottomRight.x + ControledBook.EndBottomLeft.x) / 2;
-        float xl = ((ControledBook.EndBottomRight.x - ControledBook.EndBottomLeft.x) / 2) * 0.9f;
-        float h = Mathf.Abs(ControledBook.EndBottomRight.y) * 0.9f;
-        float dx = (xl) * 2 / AnimationFramesCount;
+        float xl = ((ControledBook.EndBottomRight.x - ControledBook.EndBottomLeft.x) / 2) * 0.8f;
+        float h = Mathf.Abs(ControledBook.EndBottomRight.y) * 0.8f;
+        float dx = (xl) * 3 / AnimationFramesCount;
         switch (Mode) {
             case FlipMode.RightToLeft:
                 while (ControledBook.currentPage < ControledBook.TotalPageCount) {
@@ -118,6 +119,8 @@ private bool isHoldingLeft = false;   // Stato di pressione del tasto sinistro
     // Check keyboard input in Update
     void Update()
 {
+        if (isFlipping) return;  // Evita di iniziare un nuovo flip mentre è in corso uno attuale
+
     // Controlla se il tasto destro è tenuto premuto
     if (Input.GetKey(KeyCode.RightArrow))
     {
@@ -127,6 +130,7 @@ private bool isHoldingLeft = false;   // Stato di pressione del tasto sinistro
             holdTime = 0f; // Resetta il timer
         }
         holdTime += Time.deltaTime; // Aggiungi il tempo di pressione
+
 
         // Calcola quante pagine sfogliare
         int pagesToFlip = Mathf.FloorToInt(holdTime / holdTimeToFlip);
@@ -170,5 +174,7 @@ private bool isHoldingLeft = false;   // Stato di pressione del tasto sinistro
         isHoldingLeft = false; // Reset se il tasto non è più premuto
     }
 }
+
+private bool isKeyboardFlip = false;
 
 }

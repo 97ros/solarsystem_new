@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 32a0ef2a7ef59ad47846655a3c02fa8d
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 56841
+  packageName: Free Earth Planet - The Best Planet Shader in the Asset Store
+  packageVersion: 1.1.2
+  assetPath: Assets/Earth/Materials/EarthShader.shader
+  uploadId: 328562

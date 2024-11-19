@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: cfd95605c4548f948b02afaf3e2d6cec
+timeCreated: 1487177571
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 56841
+  packageName: Free Earth Planet - The Best Planet Shader in the Asset Store
+  packageVersion: 1.1.2
+  assetPath: Assets/Earth/Editor/EarthEditor.cs
+  uploadId: 328562

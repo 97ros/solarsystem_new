@@ -36,8 +36,8 @@ Flare:
     m_Fade: 1
   - m_ImageIndex: 4
     m_Position: 0.64
-    m_Size: 3
-    m_Color: {r: 1, g: 0.8136792, b: 0.6273585, a: 1}
+    m_Size: 12.93
+    m_Color: {r: 0.509434, g: 0.4183733, b: 0.3292097, a: 0.5294118}
     m_UseLightColor: 0
     m_Rotate: 1
     m_Zoom: 1

@@ -1,8 +1,8 @@
 using UnityEngine;
 using Unity.Cinemachine;
+
 public class PlayerSpaceship : MonoBehaviour
 {
-
     [Header("Managers")]
     public CameraManager cameraManager;
 
@@ -23,14 +23,12 @@ public class PlayerSpaceship : MonoBehaviour
     [SerializeField]
     float speedRollMultAngle = 0.05f;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
         spaceshipRB = GetComponent<Rigidbody>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.K))
@@ -45,6 +43,11 @@ public class PlayerSpaceship : MonoBehaviour
         {
             cameraManager.SwitchCamera(cameraManager.thirdPersonVirtCamFOV);
         }
+        if (Input.GetKeyDown(KeyCode.M)) // Tasto per la visuale dall'alto
+        {
+            cameraManager.SwitchCamera(cameraManager.topDownVirtCam);
+        }
+
         verticalMove = Input.GetAxis("Vertical");
         horizontalMove = Input.GetAxis("Horizontal");
         rollInput = Input.GetAxis("Roll");
@@ -52,19 +55,12 @@ public class PlayerSpaceship : MonoBehaviour
         mouseInputY = Input.GetAxis("Mouse Y");
     }
 
-    //This function is called every fixed framerate frame. (every physics timestep)
-    //please, keep inputs out of here, and physics/rigidbody code in here.
     void FixedUpdate()
     {
-
         spaceshipRB.AddForce(spaceshipRB.transform.TransformDirection(Vector3.forward) * verticalMove * speedMult, ForceMode.VelocityChange);
-
         spaceshipRB.AddForce(spaceshipRB.transform.TransformDirection(Vector3.right) * horizontalMove * speedMult, ForceMode.VelocityChange);
-
         spaceshipRB.AddTorque(spaceshipRB.transform.right * speedMultAngle * mouseInputY * -1, ForceMode.VelocityChange);
         spaceshipRB.AddTorque(spaceshipRB.transform.up * speedMultAngle * mouseInputX, ForceMode.VelocityChange);
-
         spaceshipRB.AddTorque(spaceshipRB.transform.forward * speedRollMultAngle * rollInput, ForceMode.VelocityChange);
-
     }
 }

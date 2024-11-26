@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: ee566f84c572c6c4c870cba503912148
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 173331
+  packageName: UI Blur
+  packageVersion: 3.0
+  assetPath: Assets/Krivodeling/UI/Effects/Blur/Demo/Scripts/MovingImage.cs
+  uploadId: 481065

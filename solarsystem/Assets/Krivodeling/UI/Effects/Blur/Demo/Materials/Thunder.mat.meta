@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: fe9fe2d933bc89c448860fd2b8cbe45e
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 173331
+  packageName: UI Blur
+  packageVersion: 3.0
+  assetPath: Assets/Krivodeling/UI/Effects/Blur/Demo/Materials/Thunder.mat
+  uploadId: 481065

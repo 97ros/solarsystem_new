@@ -5,7 +5,7 @@ using UnityEngine.UI;  // Necessario per lavorare con UI
 public class CambioScena : MonoBehaviour
 {
     // Funzione per caricare la scena "TabletUI"
-    public void GoToTabletScena()
+    public void GoToTabletUIScene()
     {
         SceneManager.LoadScene("TabletUI");
     }

@@ -27364,6 +27364,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cameraManager: {fileID: 1314081036}
   speedMult: 150
+  horizontalSpeedMult: 30
   speedMultAngle: 0.5
   speedRollMultAngle: 0.05
 --- !u!54 &984458956
@@ -92807,7 +92808,7 @@ GameObject:
   - component: {fileID: 2049231806}
   - component: {fileID: 2049231807}
   m_Layer: 0
-  m_Name: 
+  m_Name: Mercurio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

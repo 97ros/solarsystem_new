@@ -2,7 +2,6 @@ using UnityEngine;
 using Unity.Cinemachine;
 using System.Collections;
 
-
 public class CameraManager : MonoBehaviour
 {
     public CinemachineVirtualCamera[] cameras;
@@ -41,6 +40,27 @@ public class CameraManager : MonoBehaviour
         mainSolarSystem.SetActive(true);
     }
 
+    void Update()
+    {
+        // Gestione del passaggio tra telecamere con i tasti J, K, L, M
+        if (Input.GetKeyDown(KeyCode.L)) // Prima persona
+        {
+            SwitchCamera(firstPersonVirtCam);
+        }
+        if (Input.GetKeyDown(KeyCode.K)) // Terza persona FOV
+        {
+            SwitchCamera(thirdPersonVirtCamFOV);
+        }
+        if (Input.GetKeyDown(KeyCode.J)) // Terza persona
+        {
+            SwitchCamera(thirdPersonVirtCam);
+        }
+        if (Input.GetKeyDown(KeyCode.M)) // Visuale dall'alto
+        {
+            SwitchCamera(topDownVirtCam);
+        }
+    }
+
     public void SwitchCamera(CinemachineVirtualCamera newCam)
     {
         currentCam = newCam;
@@ -59,32 +79,28 @@ public class CameraManager : MonoBehaviour
         if (newCam == topDownVirtCam)
         {
             StartCoroutine(SwitchToTopDownCamera());
-            playerSpaceship.controlsEnabled = false;
-            Cursor.lockState = CursorLockMode.None;
+            playerSpaceship.SetControls(false); // Disabilita i controlli della navicella
+            Cursor.lockState = CursorLockMode.None; // Sblocca il cursore
         }
         else
         {
             StartCoroutine(SwitchBackToMainSolarSystem());
-            playerSpaceship.controlsEnabled = true;
-            Cursor.lockState = CursorLockMode.Locked;
+            playerSpaceship.SetControls(true); // Riabilita i controlli della navicella
+            Cursor.lockState = CursorLockMode.Locked; // Blocca il cursore
         }
     }
 
     private IEnumerator SwitchToTopDownCamera()
     {
-        yield return new WaitForSeconds(0.5f);
-        mainSolarSystem.SetActive(false);
-
-        yield return new WaitForSeconds(0.5f);
-        miniSolarSystem.SetActive(true);
+        yield return new WaitForSeconds(0.5f); // Rallenta la transizione
+        mainSolarSystem.SetActive(false); // Disabilita il sistema solare principale
+        miniSolarSystem.SetActive(true); // Attiva il mini sistema solare
     }
 
     private IEnumerator SwitchBackToMainSolarSystem()
     {
-        yield return new WaitForSeconds(0.5f);
-        miniSolarSystem.SetActive(false);
-
-        yield return new WaitForSeconds(0.5f);
-        mainSolarSystem.SetActive(true);
+        yield return new WaitForSeconds(0.5f); // Rallenta la transizione
+        miniSolarSystem.SetActive(false); // Disabilita il mini sistema solare
+        mainSolarSystem.SetActive(true); // Riattiva il sistema solare principale
     }
 }

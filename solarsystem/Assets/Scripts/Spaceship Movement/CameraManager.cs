@@ -9,7 +9,7 @@ public class CameraManager : MonoBehaviour
     public CinemachineVirtualCamera thirdPersonVirtCam;
     public CinemachineVirtualCamera firstPersonVirtCam;
     public CinemachineVirtualCamera thirdPersonVirtCamFOV;
-    public CinemachineVirtualCamera topDownVirtCam; 
+    public CinemachineVirtualCamera topDownVirtCam;
 
     public CinemachineVirtualCamera startCamera;
     private CinemachineVirtualCamera currentCam;
@@ -92,15 +92,23 @@ public class CameraManager : MonoBehaviour
 
     private IEnumerator SwitchToTopDownCamera()
     {
-        yield return new WaitForSeconds(0.5f); // Rallenta la transizione
-        mainSolarSystem.SetActive(false); // Disabilita il sistema solare principale
-        miniSolarSystem.SetActive(true); // Attiva il mini sistema solare
+        // Dopo 0.5 secondi, attiva il miniSolarSystem
+        yield return new WaitForSeconds(0.5f);
+        miniSolarSystem.SetActive(true);
+
+        // Fai svanire mainSolarSystem dopo 2.45 secondi
+        yield return new WaitForSeconds(1.5f);  // Attendere fino a 2.45 secondi
+        mainSolarSystem.SetActive(false);
     }
 
     private IEnumerator SwitchBackToMainSolarSystem()
     {
-        yield return new WaitForSeconds(0.5f); // Rallenta la transizione
-        miniSolarSystem.SetActive(false); // Disabilita il mini sistema solare
-        mainSolarSystem.SetActive(true); // Riattiva il sistema solare principale
+        // Fai svanire miniSolarSystem dopo 0.5 secondi
+        yield return new WaitForSeconds(0.5f);
+        miniSolarSystem.SetActive(false);
+
+        // Dopo 0.5 secondi, attiva mainSolarSystem
+        yield return new WaitForSeconds(0.01f); // Ritardo prima che mainSolarSystem riappaia
+        mainSolarSystem.SetActive(true);
     }
 }

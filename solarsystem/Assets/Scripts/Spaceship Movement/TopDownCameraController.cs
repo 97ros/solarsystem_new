@@ -68,84 +68,109 @@ public class TopDownCameraController : MonoBehaviour
     }
 
     void Update()
-    {
-        // Calcola il fattore di scala per la velocità di trascinamento in base alla posizione Z
-        float dragScale = Mathf.Lerp(1f, 0.1f, (transform.position.z - minZ) / (maxZ - minZ));
+{
+    // Calcola il fattore di scala per la velocità di trascinamento in base alla posizione Z
+    float dragScale = Mathf.Lerp(1f, 0.1f, (transform.position.z - minZ) / (maxZ - minZ));
 
-        // Gestione del trascinamento della telecamera per X e Y
-        if (Input.GetMouseButtonDown(0)) // Inizia il trascinamento
+    // Gestione del trascinamento della telecamera per X e Y
+    if (Input.GetMouseButtonDown(0)) // Inizia il trascinamento
+    {
+        isDragging = true;
+        lastMousePosition = Input.mousePosition;
+    }
+
+    if (isDragging)
+    {
+        // Calcola la differenza di movimento solo se c'è un reale spostamento
+        Vector3 delta = Input.mousePosition - lastMousePosition;
+        if (delta.magnitude > 0.5f) // Verifica se il mouse si è effettivamente spostato
         {
-            isDragging = true;
+            delta *= dragSpeed * dragScale;
+
+            // Applica il movimento alla velocità corrente (per ottenere l'effetto inerzia)
+            currentVelocity = Vector3.Lerp(currentVelocity, new Vector3(-delta.x, -delta.y, 0), Time.deltaTime * 10f);
+
+            // Interpolazione per il movimento fluido lungo X e Y
+            float newX = Mathf.Lerp(transform.position.x, transform.position.x + currentVelocity.x, Time.deltaTime * 6f);
+            float newY = Mathf.Lerp(transform.position.y, transform.position.y + currentVelocity.y, Time.deltaTime * 6f);
+
+            // Applica il movimento alla telecamera lungo gli assi X e Y
+            transform.position = new Vector3(newX, newY, transform.position.z);
+
+            // Limita la posizione della telecamera per evitare che esca dalla finestra visibile
+            float clampedX = Mathf.Clamp(transform.position.x, minX, maxX);
+            float clampedY = Mathf.Clamp(transform.position.y, minY, maxY);
+            transform.position = new Vector3(clampedX, clampedY, transform.position.z);
+
             lastMousePosition = Input.mousePosition;
         }
+    }
 
-        if (isDragging)
+    if (Input.GetMouseButtonUp(0)) // Termina il trascinamento
+    {
+        isDragging = false;
+    }
+
+    // Dopo che il mouse è stato rilasciato, continua il movimento con inerzia
+    if (!isDragging)
+    {
+        // Rallenta gradualmente la velocità della telecamera (come lo zoom)
+        currentVelocity = Vector3.Lerp(currentVelocity, Vector3.zero, Time.deltaTime * 5f);
+
+        // Applica il movimento con inerzia alla telecamera
+        transform.position += currentVelocity * Time.deltaTime;
+
+        // Limita la posizione della telecamera per evitare che esca dalla finestra visibile
+        float clampedX = Mathf.Clamp(transform.position.x, minX, maxX);
+        float clampedY = Mathf.Clamp(transform.position.y, minY, maxY);
+        transform.position = new Vector3(clampedX, clampedY, transform.position.z);
+
+        // Se la velocità è molto bassa, ferma completamente la telecamera
+        if (currentVelocity.magnitude < 0.01f)
         {
-            // Calcola la differenza di movimento solo se c'è un reale spostamento
-            Vector3 delta = Input.mousePosition - lastMousePosition;
-            if (delta.magnitude > 0.5f) // Verifica se il mouse si è effettivamente spostato
-            {
-                delta *= dragSpeed * dragScale;
-
-                // Applica il movimento alla velocità corrente (per ottenere l'effetto inerzia)
-                currentVelocity = Vector3.Lerp(currentVelocity, new Vector3(-delta.x, -delta.y, 0), Time.deltaTime * 10f);
-
-                // Interpolazione per il movimento fluido lungo X e Y
-                float newX = Mathf.Lerp(transform.position.x, transform.position.x + currentVelocity.x, Time.deltaTime * 6f);
-                float newY = Mathf.Lerp(transform.position.y, transform.position.y + currentVelocity.y, Time.deltaTime * 6f);
-
-                // Applica il movimento alla telecamera lungo gli assi X e Y
-                transform.position = new Vector3(newX, newY, transform.position.z);
-
-                // Limita la posizione della telecamera per evitare che esca dalla finestra visibile
-                float clampedX = Mathf.Clamp(transform.position.x, minX, maxX);
-                float clampedY = Mathf.Clamp(transform.position.y, minY, maxY);
-                transform.position = new Vector3(clampedX, clampedY, transform.position.z);
-
-                lastMousePosition = Input.mousePosition;
-            }
+            currentVelocity = Vector3.zero; // Ferma la telecamera
         }
+    }
 
-        if (Input.GetMouseButtonUp(0)) // Termina il trascinamento
-        {
-            isDragging = false;
-        }
+    // Gestione dello zoom tramite rotella del mouse per la posizione Z
+    float scrollInput = Input.GetAxis("Mouse ScrollWheel");  // Acquisisce la rotellina del mouse
+    if (scrollInput != 0)
+    {
+        // Modifica la posizione Z della telecamera per fare zoom in/out
+        targetZoom += scrollInput * zoomSpeed;
 
-        // Gestione dello zoom tramite rotella del mouse per la posizione Z
-        float scrollInput = Input.GetAxis("Mouse ScrollWheel");  // Acquisisce la rotellina del mouse
-        if (scrollInput != 0)
+        // Limita la posizione Z per evitare che si allontani troppo
+        targetZoom = Mathf.Clamp(targetZoom, minZ, maxZ);
+    }
+
+    // Interpolazione dello zoom per renderlo fluido
+    float smoothZoom = Mathf.Lerp(transform.position.z, targetZoom, Time.deltaTime * 5f);
+    transform.position = new Vector3(transform.position.x, transform.position.y, smoothZoom);
+
+    // Gestione dello zoom con il touchpad (PC)
+    if (Input.touchCount > 0)
+    {
+        // Rileva il movimento delle due dita sul touchpad
+        Touch touch1 = Input.GetTouch(0);
+        Touch touch2 = Input.GetTouch(1);
+
+        // Calcola la distanza tra le due dita
+        float prevDistance = (touch1.position - touch2.position).magnitude - touch1.deltaPosition.magnitude;
+        float currentDistance = (touch1.position - touch2.position).magnitude;
+
+        // Se la distanza cambia, zoomma
+        if (Mathf.Abs(currentDistance - prevDistance) > 1f)
         {
-            // Modifica la posizione Z della telecamera per fare zoom in/out
-            targetZoom += scrollInput * zoomSpeed;
+            float zoomDelta = (currentDistance - prevDistance) * zoomSpeed * 0.01f;
+            targetZoom -= zoomDelta;
 
             // Limita la posizione Z per evitare che si allontani troppo
             targetZoom = Mathf.Clamp(targetZoom, minZ, maxZ);
         }
-
-        // Interpolazione dello zoom per renderlo fluido
-        float smoothZoom = Mathf.Lerp(transform.position.z, targetZoom, Time.deltaTime * 5f);
-        transform.position = new Vector3(transform.position.x, transform.position.y, smoothZoom);
-
-        // Gestione dello zoom con il touchpad (PC)
-        if (Input.touchCount > 0)
-        {
-            // Rileva il movimento delle due dita sul touchpad
-            Touch touch1 = Input.GetTouch(0);
-            Touch touch2 = Input.GetTouch(1);
-
-            // Calcola la distanza tra le due dita
-            float prevDistance = (touch1.position - touch2.position).magnitude - touch1.deltaPosition.magnitude;
-            float currentDistance = (touch1.position - touch2.position).magnitude;
-
-            // Se la distanza cambia, zoomma
-            if (Mathf.Abs(currentDistance - prevDistance) > 1f)
-            {
-                float zoomDelta = (currentDistance - prevDistance) * zoomSpeed * 0.01f;
-                targetZoom -= zoomDelta;
-
-                // Limita la posizione Z per evitare che si allontani troppo
-                targetZoom = Mathf.Clamp(targetZoom, minZ, maxZ);
-            }
-        }
     }
+}
+
+
+
+
 }

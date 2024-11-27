@@ -6,30 +6,36 @@ public class TopDownCameraController : MonoBehaviour
     private Vector3 lastMousePosition; // Posizione del mouse all'inizio del trascinamento
     private bool isDragging = false; // Stato per sapere se il mouse è premuto
 
+    void OnEnable()
+    {
+        // Abilita il cursore quando la telecamera dall'alto è attiva
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+    }
+
+    void OnDisable()
+    {
+        // Nasconde il cursore quando si passa ad altre telecamere
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
+
     void Update()
     {
-        // Inizia il trascinamento quando il tasto sinistro del mouse è premuto
-        if (Input.GetMouseButtonDown(0)) // Tasto sinistro del mouse
+        if (Input.GetMouseButtonDown(0)) // Inizia il trascinamento
         {
             isDragging = true;
-            lastMousePosition = Input.mousePosition; // Salva la posizione iniziale del mouse
-        }
-
-        // Quando il mouse viene trascinato, calcola il movimento
-        if (isDragging)
-        {
-            // Calcola la differenza tra la posizione attuale e quella precedente
-            Vector3 delta = (Input.mousePosition - lastMousePosition) * dragSpeed;
-
-            // Applica la differenza di movimento al sistema solare lungo l'asse X e Y
-            transform.Translate(new Vector3(-delta.x, -delta.y, 0), Space.World); // Movimento orizzontale (x) e verticale (y)
-
-            // Aggiorna la posizione del mouse per il prossimo frame
             lastMousePosition = Input.mousePosition;
         }
 
-        // Termina il trascinamento quando il tasto sinistro del mouse è rilasciato
-        if (Input.GetMouseButtonUp(0)) // Tasto sinistro del mouse rilasciato
+        if (isDragging)
+        {
+            Vector3 delta = (Input.mousePosition - lastMousePosition) * dragSpeed;
+            transform.Translate(new Vector3(-delta.x, -delta.y, 0), Space.World);
+            lastMousePosition = Input.mousePosition;
+        }
+
+        if (Input.GetMouseButtonUp(0)) // Termina il trascinamento
         {
             isDragging = false;
         }

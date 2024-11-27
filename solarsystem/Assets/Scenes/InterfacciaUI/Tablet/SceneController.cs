@@ -3,42 +3,44 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
+    private GameObject spaceShip;
+    private PlayerSpaceship playerSpaceship;
+
+    private ParticleSystem sunParticleSystem;
+
     void Start()
     {
         // Carica la scena "SampleScene" in modalità additive
         SceneManager.LoadScene("SampleScene", LoadSceneMode.Additive);
 
         // Aspetta un frame per assicurarti che la scena sia caricata prima di cercare gli oggetti
-        StartCoroutine(DisattivaOggetti());
+        StartCoroutine(SetupScene());
     }
 
-    private System.Collections.IEnumerator DisattivaOggetti()
+    private System.Collections.IEnumerator SetupScene()
     {
-        // Aspetta un frame per assicurarti che la scena sia completamente caricata
         yield return null;
 
-        // Disattiva l'oggetto SpaceShip
-        GameObject spaceShip = GameObject.Find("SpaceShip");
+        // Ottieni riferimento alla navicella
+        spaceShip = GameObject.Find("SpaceShip");
         if (spaceShip != null)
         {
-            spaceShip.SetActive(false);
-            Debug.Log("SpaceShip disattivata all'avvio del gioco.");
+            playerSpaceship = spaceShip.GetComponent<PlayerSpaceship>();
+            playerSpaceship?.SetControls(false);
         }
         else
         {
             Debug.LogWarning("SpaceShip non trovata nella scena.");
         }
 
-        // Trova il Particle System tramite il percorso nella gerarchia
+        // Ottieni riferimento al Particle System
         Transform particleSystemTransform = GameObject.Find("SolarSystem/mainSolarSystem/Sole/Sun/Particle System")?.transform;
         if (particleSystemTransform != null)
         {
-            // Ottieni il componente ParticleSystem e ferma l'emissione
-            ParticleSystem ps = particleSystemTransform.GetComponent<ParticleSystem>();
-            if (ps != null)
+            sunParticleSystem = particleSystemTransform.GetComponent<ParticleSystem>();
+            if (sunParticleSystem != null)
             {
-                ps.Stop(); // Ferma l'emissione delle particelle
-                Debug.Log("Emissione del Particle System fermata all'avvio del gioco.");
+                sunParticleSystem.Stop(); // Disattiva le particelle inizialmente
             }
             else
             {
@@ -49,5 +51,35 @@ public class SceneLoader : MonoBehaviour
         {
             Debug.LogWarning("Particle System non trovato con il percorso specificato.");
         }
+    }
+
+    public void EnterTabletMode()
+    {
+        if (playerSpaceship != null)
+        {
+            playerSpaceship.SetControls(false); // Disabilita i controlli
+        }
+
+        if (sunParticleSystem != null)
+        {
+            sunParticleSystem.Stop(); // Disattiva il Particle System
+        }
+
+        Debug.Log("Entrata nella modalità tablet.");
+    }
+
+    public void ExitTabletMode()
+    {
+        if (playerSpaceship != null)
+        {
+            playerSpaceship.SetControls(true); // Riabilita i controlli
+        }
+
+        if (sunParticleSystem != null)
+        {
+            sunParticleSystem.Play(); // Riattiva il Particle System
+        }
+
+        Debug.Log("Ritorno alla modalità esplorazione.");
     }
 }

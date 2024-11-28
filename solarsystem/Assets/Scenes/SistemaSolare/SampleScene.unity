@@ -195,11 +195,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 39900199dffc8044b9855d63f7720fab, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071067
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 39900199dffc8044b9855d63f7720fab, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.7071068
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 39900199dffc8044b9855d63f7720fab, type: 3}
       propertyPath: m_LocalRotation.y
@@ -207,7 +207,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 39900199dffc8044b9855d63f7720fab, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 39900199dffc8044b9855d63f7720fab, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -10574,6 +10574,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 296341221}
+  - component: {fileID: 296341222}
   m_Layer: 0
   m_Name: Giove
   m_TagString: Untagged
@@ -10589,15 +10590,31 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 296341220}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.00029491, y: 0, z: 16230}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 16230}
   m_LocalScale: {x: 0.69076, y: 0.69076, z: 0.69076}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 778610065}
   - {fileID: 561873594}
   m_Father: {fileID: 1036680634}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &296341222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 296341220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ed845b2677dd5b4786263073df481b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sun: {fileID: 69369140}
+  orbitSpeed: 15
+  semiMajorAxis: 184.7
+  semiMinorAxis: 184.5
 --- !u!4 &305133906 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5417604327655588935, guid: 81ddaef9d4697d84ba75e74a69f45a43, type: 3}
@@ -10612,6 +10629,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 306878572}
+  - component: {fileID: 306878573}
   m_Layer: 3
   m_Name: Earth system
   m_TagString: Untagged
@@ -10636,6 +10654,22 @@ Transform:
   - {fileID: 844195829}
   m_Father: {fileID: 1036680634}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &306878573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 306878571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ed845b2677dd5b4786263073df481b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sun: {fileID: 69369140}
+  orbitSpeed: 30
+  semiMajorAxis: 106.5
+  semiMinorAxis: 97.5
 --- !u!1 &345992864
 GameObject:
   m_ObjectHideFlags: 0
@@ -10944,6 +10978,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 455839825}
+  - component: {fileID: 455839826}
   m_Layer: 0
   m_Name: Venere
   m_TagString: Untagged
@@ -10967,6 +11002,22 @@ Transform:
   - {fileID: 819290889}
   m_Father: {fileID: 1036680634}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &455839826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 455839824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ed845b2677dd5b4786263073df481b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sun: {fileID: 69369140}
+  orbitSpeed: 35
+  semiMajorAxis: 67.8
+  semiMinorAxis: 66.2
 --- !u!1 &469968772
 GameObject:
   m_ObjectHideFlags: 0
@@ -17000,7 +17051,7 @@ Transform:
   m_GameObject: {fileID: 808042640}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -13720}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1249.4, y: 1249.4, z: 1249.4}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -22658,7 +22709,7 @@ MonoBehaviour:
   speedMult: 150
   horizontalSpeedMult: 30
   speedMultAngle: 0.5
-  speedRollMultAngle: 0.05
+  speedRollMultAngle: 0.1
   controlsEnabled: 1
   collisionRepulsionForce: 1
 --- !u!54 &984458956
@@ -22671,7 +22722,7 @@ Rigidbody:
   serializedVersion: 4
   m_Mass: 0.1
   m_Drag: 3.5
-  m_AngularDrag: 5
+  m_AngularDrag: 4.2
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -27620,13 +27671,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ee9c41b8e264ef43b2f84572ac6e38f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dragSpeed: 4.5
+  dragSpeed: 13
   margin: 50
   centerY: 23570
-  minX: -200
-  maxX: 200
-  minY: 23370
-  maxY: 23870
+  minX: -300
+  maxX: 300
+  minY: 23270
+  maxY: 23970
   minZ: 154372
   maxZ: 154885
   zoomSpeed: 150
@@ -27900,6 +27951,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1094703146}
+  - component: {fileID: 1094703147}
   m_Layer: 0
   m_Name: Saturno
   m_TagString: Untagged
@@ -27923,6 +27975,22 @@ Transform:
   - {fileID: 1170223482}
   m_Father: {fileID: 1036680634}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1094703147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1094703145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ed845b2677dd5b4786263073df481b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sun: {fileID: 69369140}
+  orbitSpeed: 12
+  semiMajorAxis: 241
+  semiMinorAxis: 239.8
 --- !u!4 &1170223482 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4c868cde114b9b449b1713ef7b296ee3, type: 3}
@@ -37663,6 +37731,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1232827254}
+  - component: {fileID: 1232827255}
   m_Layer: 0
   m_Name: Nettuno
   m_TagString: Untagged
@@ -37679,13 +37748,29 @@ Transform:
   m_GameObject: {fileID: 1232827253}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 42887}
+  m_LocalPosition: {x: 0, y: 0, z: 29754}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1685540179}
   m_Father: {fileID: 1036680634}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1232827255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1232827253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ed845b2677dd5b4786263073df481b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sun: {fileID: 69369140}
+  orbitSpeed: 6
+  semiMajorAxis: 359
+  semiMinorAxis: 344.5
 --- !u!1 &1258002857
 GameObject:
   m_ObjectHideFlags: 0
@@ -48014,6 +48099,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1456374933}
+  - component: {fileID: 1456374934}
   m_Layer: 0
   m_Name: Urano
   m_TagString: Untagged
@@ -48030,13 +48116,29 @@ Transform:
   m_GameObject: {fileID: 1456374932}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 38916}
+  m_LocalPosition: {x: 0, y: 0, z: 26228.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 808042641}
   m_Father: {fileID: 1036680634}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1456374934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1456374932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ed845b2677dd5b4786263073df481b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sun: {fileID: 69369140}
+  orbitSpeed: 8
+  semiMajorAxis: 290
+  semiMinorAxis: 296.5
 --- !u!1 &1457349024
 GameObject:
   m_ObjectHideFlags: 0
@@ -67886,7 +67988,7 @@ Transform:
   m_GameObject: {fileID: 1685540178}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -15010}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 942.24005, y: 942.24005, z: 942.24005}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -67975,6 +68077,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1707363070}
+  - component: {fileID: 1707363071}
   m_Layer: 0
   m_Name: Marte
   m_TagString: Planet
@@ -67998,6 +68101,22 @@ Transform:
   - {fileID: 250296982}
   m_Father: {fileID: 1036680634}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1707363071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1707363069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ed845b2677dd5b4786263073df481b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sun: {fileID: 69369140}
+  orbitSpeed: 20
+  semiMajorAxis: 139.5
+  semiMinorAxis: 138.5
 --- !u!1 &1710167991
 GameObject:
   m_ObjectHideFlags: 0
@@ -83098,19 +83217,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0ec58841a16234145af3a14e39fac182, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071067
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0ec58841a16234145af3a14e39fac182, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.7071068
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0ec58841a16234145af3a14e39fac182, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0ec58841a16234145af3a14e39fac182, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0ec58841a16234145af3a14e39fac182, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -88124,23 +88243,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b1bb9ef96f04e0246b5c51ab9106e15d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 103
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b1bb9ef96f04e0246b5c51ab9106e15d, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071067
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b1bb9ef96f04e0246b5c51ab9106e15d, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.7071068
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b1bb9ef96f04e0246b5c51ab9106e15d, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b1bb9ef96f04e0246b5c51ab9106e15d, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b1bb9ef96f04e0246b5c51ab9106e15d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -88202,6 +88321,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2049231806}
+  - component: {fileID: 2049231808}
   m_Layer: 0
   m_Name: Mercurio
   m_TagString: Untagged
@@ -88218,13 +88338,29 @@ Transform:
   m_GameObject: {fileID: 2049231805}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 3519}
+  m_LocalPosition: {x: 0, y: 0, z: 3800}
   m_LocalScale: {x: 5.8137, y: 5.8137, z: 5.8137}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1634875833}
   m_Father: {fileID: 1036680634}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2049231808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2049231805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ed845b2677dd5b4786263073df481b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sun: {fileID: 69369140}
+  orbitSpeed: 40
+  semiMajorAxis: 45
+  semiMinorAxis: 40
 --- !u!1 &2082965461
 GameObject:
   m_ObjectHideFlags: 0

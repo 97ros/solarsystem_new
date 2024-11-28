@@ -4,6 +4,7 @@ public class PlayerSpaceship : MonoBehaviour
 {
     [Header("Managers")]
     public CameraManager cameraManager;
+    public Transform sistemaSolare; // Assegna l'oggetto "SistemaSolare" qui
 
     Rigidbody spaceshipRB;
 
@@ -53,11 +54,26 @@ public class PlayerSpaceship : MonoBehaviour
     {
         if (!controlsEnabled) return;
 
+        // Applica i movimenti e le rotazioni alla navicella
         spaceshipRB.AddForce(spaceshipRB.transform.TransformDirection(Vector3.forward) * verticalMove * speedMult, ForceMode.VelocityChange);
         spaceshipRB.AddForce(spaceshipRB.transform.TransformDirection(Vector3.right) * horizontalMove * horizontalSpeedMult, ForceMode.VelocityChange);
         spaceshipRB.AddTorque(spaceshipRB.transform.right * speedMultAngle * mouseInputY * -1, ForceMode.VelocityChange);
         spaceshipRB.AddTorque(spaceshipRB.transform.up * speedMultAngle * mouseInputX, ForceMode.VelocityChange);
         spaceshipRB.AddTorque(spaceshipRB.transform.forward * speedRollMultAngle * rollInput, ForceMode.VelocityChange);
+
+        // Sposta il sistema solare nella direzione opposta al movimento della navicella
+        SpostaSistemaSolare();
+    }
+
+    void SpostaSistemaSolare()
+    {
+        Vector3 navicellaPosizioneGlobale = transform.position;
+
+        // Sposta il sistema solare nella direzione opposta
+        sistemaSolare.position -= navicellaPosizioneGlobale;
+
+        // Riporta la navicella vicino all'origine
+        transform.position = Vector3.zero;
     }
 
     public void SetControls(bool enabled)

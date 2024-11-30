@@ -17,6 +17,7 @@ public class SceneLoader : MonoBehaviour
         StartCoroutine(SetupScene());
     }
 
+
     private System.Collections.IEnumerator SetupScene()
     {
         yield return null;
@@ -53,20 +54,35 @@ public class SceneLoader : MonoBehaviour
         }
     }
 
-    public void EnterTabletMode()
+    public void DeactivateSpaceShip()
+{
+    if (spaceShip != null)
     {
-        if (playerSpaceship != null)
-        {
-            playerSpaceship.SetControls(false); // Disabilita i controlli
-        }
-
-        if (sunParticleSystem != null)
-        {
-            sunParticleSystem.Stop(); // Disattiva il Particle System
-        }
-
-        Debug.Log("Entrata nella modalità tablet.");
+        spaceShip.SetActive(false); // Disattiva l'oggetto SpaceShip
+        Debug.Log("SpaceShip disattivata.");
     }
+    else
+    {
+        Debug.LogWarning("Impossibile disattivare SpaceShip perché non è stata trovata.");
+    }
+}
+
+    public void EnterTabletMode()
+{
+    if (playerSpaceship != null)
+    {
+        playerSpaceship.SetControls(false); // Disabilita i controlli
+    }
+
+    if (sunParticleSystem != null)
+    {
+        sunParticleSystem.Stop(); // Disattiva il Particle System
+    }
+
+    DeactivateSpaceShip(); // Disattiva l'oggetto SpaceShip
+
+    Debug.Log("Entrata nella modalità tablet.");
+}
 
     public void ExitTabletMode()
     {

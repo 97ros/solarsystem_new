@@ -3,7 +3,8 @@ using UnityEngine;
 public class EllipticalOrbit1 : MonoBehaviour
 {
     public Transform sun;  // Riferimento al Sole
-    public float orbitSpeed = 10f;  // Velocità della rotazione orbitale (gradi per secondo)
+    public float baseOrbitSpeed = 10f;  // Velocità di rotazione di base (gradi per secondo)
+    public float orbitSpeed = 10f;  // Velocità di rotazione attuale (modificata dallo slider)
     public float semiMajorAxis = 10f;  // Semi-asse maggiore (raggio orizzontale dell'orbita)
     public float semiMinorAxis = 5f;  // Semi-asse minore (raggio verticale dell'orbita)
 
@@ -30,4 +31,21 @@ public class EllipticalOrbit1 : MonoBehaviour
         // Imposta la nuova posizione del pianeta
         transform.position = new Vector3(x, y, z);
     }
+
+    // Metodo per aggiornare la velocità dell'orbita tramite lo slider
+    public void UpdateOrbitSpeed(float sliderValue)
+{
+    if (sliderValue < 2)
+    {
+        // Riduzione della velocità proporzionale
+        orbitSpeed = baseOrbitSpeed * (sliderValue / 2); // Scala tra 0 e 2
+    }
+    else
+    {
+        // Aumento della velocità quadratico
+        orbitSpeed = baseOrbitSpeed * Mathf.Pow(sliderValue - 1, 2); // Aumento più rapido sopra il 2
+    }
+
+    Debug.Log("Orbit Speed Updated: " + orbitSpeed);
+}
 }

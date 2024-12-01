@@ -1,47 +1,46 @@
 using UnityEngine;
+using UnityEngine.UI;
 using Unity.Cinemachine;
 
 public class TopDownCameraController : MonoBehaviour
 {
-    public float dragSpeed = 0.5f; // Aumentato per velocizzare il movimento
-    private Vector3 lastMousePosition; // Posizione del mouse all'inizio del trascinamento
-    private bool isDragging = false; // Stato per sapere se il mouse è premuto
+    public float dragSpeed = 0.5f;
+    private Vector3 lastMousePosition;
+    private bool isDragging = false;
 
-    // Limiti per il movimento della telecamera
-    public float margin = 50f;  // Margine di movimento per la telecamera
-    public float centerY = 23570f;  // Y centrale della scena
-    public float minX = -200f;    // Limite minimo per X
-    public float maxX = 200f;     // Limite massimo per X
-    public float minY = 23370f;   // Limite minimo per Y
-    public float maxY = 23770f;   // Limite massimo per Y
-    public float minZ = 154372f;  // Limite minimo per Z
-    public float maxZ = 154872f;  // Limite massimo per Z
+    public float margin = 50f;
+    public float centerY = 23570f;
+    public float minX = -200f;
+    public float maxX = 200f;
+    public float minY = 23370f;
+    public float maxY = 23770f;
+    public float minZ = 154372f;
+    public float maxZ = 154872f;
 
-    // Parametri di zoom
-    public float zoomSpeed = 100f;    // Velocità di zoom
-    public float minZoom = 10f;      // Zoom minimo (distanza minima)
-    public float maxZoom = 300f;     // Zoom massimo (distanza massima)
-    private float targetZoom;        // Zoom target per interpolazione
+    public float zoomSpeed = 100f;
+    public float minZoom = 10f;
+    public float maxZoom = 300f;
+    private float targetZoom;
 
-    private Camera mainCamera;  // Riferimento alla componente Camera principale
-    private CinemachineVirtualCamera topDownVirtCam; // Riferimento alla telecamera virtuale
+    private Camera mainCamera;
+    private CinemachineVirtualCamera topDownVirtCam;
 
-    // Valore iniziale della posizione Z
     private float initialZ = 154672f;
-
-    // Velocità del movimento per X e Y (per effetto inerzia)
     private Vector3 currentVelocity = Vector3.zero;
-    private float inertiaDamping = 0.05f; // Ridotto per aumentare l'inerzia
+    private float inertiaDamping = 0.05f;
 
+    // Riferimento allo slider
+    public Slider speedSlider;
+    
     void Start()
     {
-        mainCamera = Camera.main; // Camera principale
+        mainCamera = Camera.main;
         if (mainCamera == null)
         {
             Debug.LogError("No main camera found in the scene!");
         }
 
-        topDownVirtCam = GetComponent<CinemachineVirtualCamera>(); // Assegna la Cinemachine Virtual Camera
+        topDownVirtCam = GetComponent<CinemachineVirtualCamera>();
 
         if (mainCamera != null)
         {
@@ -64,15 +63,22 @@ public class TopDownCameraController : MonoBehaviour
 
     void Update()
     {
+        // Verifica se il cursore è sopra lo slider
+        if (IsMouseOverSlider())
+        {
+            isDragging = false;  // Disabilita il drag della telecamera se il mouse è sopra lo slider
+            return;  // Esci dalla funzione Update per evitare che il movimento della telecamera continui
+        }
+
+        // Il codice per il movimento e zoom della telecamera rimane invariato
         float dragScale = Mathf.Lerp(1f, 0.1f, (transform.position.z - minZ) / (maxZ - minZ));
 
         // Gestione trascinamento
         if (Input.GetMouseButtonDown(0))
         {
-            // Se il mouse viene premuto mentre la telecamera è in movimento (inerzia attiva), mantieni l'inerzia
             if (!isDragging && currentVelocity.magnitude > 0.01f)
             {
-                isDragging = false; // Non bloccare il movimento
+                isDragging = false;
             }
 
             lastMousePosition = Input.mousePosition;
@@ -85,8 +91,6 @@ public class TopDownCameraController : MonoBehaviour
             if (delta.magnitude > 0.5f)
             {
                 delta *= dragSpeed * dragScale;
-
-                // Ridurre l'effetto di damping per aumentare l'inerzia
                 currentVelocity = Vector3.Lerp(currentVelocity, new Vector3(-delta.x, -delta.y, 0), Time.deltaTime * 6f);
 
                 float newX = Mathf.Lerp(transform.position.x, transform.position.x + currentVelocity.x, Time.deltaTime * 6f);
@@ -110,9 +114,7 @@ public class TopDownCameraController : MonoBehaviour
         // Inerzia dopo il rilascio del mouse
         if (!isDragging)
         {
-            // Ridotto il damping per rallentare più lentamente la velocità
             currentVelocity = Vector3.Lerp(currentVelocity, Vector3.zero, Time.deltaTime * 2.5f);
-
             transform.position += currentVelocity * Time.deltaTime;
 
             float clampedX = Mathf.Clamp(transform.position.x, minX, maxX);
@@ -152,5 +154,12 @@ public class TopDownCameraController : MonoBehaviour
                 targetZoom = Mathf.Clamp(targetZoom, minZ, maxZ);
             }
         }
+    }
+
+    // Funzione che verifica se il cursore è sopra lo slider
+    private bool IsMouseOverSlider()
+    {
+        RectTransform rectTransform = speedSlider.GetComponent<RectTransform>();
+        return RectTransformUtility.RectangleContainsScreenPoint(rectTransform, Input.mousePosition);
     }
 }

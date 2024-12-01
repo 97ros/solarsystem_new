@@ -9989,6 +9989,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 198496400515357058, guid: c0aedbee0212d4ba08d6e85a65854d22, type: 3}
+      propertyPath: lengthInSec
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 198496400515357058, guid: c0aedbee0212d4ba08d6e85a65854d22, type: 3}
       propertyPath: simulationSpeed
       value: 0.1
       objectReference: {fileID: 0}

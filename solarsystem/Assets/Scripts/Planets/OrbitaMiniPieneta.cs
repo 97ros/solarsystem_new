@@ -34,18 +34,18 @@ public class EllipticalOrbit1 : MonoBehaviour
 
     // Metodo per aggiornare la velocità dell'orbita tramite lo slider
     public void UpdateOrbitSpeed(float sliderValue)
+{
+    if (sliderValue < 2)
     {
-        // Se lo slider è a 0, ferma la rotazione
-        if (sliderValue == 0)
-        {
-            orbitSpeed = 0;
-        }
-        else
-        {
-            // Calcola l'incremento proporzionale della velocità in base alla velocità iniziale e il range dello slider (da 0 a 2)
-            orbitSpeed = baseOrbitSpeed * (1 + (sliderValue * 2));  // Lo slider va da 0 a 2, quindi incremento fino a 3 volte la velocità base
-        }
-
-        Debug.Log("Orbit Speed Updated: " + orbitSpeed); // Aggiungi un log per verificare il cambiamento della velocità
+        // Riduzione della velocità proporzionale
+        orbitSpeed = baseOrbitSpeed * (sliderValue / 2); // Scala tra 0 e 2
     }
+    else
+    {
+        // Aumento della velocità quadratico
+        orbitSpeed = baseOrbitSpeed * Mathf.Pow(sliderValue - 1, 2); // Aumento più rapido sopra il 2
+    }
+
+    Debug.Log("Orbit Speed Updated: " + orbitSpeed);
+}
 }

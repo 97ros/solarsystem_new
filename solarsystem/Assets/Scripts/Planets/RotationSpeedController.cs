@@ -8,8 +8,9 @@ public class SliderControl : MonoBehaviour
 
     void Start()
     {
-        // Imposta il valore iniziale dello slider (da 0 a 2)
-        speedSlider.value = 0.5f;  // Un valore iniziale che non è né troppo lento né troppo veloce
+        speedSlider.minValue = 0f;
+        speedSlider.maxValue = 4f;
+        speedSlider.value = 2f;  // Valore iniziale corrispondente alla velocità base
 
         // Aggiungi il listener per lo slider
         speedSlider.onValueChanged.AddListener(OnSliderValueChanged);
@@ -18,9 +19,9 @@ public class SliderControl : MonoBehaviour
     // Funzione chiamata quando lo slider cambia valore
     void OnSliderValueChanged(float value)
     {
-        Debug.Log("Slider Value: " + value); // Aggiungi un log per verificare che lo slider funzioni
+        Debug.Log("Slider Value: " + value);
 
-        // Modifica la velocità di rotazione per ogni pianeta, moltiplicando per il valore dello slider
+        // Modifica la velocità di rotazione per ogni pianeta
         foreach (EllipticalOrbit1 planet in planets)
         {
             planet.UpdateOrbitSpeed(value);

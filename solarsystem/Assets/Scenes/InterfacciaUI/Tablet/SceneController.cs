@@ -1,47 +1,93 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
+using System.Collections;
 
-public class SceneLoader : MonoBehaviour
+public class SceneController : MonoBehaviour
 {
     private GameObject spaceShip;
     private PlayerSpaceship playerSpaceship;
-
     private ParticleSystem sunParticleSystem;
 
     void Start()
     {
         // Carica la scena "SampleScene" in modalità additive
-        SceneManager.LoadScene("SampleScene", LoadSceneMode.Additive);
-
-        // Aspetta un frame per assicurarti che la scena sia caricata prima di cercare gli oggetti
-        StartCoroutine(SetupScene());
+       StartCoroutine(LoadSampleScene());
     }
 
-
-    private System.Collections.IEnumerator SetupScene()
+    private IEnumerator LoadSampleScene()
     {
-        yield return null;
-
-        // Ottieni riferimento alla navicella
-        spaceShip = GameObject.Find("SpaceShip");
-        if (spaceShip != null)
+        // Carica la scena additive
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("SampleScene", LoadSceneMode.Additive);
+        while (!asyncLoad.isDone)
         {
-            playerSpaceship = spaceShip.GetComponent<PlayerSpaceship>();
-            playerSpaceship?.SetControls(false);
+            yield return null;
+        }
+
+        // Assicurati che la scena sia attiva
+        Scene sampleScene = SceneManager.GetSceneByName("SampleScene");
+        if (sampleScene.IsValid() && sampleScene.isLoaded)
+        {
+            SceneManager.SetActiveScene(sampleScene);
+
+            // Disattiva EventSystem nella scena secondaria
+            DisableEventSystem(sampleScene);
+
+            // Configura gli oggetti della scena
+            SetupSampleSceneObjects();
         }
         else
         {
-            Debug.LogWarning("SpaceShip non trovata nella scena.");
+            Debug.LogError("SampleScene non valida o non caricata correttamente.");
+        }
+    }
+
+    private void DisableEventSystem(Scene scene)
+    {
+        GameObject[] rootObjects = scene.GetRootGameObjects();
+        foreach (GameObject obj in rootObjects)
+        {
+            EventSystem eventSystem = obj.GetComponent<EventSystem>();
+            if (eventSystem != null)
+            {
+                obj.SetActive(false);
+                Debug.Log("EventSystem disattivato nella scena secondaria.");
+                return;
+            }
         }
 
-        // Ottieni riferimento al Particle System
+        Debug.LogWarning("Nessun EventSystem trovato nella scena secondaria.");
+    }
+
+    private void SetupSampleSceneObjects()
+    {
+        // Trova l'oggetto SpaceShip
+        spaceShip = GameObject.Find("SpaceShip");
+        if (spaceShip != null)
+        {
+            spaceShip.SetActive(false); // Disattiva subito SpaceShip
+            playerSpaceship = spaceShip.GetComponent<PlayerSpaceship>();
+            if (playerSpaceship != null)
+            {
+                playerSpaceship.SetControls(false); // Disattiva i controlli
+            }
+
+            Debug.Log("SpaceShip trovata e configurata.");
+        }
+        else
+        {
+            Debug.LogWarning("SpaceShip non trovata nella scena SampleScene.");
+        }
+
+        // Trova il Particle System
         Transform particleSystemTransform = GameObject.Find("SolarSystem/mainSolarSystem/Sole/Sun/Particle System")?.transform;
         if (particleSystemTransform != null)
         {
             sunParticleSystem = particleSystemTransform.GetComponent<ParticleSystem>();
             if (sunParticleSystem != null)
             {
-                sunParticleSystem.Stop(); // Disattiva le particelle inizialmente
+                sunParticleSystem.Stop(); // Disattiva il Particle System
+                Debug.Log("Particle System configurato.");
             }
             else
             {
@@ -54,46 +100,41 @@ public class SceneLoader : MonoBehaviour
         }
     }
 
-    public void DeactivateSpaceShip()
-{
-    if (spaceShip != null)
-    {
-        spaceShip.SetActive(false); // Disattiva l'oggetto SpaceShip
-        Debug.Log("SpaceShip disattivata.");
-    }
-    else
-    {
-        Debug.LogWarning("Impossibile disattivare SpaceShip perché non è stata trovata.");
-    }
-}
-
     public void EnterTabletMode()
-{
-    if (playerSpaceship != null)
     {
-        playerSpaceship.SetControls(false); // Disabilita i controlli
+        if (playerSpaceship != null)
+        {
+            playerSpaceship.SetControls(false);
+        }
+
+        if (sunParticleSystem != null)
+        {
+            sunParticleSystem.Stop();
+        }
+
+        if (spaceShip != null)
+        {
+            spaceShip.SetActive(false);
+        }
+
+        Debug.Log("Entrata nella modalità tablet.");
     }
-
-    if (sunParticleSystem != null)
-    {
-        sunParticleSystem.Stop(); // Disattiva il Particle System
-    }
-
-    DeactivateSpaceShip(); // Disattiva l'oggetto SpaceShip
-
-    Debug.Log("Entrata nella modalità tablet.");
-}
 
     public void ExitTabletMode()
     {
         if (playerSpaceship != null)
         {
-            playerSpaceship.SetControls(true); // Riabilita i controlli
+            playerSpaceship.SetControls(true);
         }
 
         if (sunParticleSystem != null)
         {
-            sunParticleSystem.Play(); // Riattiva il Particle System
+            sunParticleSystem.Play();
+        }
+
+        if (spaceShip != null)
+        {
+            spaceShip.SetActive(true);
         }
 
         Debug.Log("Ritorno alla modalità esplorazione.");

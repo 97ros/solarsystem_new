@@ -8,11 +8,12 @@ public class SceneController : MonoBehaviour
     private GameObject spaceShip;
     private PlayerSpaceship playerSpaceship;
     private ParticleSystem sunParticleSystem;
+    private GameObject canvas; // Riferimento al Canvas (presente nella SampleScene)
 
     void Start()
     {
         // Carica la scena "SampleScene" in modalità additive
-       StartCoroutine(LoadSampleScene());
+        StartCoroutine(LoadSampleScene());
     }
 
     private IEnumerator LoadSampleScene()
@@ -33,7 +34,7 @@ public class SceneController : MonoBehaviour
             // Disattiva EventSystem nella scena secondaria
             DisableEventSystem(sampleScene);
 
-            // Configura gli oggetti della scena
+            // Configura gli oggetti della scena, incluso il Canvas
             SetupSampleSceneObjects();
         }
         else
@@ -61,6 +62,18 @@ public class SceneController : MonoBehaviour
 
     private void SetupSampleSceneObjects()
     {
+        // Trova il Canvas nella scena SampleScene
+        canvas = GameObject.Find("Canvas");
+        if (canvas != null)
+        {
+            canvas.SetActive(false); // Disattiva il Canvas
+            Debug.Log("Canvas disattivato nella scena SampleScene.");
+        }
+        else
+        {
+            Debug.LogWarning("Canvas non trovato nella scena SampleScene.");
+        }
+
         // Trova l'oggetto SpaceShip
         spaceShip = GameObject.Find("SpaceShip");
         if (spaceShip != null)
@@ -117,6 +130,11 @@ public class SceneController : MonoBehaviour
             spaceShip.SetActive(false);
         }
 
+        if (canvas != null)
+        {
+            canvas.SetActive(false); // Assicurati che il Canvas rimanga disattivato
+        }
+
         Debug.Log("Entrata nella modalità tablet.");
     }
 
@@ -135,6 +153,11 @@ public class SceneController : MonoBehaviour
         if (spaceShip != null)
         {
             spaceShip.SetActive(true);
+        }
+
+        if (canvas != null)
+        {
+            canvas.SetActive(true); // Riattiva il Canvas solo se richiesto nella modalità esplorazione
         }
 
         Debug.Log("Ritorno alla modalità esplorazione.");

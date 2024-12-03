@@ -737,7 +737,7 @@ GameObject:
   - component: {fileID: 168434325}
   - component: {fileID: 168434324}
   m_Layer: 5
-  m_Name: Venere
+  m_Name: ButtonVenere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1267,7 +1267,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &246018422
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2432,7 +2432,7 @@ GameObject:
   - component: {fileID: 403586652}
   - component: {fileID: 403586651}
   m_Layer: 5
-  m_Name: Marte
+  m_Name: ButtonMarte
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3215,7 +3215,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &489856436
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3296,7 +3296,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -5540,7 +5540,7 @@ GameObject:
   - component: {fileID: 1126185707}
   - component: {fileID: 1126185706}
   m_Layer: 5
-  m_Name: Nettuno
+  m_Name: ButtonNettuno
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7399,7 +7399,7 @@ GameObject:
   - component: {fileID: 1417611424}
   - component: {fileID: 1417611423}
   m_Layer: 5
-  m_Name: Urano
+  m_Name: ButtonUrano
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9080,7 +9080,7 @@ GameObject:
   - component: {fileID: 1832705835}
   - component: {fileID: 1832705834}
   m_Layer: 5
-  m_Name: Saturno
+  m_Name: ButtonSaturno
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9569,7 +9569,7 @@ GameObject:
   - component: {fileID: 1945874548}
   - component: {fileID: 1945874547}
   m_Layer: 5
-  m_Name: Terra
+  m_Name: ButtonTerra
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9702,7 +9702,7 @@ GameObject:
   - component: {fileID: 1989596179}
   - component: {fileID: 1989596178}
   m_Layer: 5
-  m_Name: Giove
+  m_Name: ButtonGiove
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

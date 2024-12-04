@@ -27308,6 +27308,32 @@ LineRenderer:
   m_UseWorldSpace: 1
   m_Loop: 0
   m_ApplyActiveColorSpace: 1
+--- !u!1 &749948217 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -3637759865191541574, guid: 3b3ecf33e16038d478bfc4ca680bbdc3, type: 3}
+  m_PrefabInstance: {fileID: 1759716461}
+  m_PrefabAsset: {fileID: 0}
+--- !u!135 &749948219
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 749948217}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 259
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &755183602
 GameObject:
   m_ObjectHideFlags: 0
@@ -33643,7 +33669,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 984458953}
   serializedVersion: 4
-  m_Mass: 0.009
+  m_Mass: 0.01
   m_Drag: 3.5
   m_AngularDrag: 4.2
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -79176,6 +79202,11 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!1 &1556422231 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0ec58841a16234145af3a14e39fac182, type: 3}
+  m_PrefabInstance: {fileID: 1675024589}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1566890654
 GameObject:
   m_ObjectHideFlags: 0
@@ -89083,19 +89114,47 @@ PrefabInstance:
       propertyPath: m_Name
       value: nettuno
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0ec58841a16234145af3a14e39fac182, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0ec58841a16234145af3a14e39fac182, type: 3}
       insertIndex: -1
       addedObject: {fileID: 527187137}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0ec58841a16234145af3a14e39fac182, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1675024593}
   m_SourcePrefab: {fileID: 100100000, guid: 0ec58841a16234145af3a14e39fac182, type: 3}
 --- !u!4 &1675024590 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0ec58841a16234145af3a14e39fac182, type: 3}
   m_PrefabInstance: {fileID: 1675024589}
   m_PrefabAsset: {fileID: 0}
+--- !u!135 &1675024593
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556422231}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.012
+  m_Center: {x: -0.0000000046566133, y: -0.0000000046566124, z: 0}
 --- !u!1 &1680612066
 GameObject:
   m_ObjectHideFlags: 0
@@ -94661,9 +94720,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: planet
       objectReference: {fileID: 0}
+    - target: {fileID: -3637759865191541574, guid: 3b3ecf33e16038d478bfc4ca680bbdc3, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b3ecf33e16038d478bfc4ca680bbdc3, type: 3}
       propertyPath: m_Name
       value: uranus
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3b3ecf33e16038d478bfc4ca680bbdc3, type: 3}
+      propertyPath: m_TagString
+      value: Planet
       objectReference: {fileID: 0}
     - target: {fileID: 2351134823129442818, guid: 3b3ecf33e16038d478bfc4ca680bbdc3, type: 3}
       propertyPath: m_LocalRotation.w
@@ -94724,7 +94791,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5740329349093441227, guid: 3b3ecf33e16038d478bfc4ca680bbdc3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1252165364}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: -3637759865191541574, guid: 3b3ecf33e16038d478bfc4ca680bbdc3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 749948219}
   m_SourcePrefab: {fileID: 100100000, guid: 3b3ecf33e16038d478bfc4ca680bbdc3, type: 3}
 --- !u!1 &1785459314
 GameObject:

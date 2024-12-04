@@ -10023,6 +10023,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 193175131}
+  - component: {fileID: 193175132}
   m_Layer: 3
   m_Name: Luna
   m_TagString: Untagged
@@ -10046,6 +10047,20 @@ Transform:
   - {fileID: 1268143041}
   m_Father: {fileID: 1958685789}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &193175132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 193175130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f482d23ec4adba44ea232ecf6619c5d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  earth: {fileID: 1061903464}
+  orbitSpeed: 10
 --- !u!4 &218228412 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4451924038575070938, guid: 81ddaef9d4697d84ba75e74a69f45a43, type: 3}
@@ -15796,7 +15811,7 @@ Transform:
   m_GameObject: {fileID: 345992864}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 11199}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -21408,6 +21423,7 @@ GameObject:
   m_Component:
   - component: {fileID: 519644406}
   - component: {fileID: 519644407}
+  - component: {fileID: 519644408}
   m_Layer: 0
   m_Name: Mercurio
   m_TagString: Untagged
@@ -21424,7 +21440,7 @@ Transform:
   m_GameObject: {fileID: 519644405}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 11244}
+  m_LocalPosition: {x: 0, y: 0, z: 21000}
   m_LocalScale: {x: 6, y: 6, z: 6}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -21438,14 +21454,26 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519644405}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53fc884e4556020459138c2325a64020, type: 3}
+  m_Script: {fileID: 11500000, guid: 6c76cb21fa7ecab44a260ce3c67cdd6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sole: {fileID: 1491293169}
-  periodoOrbitale: 87.97
-  inclinazioneOrbitale: 7
+  rotationSpeed: 2
+--- !u!114 &519644408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519644405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 814bdc54c7eefef4a950a2b7bdd5deca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sun: {fileID: 1491293169}
+  orbitSpeed: 0.5
 --- !u!1 &527187136
 GameObject:
   m_ObjectHideFlags: 0
@@ -27008,6 +27036,7 @@ GameObject:
   m_Component:
   - component: {fileID: 713006269}
   - component: {fileID: 713006270}
+  - component: {fileID: 713006271}
   m_Layer: 0
   m_Name: Marte
   m_TagString: Untagged
@@ -27024,7 +27053,7 @@ Transform:
   m_GameObject: {fileID: 713006268}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 37123}
+  m_LocalPosition: {x: 0, y: 0, z: 48000}
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -27038,14 +27067,26 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 713006268}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53fc884e4556020459138c2325a64020, type: 3}
+  m_Script: {fileID: 11500000, guid: 6c76cb21fa7ecab44a260ce3c67cdd6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sole: {fileID: 1491293169}
-  periodoOrbitale: 686.67
-  inclinazioneOrbitale: 1.9
+  rotationSpeed: 9
+--- !u!114 &713006271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713006268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 814bdc54c7eefef4a950a2b7bdd5deca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sun: {fileID: 1491293169}
+  orbitSpeed: 0.15
 --- !u!1 &723434126
 GameObject:
   m_ObjectHideFlags: 0
@@ -27277,6 +27318,7 @@ GameObject:
   m_Component:
   - component: {fileID: 755183603}
   - component: {fileID: 755183604}
+  - component: {fileID: 755183605}
   m_Layer: 0
   m_Name: Saturno
   m_TagString: Untagged
@@ -27293,7 +27335,7 @@ Transform:
   m_GameObject: {fileID: 755183602}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 72303}
+  m_LocalPosition: {x: 0, y: 0, z: 86000}
   m_LocalScale: {x: 3000, y: 3000, z: 3000}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -27307,14 +27349,26 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 755183602}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53fc884e4556020459138c2325a64020, type: 3}
+  m_Script: {fileID: 11500000, guid: 6c76cb21fa7ecab44a260ce3c67cdd6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sole: {fileID: 1491293169}
-  periodoOrbitale: 10756.61
-  inclinazioneOrbitale: 2.5
+  rotationSpeed: 11
+--- !u!114 &755183605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 755183602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 814bdc54c7eefef4a950a2b7bdd5deca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sun: {fileID: 1491293169}
+  orbitSpeed: 0.05
 --- !u!1001 &772463950
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38776,6 +38830,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1061903464}
+  - component: {fileID: 1061903465}
   m_Layer: 3
   m_Name: Terra
   m_TagString: Untagged
@@ -38799,6 +38854,19 @@ Transform:
   - {fileID: 1895431854}
   m_Father: {fileID: 1958685789}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1061903465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1061903463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c76cb21fa7ecab44a260ce3c67cdd6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 7
 --- !u!1 &1063172018
 GameObject:
   m_ObjectHideFlags: 0
@@ -48883,6 +48951,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1219877668}
   - component: {fileID: 1219877669}
+  - component: {fileID: 1219877670}
   m_Layer: 0
   m_Name: Venere
   m_TagString: Untagged
@@ -48899,7 +48968,7 @@ Transform:
   m_GameObject: {fileID: 1219877667}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 19525}
+  m_LocalPosition: {x: 0, y: 0, z: 29000}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -48913,14 +48982,26 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1219877667}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53fc884e4556020459138c2325a64020, type: 3}
+  m_Script: {fileID: 11500000, guid: 6c76cb21fa7ecab44a260ce3c67cdd6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sole: {fileID: 1491293169}
-  periodoOrbitale: 224.7
-  inclinazioneOrbitale: 3.4
+  rotationSpeed: -2
+--- !u!114 &1219877670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219877667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 814bdc54c7eefef4a950a2b7bdd5deca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sun: {fileID: 1491293169}
+  orbitSpeed: 0.3
 --- !u!1001 &1236157909
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -59385,6 +59466,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1380235701}
   - component: {fileID: 1380235702}
+  - component: {fileID: 1380235703}
   m_Layer: 0
   m_Name: Giove
   m_TagString: Untagged
@@ -59401,7 +59483,7 @@ Transform:
   m_GameObject: {fileID: 1380235700}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 51661}
+  m_LocalPosition: {x: 0, y: 0, z: 66000}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -59416,14 +59498,26 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1380235700}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53fc884e4556020459138c2325a64020, type: 3}
+  m_Script: {fileID: 11500000, guid: 6c76cb21fa7ecab44a260ce3c67cdd6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sole: {fileID: 1491293169}
-  periodoOrbitale: 4331.865
-  inclinazioneOrbitale: 1.3
+  rotationSpeed: 12
+--- !u!114 &1380235703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1380235700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 814bdc54c7eefef4a950a2b7bdd5deca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sun: {fileID: 1491293169}
+  orbitSpeed: 0.1
 --- !u!1 &1399061516
 GameObject:
   m_ObjectHideFlags: 0
@@ -64267,6 +64361,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1406026356}
   - component: {fileID: 1406026357}
+  - component: {fileID: 1406026358}
   m_Layer: 0
   m_Name: Urano
   m_TagString: Planet
@@ -64283,7 +64378,7 @@ Transform:
   m_GameObject: {fileID: 1406026355}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0, z: -0.85264003, w: -0.5224988}
-  m_LocalPosition: {x: 0, y: 0, z: 90000}
+  m_LocalPosition: {x: 0, y: 0, z: 103000}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -64297,14 +64392,26 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1406026355}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53fc884e4556020459138c2325a64020, type: 3}
+  m_Script: {fileID: 11500000, guid: 6c76cb21fa7ecab44a260ce3c67cdd6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sole: {fileID: 1491293169}
-  periodoOrbitale: 30706.568
-  inclinazioneOrbitale: 0.8
+  rotationSpeed: -7
+--- !u!114 &1406026358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1406026355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 814bdc54c7eefef4a950a2b7bdd5deca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sun: {fileID: 1491293169}
+  orbitSpeed: 0.02
 --- !u!1 &1410705142
 GameObject:
   m_ObjectHideFlags: 0
@@ -94413,6 +94520,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1747061805}
   - component: {fileID: 1747061806}
+  - component: {fileID: 1747061807}
   m_Layer: 0
   m_Name: Nettuno
   m_TagString: Planet
@@ -94429,7 +94537,7 @@ Transform:
   m_GameObject: {fileID: 1747061804}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 100000}
+  m_LocalPosition: {x: 0, y: 0, z: 115000}
   m_LocalScale: {x: 500, y: 500, z: 500}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -94445,14 +94553,26 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1747061804}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53fc884e4556020459138c2325a64020, type: 3}
+  m_Script: {fileID: 11500000, guid: 6c76cb21fa7ecab44a260ce3c67cdd6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sole: {fileID: 1491293169}
-  periodoOrbitale: 60222.42
-  inclinazioneOrbitale: 1.8
+  rotationSpeed: 7.6
+--- !u!114 &1747061807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1747061804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 814bdc54c7eefef4a950a2b7bdd5deca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sun: {fileID: 1491293169}
+  orbitSpeed: 0.01
 --- !u!1001 &1759716461
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -104629,7 +104749,7 @@ MonoBehaviour:
   m_Lens:
     FieldOfView: 30
     OrthographicSize: 10
-    NearClipPlane: 0.1
+    NearClipPlane: 0.27
     FarClipPlane: 244452
     Dutch: 0
     ModeOverride: 0
@@ -109808,7 +109928,7 @@ Transform:
   m_GameObject: {fileID: 1958685788}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 30492}
+  m_LocalPosition: {x: 0, y: 0, z: 38000}
   m_LocalScale: {x: 6, y: 6, z: 6}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -109823,14 +109943,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1958685788}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53fc884e4556020459138c2325a64020, type: 3}
+  m_Script: {fileID: 11500000, guid: 814bdc54c7eefef4a950a2b7bdd5deca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sole: {fileID: 1491293169}
-  periodoOrbitale: 365
-  inclinazioneOrbitale: 0
+  sun: {fileID: 1491293169}
+  orbitSpeed: 0.2
 --- !u!1001 &2011289931
 PrefabInstance:
   m_ObjectHideFlags: 0

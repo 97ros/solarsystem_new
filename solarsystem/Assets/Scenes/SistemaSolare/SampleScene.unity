@@ -26714,7 +26714,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd6043bde05a7fc4cba197d06915c1e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Damping: {x: 0.02, y: 0.02, z: 0.02}
+  Damping: {x: 0, y: 0, z: 0}
   ShoulderOffset: {x: 0, y: 0, z: 0}
   VerticalArmLength: 1.28
   CameraSide: 1
@@ -33669,7 +33669,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 984458953}
   serializedVersion: 4
-  m_Mass: 0.01
+  m_Mass: 0.05
   m_Drag: 3.5
   m_AngularDrag: 4.2
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -59233,7 +59233,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd6043bde05a7fc4cba197d06915c1e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Damping: {x: 0.02, y: 0.02, z: 0.02}
+  Damping: {x: 0, y: 0, z: 0}
   ShoulderOffset: {x: 0, y: 0, z: 0}
   VerticalArmLength: 1.88
   CameraSide: 1

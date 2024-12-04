@@ -1,10 +1,16 @@
 using UnityEngine;
+using Unity.Cinemachine;
 
 public class PlayerSpaceship : MonoBehaviour
 {
     [Header("Managers")]
     public CameraManager cameraManager;
     public Transform sistemaSolare; // Assegna l'oggetto "SistemaSolare" qui
+
+    [Header("Cinemachine")]
+    public CinemachineVirtualCamera firstPersonCamera; // Telecamera prima persona
+    public CinemachineVirtualCamera thirdPersonCamera; // Telecamera terza persona
+    public CinemachineVirtualCamera thirdPersonFOVCamera; // Telecamera terza persona con FOV incrementato
 
     Rigidbody spaceshipRB;
 
@@ -29,6 +35,27 @@ public class PlayerSpaceship : MonoBehaviour
     [SerializeField]
     float boostMultiplier = 2f; // Moltiplicatore di velocità per il boost
     private bool isBoosting = false;
+    private float currentSpeedMult = 1f; // Velocità attuale
+    private float targetSpeedMult = 1f; // Velocità desiderata
+
+    // Camera FOV
+    [Header("Camera FOV Settings")]
+    [SerializeField]
+    private float defaultFirstPersonFOV = 30f; // FOV predefinito prima persona
+    [SerializeField]
+    private float defaultThirdPersonFOV = 20f; // FOV predefinito terza persona
+    [SerializeField]
+    private float defaultThirdPersonFOVBoosted = 50f; // FOV predefinito terza persona con boost
+    private float currentFirstPersonFOV;
+    private float currentThirdPersonFOV;
+    private float currentThirdPersonFOVBoosted;
+
+    // Incremento di FOV tramite Inspector
+    [Header("Camera Boost Settings")]
+    [SerializeField]
+    private float boostFOVIncrement = 10f; // Incremento FOV durante il boost
+
+    private bool isMovingForward = false; // Per verificare se la navicella sta andando in avanti
 
     // Controllo abilitazione
     public bool controlsEnabled = true;
@@ -42,6 +69,12 @@ public class PlayerSpaceship : MonoBehaviour
     void Start()
     {
         spaceshipRB = GetComponent<Rigidbody>();
+
+        // Imposta i valori iniziali per FOV
+        currentFirstPersonFOV = defaultFirstPersonFOV;
+        currentThirdPersonFOV = defaultThirdPersonFOV;
+        currentThirdPersonFOVBoosted = defaultThirdPersonFOVBoosted;
+
         SetControls(true); // Assicura che i controlli siano abilitati all'inizio
     }
 
@@ -56,14 +89,23 @@ public class PlayerSpaceship : MonoBehaviour
 
         // Controlla se il tasto Shift è premuto per attivare il boost
         isBoosting = Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift);
+
+        // Calcola la velocità con il boost (se attivato)
+        targetSpeedMult = isBoosting ? speedMult * boostMultiplier : speedMult;
+
+        // Interpolazione graduale verso la velocità desiderata
+        currentSpeedMult = Mathf.Lerp(currentSpeedMult, targetSpeedMult, Time.deltaTime * 5f); // "5f" controlla la velocità di transizione
+
+        // Rileva se la navicella si sta muovendo in avanti
+        isMovingForward = verticalMove > 0;
+
+        // Modifica graduale di FOV per la telecamera attiva
+        UpdateCameraFOV();
     }
 
     void FixedUpdate()
     {
         if (!controlsEnabled) return;
-
-        // Calcola la velocità con il boost (se attivato)
-        float currentSpeedMult = isBoosting ? speedMult * boostMultiplier : speedMult;
 
         // Applica i movimenti e le rotazioni alla navicella
         spaceshipRB.AddForce(spaceshipRB.transform.TransformDirection(Vector3.forward) * verticalMove * currentSpeedMult, ForceMode.VelocityChange);
@@ -85,6 +127,45 @@ public class PlayerSpaceship : MonoBehaviour
 
         // Riporta la navicella vicino all'origine
         transform.position = Vector3.zero;
+    }
+
+    void UpdateCameraFOV()
+    {
+        // Se la navicella si muove in avanti e Shift è premuto, aumenta il FOV
+        if (isMovingForward && isBoosting)
+        {
+            // Prima persona attiva
+            if (firstPersonCamera.Priority > thirdPersonCamera.Priority && firstPersonCamera.Priority > thirdPersonFOVCamera.Priority)
+            {
+                firstPersonCamera.m_Lens.FieldOfView = Mathf.Lerp(firstPersonCamera.m_Lens.FieldOfView, currentFirstPersonFOV + boostFOVIncrement, Time.deltaTime * 5f);
+            }
+            // Terza persona attiva
+            else if (thirdPersonCamera.Priority > firstPersonCamera.Priority && thirdPersonCamera.Priority > thirdPersonFOVCamera.Priority)
+            {
+                thirdPersonCamera.m_Lens.FieldOfView = Mathf.Lerp(thirdPersonCamera.m_Lens.FieldOfView, currentThirdPersonFOV + boostFOVIncrement, Time.deltaTime * 5f);
+            }
+            // Terza persona con FOV incrementato attiva
+            else
+            {
+                thirdPersonFOVCamera.m_Lens.FieldOfView = Mathf.Lerp(thirdPersonFOVCamera.m_Lens.FieldOfView, currentThirdPersonFOVBoosted + boostFOVIncrement, Time.deltaTime * 5f);
+            }
+        }
+        else
+        {
+            // Se non si sta accelerando o il boost non è attivo, ritorna ai valori predefiniti
+            if (firstPersonCamera.Priority > thirdPersonCamera.Priority && firstPersonCamera.Priority > thirdPersonFOVCamera.Priority)
+            {
+                firstPersonCamera.m_Lens.FieldOfView = Mathf.Lerp(firstPersonCamera.m_Lens.FieldOfView, defaultFirstPersonFOV, Time.deltaTime * 5f);
+            }
+            else if (thirdPersonCamera.Priority > firstPersonCamera.Priority && thirdPersonCamera.Priority > thirdPersonFOVCamera.Priority)
+            {
+                thirdPersonCamera.m_Lens.FieldOfView = Mathf.Lerp(thirdPersonCamera.m_Lens.FieldOfView, defaultThirdPersonFOV, Time.deltaTime * 5f);
+            }
+            else
+            {
+                thirdPersonFOVCamera.m_Lens.FieldOfView = Mathf.Lerp(thirdPersonFOVCamera.m_Lens.FieldOfView, defaultThirdPersonFOVBoosted, Time.deltaTime * 5f);
+            }
+        }
     }
 
     public void SetControls(bool enabled)
@@ -112,7 +193,7 @@ public class PlayerSpaceship : MonoBehaviour
         }
     }
 
-    void OnTriggerStay(Collider other)
+        void OnTriggerStay(Collider other)
     {
         if (other.CompareTag("Planet"))
         {
@@ -126,3 +207,4 @@ public class PlayerSpaceship : MonoBehaviour
         spaceshipRB.AddForce(repulsionDirection * collisionRepulsionForce, ForceMode.Impulse);
     }
 }
+

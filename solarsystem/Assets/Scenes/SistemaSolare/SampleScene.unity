@@ -28014,7 +28014,7 @@ MonoBehaviour:
   m_LookAt: {fileID: 305133906}
   m_Follow: {fileID: 305133906}
   m_Lens:
-    FieldOfView: 19.72
+    FieldOfView: 20
     OrthographicSize: 10
     NearClipPlane: 0.27
     FarClipPlane: 244452
@@ -33437,7 +33437,7 @@ Camera:
     height: 1
   near clip plane: 0.27
   far clip plane: 244452
-  field of view: 19.72
+  field of view: 20
   orthographic: 0
   orthographic size: 10
   m_Depth: -1
@@ -33621,11 +33621,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cameraManager: {fileID: 1314081036}
   sistemaSolare: {fileID: 1299163460}
+  firstPersonCamera: {fileID: 1862976540}
+  thirdPersonCamera: {fileID: 1457349025}
+  thirdPersonFOVCamera: {fileID: 826512766}
   speedMult: 150
   horizontalSpeedMult: 30
   speedMultAngle: 0.5
   speedRollMultAngle: 0.1
   boostMultiplier: 2.5
+  defaultFirstPersonFOV: 30
+  defaultThirdPersonFOV: 50
+  defaultThirdPersonFOVBoosted: 20
+  boostFOVIncrement: 15
   controlsEnabled: 1
   collisionRepulsionForce: 1
 --- !u!54 &984458956

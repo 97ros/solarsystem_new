@@ -33651,7 +33651,7 @@ MonoBehaviour:
   thirdPersonCamera: {fileID: 1457349025}
   thirdPersonFOVCamera: {fileID: 826512766}
   speedMult: 150
-  horizontalSpeedMult: 30
+  horizontalSpeedMult: 120
   speedMultAngle: 0.5
   speedRollMultAngle: 0.1
   boostMultiplier: 2.5

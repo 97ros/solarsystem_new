@@ -25,6 +25,11 @@ public class PlayerSpaceship : MonoBehaviour
     [SerializeField]
     float speedRollMultAngle = 0.05f;
 
+    // Boost
+    [SerializeField]
+    float boostMultiplier = 2f; // Moltiplicatore di velocità per il boost
+    private bool isBoosting = false;
+
     // Controllo abilitazione
     public bool controlsEnabled = true;
 
@@ -48,14 +53,20 @@ public class PlayerSpaceship : MonoBehaviour
         rollInput = Input.GetAxis("Roll");
         mouseInputX = Input.GetAxis("Mouse X");
         mouseInputY = Input.GetAxis("Mouse Y");
+
+        // Controlla se il tasto Shift è premuto per attivare il boost
+        isBoosting = Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift);
     }
 
     void FixedUpdate()
     {
         if (!controlsEnabled) return;
 
+        // Calcola la velocità con il boost (se attivato)
+        float currentSpeedMult = isBoosting ? speedMult * boostMultiplier : speedMult;
+
         // Applica i movimenti e le rotazioni alla navicella
-        spaceshipRB.AddForce(spaceshipRB.transform.TransformDirection(Vector3.forward) * verticalMove * speedMult, ForceMode.VelocityChange);
+        spaceshipRB.AddForce(spaceshipRB.transform.TransformDirection(Vector3.forward) * verticalMove * currentSpeedMult, ForceMode.VelocityChange);
         spaceshipRB.AddForce(spaceshipRB.transform.TransformDirection(Vector3.right) * horizontalMove * horizontalSpeedMult, ForceMode.VelocityChange);
         spaceshipRB.AddTorque(spaceshipRB.transform.right * speedMultAngle * mouseInputY * -1, ForceMode.VelocityChange);
         spaceshipRB.AddTorque(spaceshipRB.transform.up * speedMultAngle * mouseInputX, ForceMode.VelocityChange);

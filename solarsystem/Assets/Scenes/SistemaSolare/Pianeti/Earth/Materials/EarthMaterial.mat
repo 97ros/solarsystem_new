@@ -131,17 +131,17 @@ Material:
     - _NormalMapIntensity: 0.55
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _RimIntensity: 10
-    - _RimPower: 12
+    - _RimIntensity: 0
+    - _RimPower: 64
     - _Shininess: 0.03
-    - _Smoothness: 0.2
+    - _Smoothness: 0
     - _SpecularIntensity: 0
     - _SpecularPower: 1024
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _AtmosFar: {r: 0.4557808, g: 0.5187039, b: 0.9850746, a: 1}
+    - _AtmosFar: {r: 0.4557808, g: 0.5187039, b: 0.9850746, a: 0}
     - _AtmosNear: {r: 0.1686275, g: 0.7372549, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _DayTintColor: {r: 1, g: 1, b: 1, a: 1}

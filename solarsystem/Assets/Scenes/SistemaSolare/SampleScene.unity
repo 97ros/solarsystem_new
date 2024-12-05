@@ -10134,10 +10134,17 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2bee4c267e99546b7af266a1fa82af6f, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2bee4c267e99546b7af266a1fa82af6f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2128873812}
   m_SourcePrefab: {fileID: 100100000, guid: 2bee4c267e99546b7af266a1fa82af6f, type: 3}
 --- !u!1 &236161373
 GameObject:
@@ -26951,7 +26958,7 @@ GameObject:
   - component: {fileID: 678870340}
   m_Layer: 0
   m_Name: Titano
-  m_TagString: Untagged
+  m_TagString: Planet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26986,7 +26993,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -27668,11 +27675,18 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: afda7aeb0bd374e669dd19cbeb6fa15e, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 65702495048144492, guid: afda7aeb0bd374e669dd19cbeb6fa15e, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afda7aeb0bd374e669dd19cbeb6fa15e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1907003603}
   m_SourcePrefab: {fileID: 100100000, guid: afda7aeb0bd374e669dd19cbeb6fa15e, type: 3}
 --- !u!1 &749948217 stripped
 GameObject:
@@ -39256,6 +39270,11 @@ Transform:
   - {fileID: 734985932}
   m_Father: {fileID: 941343571}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!1 &1047831018 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: afda7aeb0bd374e669dd19cbeb6fa15e, type: 3}
+  m_PrefabInstance: {fileID: 739038859}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1050596133
 GameObject:
   m_ObjectHideFlags: 0
@@ -44654,7 +44673,7 @@ GameObject:
   - component: {fileID: 1185587562}
   m_Layer: 0
   m_Name: Titania
-  m_TagString: Untagged
+  m_TagString: Planet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44674,7 +44693,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -69913,7 +69932,7 @@ GameObject:
   - component: {fileID: 1480248631}
   m_Layer: 0
   m_Name: Io
-  m_TagString: Untagged
+  m_TagString: Planet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69948,7 +69967,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -89498,7 +89517,7 @@ GameObject:
   - component: {fileID: 1596883559}
   m_Layer: 0
   m_Name: Tritone
-  m_TagString: Untagged
+  m_TagString: Planet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -89533,7 +89552,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -89787,7 +89806,7 @@ GameObject:
   - component: {fileID: 1673780995}
   m_Layer: 0
   m_Name: Miranda
-  m_TagString: Untagged
+  m_TagString: Planet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -89822,7 +89841,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -90068,6 +90087,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1680612066}
   m_Mesh: {fileID: -2124705421725058983, guid: 4c868cde114b9b449b1713ef7b296ee3, type: 3}
+--- !u!1 &1700876461 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 2bee4c267e99546b7af266a1fa82af6f, type: 3}
+  m_PrefabInstance: {fileID: 224103947}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1702023252
 GameObject:
   m_ObjectHideFlags: 0
@@ -95638,7 +95662,7 @@ GameObject:
   - component: {fileID: 1765526359}
   m_Layer: 0
   m_Name: Callisto
-  m_TagString: Untagged
+  m_TagString: Planet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -95673,7 +95697,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -106112,6 +106136,27 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: afda7aeb0bd374e669dd19cbeb6fa15e, type: 3}
   m_PrefabInstance: {fileID: 739038859}
   m_PrefabAsset: {fileID: 0}
+--- !u!135 &1907003603
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047831018}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1908013423
 GameObject:
   m_ObjectHideFlags: 0
@@ -121238,6 +121283,27 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2bee4c267e99546b7af266a1fa82af6f, type: 3}
   m_PrefabInstance: {fileID: 224103947}
   m_PrefabAsset: {fileID: 0}
+--- !u!135 &2128873812
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1700876461}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &8261087192439729689
 PrefabInstance:
   m_ObjectHideFlags: 0

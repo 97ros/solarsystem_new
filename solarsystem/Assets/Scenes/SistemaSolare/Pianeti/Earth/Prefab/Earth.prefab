@@ -115,7 +115,6 @@ GameObject:
   - component: {fileID: 11401934}
   - component: {fileID: 3361438}
   - component: {fileID: 2353574}
-  - component: {fileID: 6439326}
   m_Layer: 0
   m_Name: EarthRendering
   m_TagString: Untagged
@@ -160,6 +159,7 @@ MonoBehaviour:
   RotationSpeed: 1
   Axis: {x: 0.20475286, y: 0.9781476, z: -0.036103465}
   Sun: {fileID: 0}
+  Spaceship: {fileID: 0}
 --- !u!33 &3361438
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -213,25 +213,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &6439326
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 163060}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}

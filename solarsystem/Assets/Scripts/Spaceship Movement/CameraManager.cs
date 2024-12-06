@@ -13,6 +13,9 @@ public class CameraManager : MonoBehaviour
 
     public CinemachineVirtualCamera startCamera;
     private CinemachineVirtualCamera currentCam;
+    private CinemachineVirtualCamera lastActiveCam; // Memorizza l'ultima telecamera attiva prima di passare a topDownVirtCam
+
+    private int activeCameraIndex = -1; // Indice della telecamera attiva (-1 iniziale per nessuna telecamera ciclica attiva)
 
     [Header("Solar Systems")]
     public GameObject mainSolarSystem;
@@ -24,6 +27,7 @@ public class CameraManager : MonoBehaviour
     void Start()
     {
         currentCam = startCamera;
+        lastActiveCam = currentCam; // Imposta la telecamera iniziale come ultima telecamera attiva
         for (int i = 0; i < cameras.Length; i++)
         {
             if (cameras[i] == currentCam)
@@ -42,22 +46,46 @@ public class CameraManager : MonoBehaviour
 
     void Update()
     {
-        // Gestione del passaggio tra telecamere con i tasti J, K, L, M
-        if (Input.GetKeyDown(KeyCode.L)) // Prima persona
+        // Gestione del ciclo tra telecamere con il tasto V
+        if (Input.GetKeyDown(KeyCode.V) && currentCam != topDownVirtCam)
         {
-            SwitchCamera(firstPersonVirtCam);
+            CycleThroughCameras();
         }
-        if (Input.GetKeyDown(KeyCode.K)) // Terza persona FOV
+
+        // Gestione della visuale dall'alto con il tasto M
+        if (Input.GetKeyDown(KeyCode.M))
         {
-            SwitchCamera(thirdPersonVirtCamFOV);
+            if (currentCam == topDownVirtCam)
+            {
+                // Se siamo già in topDownVirtCam, torna alla telecamera precedente
+                SwitchCamera(lastActiveCam);
+            }
+            else
+            {
+                // Memorizza la telecamera attuale come ultima telecamera prima di passare alla top-down
+                lastActiveCam = currentCam;
+                SwitchCamera(topDownVirtCam);
+            }
         }
-        if (Input.GetKeyDown(KeyCode.J)) // Terza persona
+    }
+
+    private void CycleThroughCameras()
+    {
+        // Incrementa l'indice della telecamera attiva
+        activeCameraIndex = (activeCameraIndex + 1) % 3;
+
+        // Seleziona la telecamera in base all'indice
+        switch (activeCameraIndex)
         {
-            SwitchCamera(thirdPersonVirtCam);
-        }
-        if (Input.GetKeyDown(KeyCode.M)) // Visuale dall'alto
-        {
-            SwitchCamera(topDownVirtCam);
+            case 0:
+                SwitchCamera(thirdPersonVirtCam);
+                break;
+            case 1:
+                SwitchCamera(firstPersonVirtCam);
+                break;
+            case 2:
+                SwitchCamera(thirdPersonVirtCamFOV);
+                break;
         }
     }
 
@@ -92,23 +120,19 @@ public class CameraManager : MonoBehaviour
 
     private IEnumerator SwitchToTopDownCamera()
     {
-        // Dopo 0.5 secondi, attiva il miniSolarSystem
         yield return new WaitForSeconds(0.5f);
         miniSolarSystem.SetActive(true);
 
-        // Fai svanire mainSolarSystem dopo 2.45 secondi
-        yield return new WaitForSeconds(1.5f);  // Attendere fino a 2.45 secondi
+        yield return new WaitForSeconds(1.5f);
         mainSolarSystem.SetActive(false);
     }
 
     private IEnumerator SwitchBackToMainSolarSystem()
     {
-        // Fai svanire miniSolarSystem dopo 0.5 secondi
         yield return new WaitForSeconds(0.5f);
         miniSolarSystem.SetActive(false);
 
-        // Dopo 0.5 secondi, attiva mainSolarSystem
-        yield return new WaitForSeconds(0.01f); // Ritardo prima che mainSolarSystem riappaia
+        yield return new WaitForSeconds(0.01f);
         mainSolarSystem.SetActive(true);
     }
 }

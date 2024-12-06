@@ -10068,6 +10068,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   earth: {fileID: 1061903464}
   orbitSpeed: 10
+--- !u!20 &199529029 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 5061904502416509407, guid: 07e0ea965b67c02499e193fdc92b72d7, type: 3}
+  m_PrefabInstance: {fileID: 1627144367}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &218228412 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4451924038575070938, guid: 81ddaef9d4697d84ba75e74a69f45a43, type: 3}
@@ -70218,7 +70223,7 @@ PrefabInstance:
     - target: {fileID: 6916387878161754212, guid: 6a05dfb5db67693468a2aae8537f3d98, type: 3}
       propertyPath: m_Camera
       value: 
-      objectReference: {fileID: 963194227}
+      objectReference: {fileID: 199529029}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

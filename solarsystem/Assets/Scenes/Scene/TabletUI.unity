@@ -2430,9 +2430,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: dnffn jjfjfj djwhaihd wuhqihiw huwhuehf uheufhieha heufhie uhfuehfueh kndjhwwhf
-    djahfuh fjehfuehf jfhudhfu hfuehfudhf fuhduhfsj hsuhfudsh dufhsuhu huhuh dfjnjxsi
-    ijishfhujb jhxvjnvj ijihihi huedhfud
+  m_text: 'hhuhu
+
+    ewhuhuhu
+
+    nnjjb
+
+    njhnjnjnjnjn
+
+    kmkmkmkm
+
+    mnmnmnmnmnmnmnmnmnmnmnmnmnmnmnmnmnmkjkjkjkjkjkjkjkjkjkjkjkjkjkkjkjkhgytytyhgtyhghghgh'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2497,7 +2505,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -58.719162, y: -16.45183, z: -14.022484, w: -252.25912}
+  m_margin: {x: -58.719162, y: -16.45183, z: -18.715973, w: -252.25912}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

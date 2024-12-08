@@ -15485,7 +15485,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 292356193}
-  - component: {fileID: 292356194}
   m_Layer: 0
   m_Name: SceneManager
   m_TagString: Untagged
@@ -15508,18 +15507,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 241198647}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &292356194
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 292356192}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8768b2030f4a454caa7c63c9dbceb14, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &296341220
 GameObject:
   m_ObjectHideFlags: 0
@@ -27280,6 +27267,18 @@ PrefabInstance:
     m_TransformParent: {fileID: 734985932}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 0ec58841a16234145af3a14e39fac182, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 45800
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0ec58841a16234145af3a14e39fac182, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 45800
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0ec58841a16234145af3a14e39fac182, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 45800
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0ec58841a16234145af3a14e39fac182, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0
       objectReference: {fileID: 0}
@@ -27930,7 +27929,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.017
+  m_Radius: 0.013
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &772463950
 PrefabInstance:
@@ -28059,7 +28058,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.017
+  m_Radius: 0.012
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &778610065 stripped
 Transform:
@@ -28197,7 +28196,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 2.37
+  m_Radius: 1.1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &796589280
 GameObject:
@@ -28526,7 +28525,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.017
+  m_Radius: 0.012
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &819290888 stripped
 GameObject:
@@ -34229,7 +34228,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 984458953}
   serializedVersion: 4
-  m_Mass: 0.05
+  m_Mass: 0.01
   m_Drag: 3.5
   m_AngularDrag: 4.2
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -89763,7 +89762,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 632.7
+  m_Radius: 292.04
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1630149695
 GameObject:
@@ -90134,7 +90133,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.03
+  m_Radius: 0.012
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1680612066
 GameObject:
@@ -95458,7 +95457,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.017
+  m_Radius: 0.012
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1722890497
 GameObject:
@@ -101050,7 +101049,7 @@ GameObject:
   - component: {fileID: 1790426571}
   m_Layer: 0
   m_Name: Ariel
-  m_TagString: Untagged
+  m_TagString: Planet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -101070,7 +101069,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -106309,7 +106308,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.5
+  m_Radius: 1.7
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1908013423
 GameObject:
@@ -111197,7 +111196,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1953391112}
-  - component: {fileID: 1953391113}
   m_Layer: 0
   m_Name: TransitionManager
   m_TagString: Untagged
@@ -111220,18 +111218,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 241198647}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1953391113
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1953391111}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8768b2030f4a454caa7c63c9dbceb14, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1958685788
 GameObject:
   m_ObjectHideFlags: 0
@@ -121364,7 +121350,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.7
+  m_Radius: 0.58
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &2103530115
 MeshRenderer:
@@ -121456,7 +121442,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.5
+  m_Radius: 2.8
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &8261087192439729689
 PrefabInstance:

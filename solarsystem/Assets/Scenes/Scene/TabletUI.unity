@@ -4700,43 +4700,38 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'hhghghgh
-
-    jhjhj
-
-    jjhjh
-
-    hjhjhj
-
-    kkjkj
-
-    hjhjh
-
-    bhbhbh
-
-    hjhj
-
-    jhjhjh
-
-    vggvgv
-
-    bhhvhvg
-
-    gvgvgvgcf
-
-    vgvggcgcg
-
-    gvgvgvgvg
-
-    vgvgvgvg
-
-    vgcgcgcg
-
-    vgcgcgcgcgc
-
-    vgvgvgvgvg
-
-'
+  m_text: "Leggi di Keplero\r\n Le leggi di Keplero sono tre leggi relative al moto
+    dei pianeti intorno al Sole, formulate da Johannes Keplero tra il \r\n1608 ed
+    il 1619, che descrivono quantitativamente il moto dei pianeti. Sono note come
+    legge delle orbite \r\nellittiche, legge delle aree e legge dei periodi.\r\n
+    Legge delle orbite ellittiche\r\n La prima legge afferma che i pianeti orbitano
+    intorno al Sole su orbite ellittiche, col Sole posizionato in uno dei \r\ndue
+    fuochi dell'ellisse, detto fuoco principale. Oltre alla citata implicazione storico-filosofica,
+    questa legge implica \r\nanche che la distanza Sole-pianeta cambia continuamente
+    lungo l'orbita, introducendo i concetti di perielio, cio\xE8 \r\ndistanza minima
+    dal Sole, ed afelio, cio\xE8 distanza massima.\r\n Legge delle aree\r\n La seconda
+    legge di Keplero afferma invece che se consideriamo una linea\r\n immaginaria
+    che collega un pianeta al Sole, tale linea spazza aree uguali in intervalli di
+    tempo uguali.\r\n L'implicazione principale di questa legge \xE8 che i pianeti
+    si muovono a velocit\xE0 diverse\r\n lungo lorbita ellittica attorno al Sole.
+    La velocit\xE0 \xE8 massima in correspondenza del perielio, mentre \xE8 minima
+    in \r\ncorrispondenza dell'afelio.\r\n Legge dei periodi\r\n Essa afferma che,
+    in conseguenza delle prime due, il periodo di rivoluzione di un pianeta attorno
+    al Sole \xE8 \r\nstrettamente legato alla sua distanza media da esso. Pi\xF9
+    precisamente, esprimendo il periodo di rivoluzione in \r\nanni e la distanza,
+    intesa come il semi-asse maggiore dell'orbita ellittica, in unit\xE0 astronomiche
+    (distanza media \r\nTerra-Sole pari a circa 150 milioni di chilometri), allora
+    il periodo di rivoluzione al quadrato \xE8 proporzionale al \r\nsemi-asse maggiore
+    dell'orbita al cubo. L'implicazione principale di questa legge \xE8 che pi\xF9
+    un pianeta \xE8 lontano \r\ndal Sole, pi\xF9 tempo esso impiegher\xE0 a compiere
+    una orbita completa attorno ad esso. Mercurio, il pianeta pi\xF9 \r\nvicino al
+    Sole ad una distanza di circa 58 milioni di chilometri, impiega solo 88 giorni
+    per compiere una orbita \r\ncompleta, mentre Nettuno, il pianeta pi\xF9 lontano
+    a circa 4.5 miliardi di chilometri, impiega ben 165 anni per \r\norbitare attorno
+    al Sole.\r\n Legge della gravitazione universale\r\n La legge di gravitazione
+    universale afferma che due masse, m1 e m2, si attraggono con una forza, Fg, \r\nproporzionale
+    alle masse stesse e inversamente proporzionale al quadrato della loro distanza,
+    r, tramite una \r\ncostante G.\r\n Fg = G \xB7 m1 \xB7 m2 / r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4801,7 +4796,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 19.303627, y: -106.81474, z: 15.443085, w: 0}
+  m_margin: {x: 19.303627, y: -117.23593, z: -4.3164215, w: -135.8074}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -18815,7 +18810,7 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1721152970}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.38999486}
+  m_AnchorMin: {x: 0, y: 0.38999513}
   m_AnchorMax: {x: 1, y: 0.99999523}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}

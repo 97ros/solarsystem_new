@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class StratRotation : MonoBehaviour
 {
-    public float rotationSpeed = 100f; // Velocità di rotazione regolabile
+    public float rotationSpeed = 300f; // Velocità di rotazione regolabile
     private bool isRotating = false;  // Flag per controllare se il pianeta sta ruotando
 
     void Update()

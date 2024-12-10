@@ -18,7 +18,7 @@ namespace DigitalRuby.Earth
     [RequireComponent(typeof(MeshRenderer))]
     public class EarthScript : SphereScript
     {
-        [Range(-1000.0f, 1000.0f)]
+       /* [Range(-1000.0f, 1000.0f)]
         [Tooltip("Rotation speed around axis")]
         public float RotationSpeed = 1.0f;
 
@@ -26,8 +26,10 @@ namespace DigitalRuby.Earth
         public Vector3 Axis;
 
         [Tooltip("The sun, defaults to first dir light")]
+        */
         public Light Sun;
         public Light Spaceship;
+        public Light TabletLight;
 
         private MeshRenderer meshRenderer;
         private MaterialPropertyBlock materialBlock;
@@ -38,7 +40,9 @@ namespace DigitalRuby.Earth
             materialBlock = new MaterialPropertyBlock();
             Sun = (Sun == null ? Light.GetLights(LightType.Point, -1)[0] : Sun);
             Spaceship = (Spaceship == null ? Light.GetLights(LightType.Rectangle, -1)[0] : Spaceship);
-            if (Axis == Vector3.zero)
+            TabletLight = (TabletLight == null ? Light.GetLights(LightType.Directional, -1)[0] : TabletLight);
+
+            /*if (Axis == Vector3.zero)
             {
                 Axis = transform.up;
             }
@@ -75,6 +79,8 @@ namespace DigitalRuby.Earth
 
 #endif
 
+        }
+        */
         }
     }
 }

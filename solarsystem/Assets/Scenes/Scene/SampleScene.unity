@@ -40035,9 +40035,25 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ShowUIimpostazioni
       objectReference: {fileID: 0}
+    - target: {fileID: 1905038882290596999, guid: 03345192e5c496444a669e0b0afc41e0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 445222003}
+    - target: {fileID: 1905038882290596999, guid: 03345192e5c496444a669e0b0afc41e0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ReturnToUIiniziale
+      objectReference: {fileID: 0}
     - target: {fileID: 2782909671351502258, guid: 03345192e5c496444a669e0b0afc41e0, type: 3}
       propertyPath: m_TargetGraphic
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2782909671351502258, guid: 03345192e5c496444a669e0b0afc41e0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 445222003}
+    - target: {fileID: 2782909671351502258, guid: 03345192e5c496444a669e0b0afc41e0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ReturnToUIiniziale
       objectReference: {fileID: 0}
     - target: {fileID: 3254751010944079705, guid: 03345192e5c496444a669e0b0afc41e0, type: 3}
       propertyPath: m_TargetGraphic
@@ -40086,6 +40102,14 @@ PrefabInstance:
     - target: {fileID: 4725456363482483341, guid: 03345192e5c496444a669e0b0afc41e0, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786372861938703713, guid: 03345192e5c496444a669e0b0afc41e0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 445222003}
+    - target: {fileID: 4786372861938703713, guid: 03345192e5c496444a669e0b0afc41e0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ReturnToUIiniziale
       objectReference: {fileID: 0}
     - target: {fileID: 6138104712982325753, guid: 03345192e5c496444a669e0b0afc41e0, type: 3}
       propertyPath: m_Pivot.x

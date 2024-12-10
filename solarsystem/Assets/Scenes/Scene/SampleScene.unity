@@ -16258,6 +16258,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6aa3b52109f4e914e81454f1fcda2c85, type: 3}
+--- !u!114 &445222003 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3098884358865329752, guid: 6aa3b52109f4e914e81454f1fcda2c85, type: 3}
+  m_PrefabInstance: {fileID: 445222002}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a22076154573c62408181c2a9414e79c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &447906699
 GameObject:
   m_ObjectHideFlags: 0
@@ -39988,13 +39999,81 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 77109050190227616, guid: 03345192e5c496444a669e0b0afc41e0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 445222003}
+    - target: {fileID: 77109050190227616, guid: 03345192e5c496444a669e0b0afc41e0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ShowUIinformazioni
+      objectReference: {fileID: 0}
     - target: {fileID: 335991045704043733, guid: 03345192e5c496444a669e0b0afc41e0, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 963194227}
+    - target: {fileID: 403418341255816283, guid: 03345192e5c496444a669e0b0afc41e0, type: 3}
+      propertyPath: m_TargetGraphic
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 403418341255816283, guid: 03345192e5c496444a669e0b0afc41e0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 445222003}
+    - target: {fileID: 403418341255816283, guid: 03345192e5c496444a669e0b0afc41e0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ShowUIimpostazioni
+      objectReference: {fileID: 0}
     - target: {fileID: 713191343347590932, guid: 03345192e5c496444a669e0b0afc41e0, type: 3}
       propertyPath: m_Name
       value: CanvaTablet
+      objectReference: {fileID: 0}
+    - target: {fileID: 870857725070192449, guid: 03345192e5c496444a669e0b0afc41e0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 445222003}
+    - target: {fileID: 870857725070192449, guid: 03345192e5c496444a669e0b0afc41e0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ShowUIimpostazioni
+      objectReference: {fileID: 0}
+    - target: {fileID: 2782909671351502258, guid: 03345192e5c496444a669e0b0afc41e0, type: 3}
+      propertyPath: m_TargetGraphic
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3254751010944079705, guid: 03345192e5c496444a669e0b0afc41e0, type: 3}
+      propertyPath: m_TargetGraphic
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3254751010944079705, guid: 03345192e5c496444a669e0b0afc41e0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 445222003}
+    - target: {fileID: 3254751010944079705, guid: 03345192e5c496444a669e0b0afc41e0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ShowUIleggi
+      objectReference: {fileID: 0}
+    - target: {fileID: 3619742245090474639, guid: 03345192e5c496444a669e0b0afc41e0, type: 3}
+      propertyPath: m_TargetGraphic
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3619742245090474639, guid: 03345192e5c496444a669e0b0afc41e0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 445222003}
+    - target: {fileID: 3619742245090474639, guid: 03345192e5c496444a669e0b0afc41e0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ShowUIinformazioni
+      objectReference: {fileID: 0}
+    - target: {fileID: 3863693478881042807, guid: 03345192e5c496444a669e0b0afc41e0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 445222003}
+    - target: {fileID: 3863693478881042807, guid: 03345192e5c496444a669e0b0afc41e0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ShowUIleggi
+      objectReference: {fileID: 0}
+    - target: {fileID: 3926176399773344158, guid: 03345192e5c496444a669e0b0afc41e0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4552270940093660373, guid: 03345192e5c496444a669e0b0afc41e0, type: 3}
       propertyPath: m_Enabled
@@ -40004,6 +40083,10 @@ PrefabInstance:
       propertyPath: tabletCamera
       value: 
       objectReference: {fileID: 963194227}
+    - target: {fileID: 4725456363482483341, guid: 03345192e5c496444a669e0b0afc41e0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6138104712982325753, guid: 03345192e5c496444a669e0b0afc41e0, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -40084,8 +40167,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6737682805100938715, guid: 03345192e5c496444a669e0b0afc41e0, type: 3}
+      propertyPath: m_TargetGraphic
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8203094307447119388, guid: 03345192e5c496444a669e0b0afc41e0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8323343021588999486, guid: 03345192e5c496444a669e0b0afc41e0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 5772916848532456317, guid: 03345192e5c496444a669e0b0afc41e0, type: 3}
+    - {fileID: 5620605472006912893, guid: 03345192e5c496444a669e0b0afc41e0, type: 3}
+    - {fileID: 113041989414590354, guid: 03345192e5c496444a669e0b0afc41e0, type: 3}
+    - {fileID: 280473214703952201, guid: 03345192e5c496444a669e0b0afc41e0, type: 3}
+    - {fileID: 7424504323830217026, guid: 03345192e5c496444a669e0b0afc41e0, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 03345192e5c496444a669e0b0afc41e0, type: 3}

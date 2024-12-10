@@ -33891,6 +33891,10 @@ PrefabInstance:
       propertyPath: Spaceship
       value: 
       objectReference: {fileID: 1258002859}
+    - target: {fileID: 11401934, guid: c2e22098ce7c8da4590cceb5113bd50e, type: 3}
+      propertyPath: TabletLight
+      value: 
+      objectReference: {fileID: 1050596135}
     - target: {fileID: 12270238, guid: c2e22098ce7c8da4590cceb5113bd50e, type: 3}
       propertyPath: m_Size
       value: 5
@@ -101015,6 +101019,10 @@ PrefabInstance:
       propertyPath: Spaceship
       value: 
       objectReference: {fileID: 1258002859}
+    - target: {fileID: 11401934, guid: c2e22098ce7c8da4590cceb5113bd50e, type: 3}
+      propertyPath: TabletLight
+      value: 
+      objectReference: {fileID: 1050596135}
     - target: {fileID: 12270238, guid: c2e22098ce7c8da4590cceb5113bd50e, type: 3}
       propertyPath: m_Size
       value: 887.8
@@ -111186,7 +111194,7 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 23
-  m_Center: {x: -0.00012207031, y: 0, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1953391111
 GameObject:
   m_ObjectHideFlags: 0

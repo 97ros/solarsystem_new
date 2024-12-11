@@ -25,7 +25,7 @@ public class ButtonSound : MonoBehaviour
     // Metodo per riprodurre il suono
     public void PlaySound()
     {
-        Debug.LogWarning("vaffanculo");
+        Debug.LogWarning("suono");
         audioSource.Play();
     }
 }

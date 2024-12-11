@@ -847,7 +847,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -120.000244, y: 127}
+  m_AnchoredPosition: {x: -120.000244, y: 131}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &48974597
@@ -903,8 +903,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 16
-  m_fontSizeBase: 16
+  m_fontSize: 17
+  m_fontSizeBase: 17
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -941,7 +941,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -66.31604, y: 17.503084, z: -14.022484, w: -252.25912}
+  m_margin: {x: -71.929184, y: 17.503084, z: -25.248772, w: -252.25912}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2401,7 +2401,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -120.000244, y: 126}
+  m_AnchoredPosition: {x: -122, y: 131}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &88547280
@@ -2424,7 +2424,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Saturno \xE8 il sesto pianeta dal Sole e noto per i suoi spettacolari
+  m_text: "Saturno \xE8 il sesto pianeta dal Sole ed \xE8 noto per i suoi spettacolari
     anelli.\r\n- Diametro: 120.536 km\r\n- Massa: 5.7 \xD7 10\xB2\u2076 kg\r\n- Periodo
     orbitale: 29 anni\r\n- Temperatura superficiale: -139 \xB0C\r\nStratificazione:
     Saturno \xE8 un gigante gassoso, con una composizione simile a quella di Giove.
@@ -2458,8 +2458,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 16
-  m_fontSizeBase: 16
+  m_fontSize: 17
+  m_fontSizeBase: 17
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2496,7 +2496,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -67.835144, y: 17.503084, z: -23.138802, w: -252.25912}
+  m_margin: {x: -70.87369, y: 17.503084, z: -29.21656, w: -261.76645}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -3639,7 +3639,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -120.000244, y: 123.999695}
+  m_AnchoredPosition: {x: -120.000244, y: 129}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &285942295
@@ -3695,8 +3695,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 16
-  m_fontSizeBase: 16
+  m_fontSize: 17
+  m_fontSizeBase: 17
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3733,7 +3733,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -69.35458, y: 17.503084, z: -18.58081, w: -238.6774}
+  m_margin: {x: -69.35458, y: 17.503084, z: -18.58081, w: -260.40848}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -3856,7 +3856,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -120.00033, y: 123.9999}
+  m_AnchoredPosition: {x: -120.00033, y: 128}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &301091333
@@ -3912,8 +3912,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 16
-  m_fontSizeBase: 16
+  m_fontSize: 17
+  m_fontSizeBase: 17
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3950,7 +3950,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -58.719162, y: 17.503084, z: -14.022484, w: -252.25912}
+  m_margin: {x: -66.31604, y: 17.503084, z: -20.099915, w: -252.25912}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -4826,7 +4826,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -115, y: 161.99994}
+  m_AnchoredPosition: {x: -112, y: 161.99994}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &352805679
@@ -5426,7 +5426,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -120.000244, y: 131}
+  m_AnchoredPosition: {x: -123, y: 133}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &430820698
@@ -5482,8 +5482,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 16
-  m_fontSizeBase: 16
+  m_fontSize: 16.8
+  m_fontSizeBase: 16.8
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -5520,7 +5520,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -67.835144, y: 17.503084, z: -20.10025, w: -252.25912}
+  m_margin: {x: -75.43167, y: 17.503084, z: -36.813774, w: -276.7064}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -7157,7 +7157,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -120.327576, y: 123}
+  m_AnchoredPosition: {x: -120.327576, y: 128}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &647888056
@@ -7180,13 +7180,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Nettuno \xE8 l'ottavo pianeta dal Sole e simile a Urano, ma con una atmosfera
-    pi\xF9 attiva e venti molto veloci.\r\n- Diametro: 49.528 km\r\n- Massa: 1.02
-    \xD7 10\xB2\u2076 kg\r\n- Periodo orbitale: 165 anni\r\n- Temperatura superficiale:
-    -200 \xB0C\r\nStratificazione: Nettuno \xE8 un gigante ghiacciato, con una composizione
-    simile a quella di Urano. La sua atmosfera \xE8 dominata da idrogeno, elio e
-    metano, che conferiscono al pianeta il caratteristico colore blu. Il suo nucleo
-    \xE8 solido e circondato da un mantello di ghiacci e gas."
+  m_text: "Nettuno \xE8 l'ottavo pianeta dal Sole ed \xE8 simile a Urano, ma con
+    una atmosfera pi\xF9 attiva e venti molto veloci.\r\n- Diametro: 49.528 km\r\n-
+    Massa: 1.02 \xD7 10\xB2\u2076 kg\r\n- Periodo orbitale: 165 anni\r\n- Temperatura
+    superficiale: -200 \xB0C\r\nStratificazione: Nettuno \xE8 un gigante ghiacciato,
+    con una composizione simile a quella di Urano. La sua atmosfera \xE8 dominata
+    da idrogeno, elio e metano, che conferiscono al pianeta il caratteristico colore
+    blu. Il suo nucleo \xE8 solido e circondato da un mantello di ghiacci e gas."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7213,8 +7213,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 16
-  m_fontSizeBase: 16
+  m_fontSize: 17
+  m_fontSizeBase: 17
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -7251,7 +7251,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -73.87096, y: 13.43977, z: -20.083405, w: -252.25912}
+  m_margin: {x: -73.87096, y: 13.43977, z: -24.629349, w: -252.25912}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -11175,7 +11175,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -135, y: 162}
+  m_AnchoredPosition: {x: -129, y: 162}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1121498210
@@ -13311,7 +13311,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -105.00006, y: 161.99994}
+  m_AnchoredPosition: {x: -102, y: 161.99994}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1291203244
@@ -13990,7 +13990,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -120.000244, y: 129}
+  m_AnchoredPosition: {x: -117, y: 140}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1368521441
@@ -14013,14 +14013,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Marte \xE8 il quarto pianeta dal Sole e conosciuto come il \"pianeta rosso\"
-    a causa del suo suolo ricco di ossido di ferro.\r\n- Diametro: 6.779 km\r\n-
-    Massa: 6.4 \xD7 10\xB2\xB3 kg\r\n- Periodo orbitale: 687 giorni\r\n- Temperatura
-    superficiale: media di -63 \xB0C, con escursioni da -140 \xB0C a +17 \xB0C\r\nStratificazione:
-    La crosta marziana \xE8 rocciosa, il mantello \xE8 probabilmente parzialmente
-    fuso. Marte ha un'atmosfera molto sottile, composta principalmente da anidride
-    carbonica. Il pianeta ha calotte polari di ghiaccio e segni di antichi fiumi
-    e laghi."
+  m_text: "Marte \xE8 il quarto pianeta dal Sole ed \xE8 conosciuto come il \"pianeta
+    rosso\" a causa del suo suolo ricco di ossido di ferro.\r\n- Diametro: 6.779
+    km\r\n- Massa: 6.4 \xD7 10\xB2\xB3 kg\r\n- Periodo orbitale: 687 giorni\r\n-
+    Temperatura superficiale: media di -63 \xB0C, con escursioni da -140 \xB0C a
+    +17 \xB0C\r\nStratificazione: La crosta marziana \xE8 rocciosa, il mantello \xE8
+    probabilmente parzialmente fuso. Marte ha un'atmosfera molto sottile, composta
+    principalmente da anidride carbonica. Il pianeta ha calotte polari di ghiaccio
+    e segni di antichi fiumi e laghi."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -14047,8 +14047,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 16
-  m_fontSizeBase: 16
+  m_fontSize: 16.8
+  m_fontSizeBase: 16.8
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -14085,7 +14085,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -70.87402, y: 17.503084, z: -30.735664, w: -261.76645}
+  m_margin: {x: -75.43201, y: 17.503084, z: -30.735664, w: -282.13904}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -15247,7 +15247,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -120.327576, y: 121}
+  m_AnchoredPosition: {x: -123, y: 129}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1480719579
@@ -15303,8 +15303,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 16
-  m_fontSizeBase: 16
+  m_fontSize: 17
+  m_fontSizeBase: 17
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -15341,7 +15341,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -70.84067, y: 12.085232, z: -21.598717, w: -246.84189}
+  m_margin: {x: -70.84067, y: 12.085232, z: -32.205925, w: -246.84189}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -18138,7 +18138,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 39dfd123d65867d46b256e08bcbbf1e7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 76.989746
+      value: 112
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 39dfd123d65867d46b256e08bcbbf1e7, type: 3}
       propertyPath: m_LocalPosition.y
@@ -18146,7 +18146,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 39dfd123d65867d46b256e08bcbbf1e7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -123.69962
+      value: -103
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 39dfd123d65867d46b256e08bcbbf1e7, type: 3}
       propertyPath: m_LocalRotation.w
@@ -21793,7 +21793,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -122.4, y: 161.99994}
+  m_AnchoredPosition: {x: -118, y: 161.99994}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2142734618

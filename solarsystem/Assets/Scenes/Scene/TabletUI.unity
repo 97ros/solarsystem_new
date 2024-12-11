@@ -847,7 +847,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -120.000244, y: 123.999695}
+  m_AnchoredPosition: {x: -120.000244, y: 127}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &48974597
@@ -870,13 +870,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\xC8 il pianeta pi\xF9 vicino al Sole e il pi\xF9 piccolo del Sistema
-    Solare.\r\n- Diametro: 4.879 km\r\n- Massa: 3.3 x 10^23 kg\r\n- Periodo orbitale:
-    88 giorni\r\n- Temperatura superficiale: tra i -183 \xB0C e i 473 \xB0C, con
-    escursioni termiche estremamente ampie.\r\nStratificazione: Mercurio ha un nucleo
-    metallico molto grande, composto principalmente da ferro, circondato da un mantello
-    e una crosta sottile. Non ha atmosfera significativa, quindi la superficie \xE8
-    esposta direttamente al vuoto spaziale."
+  m_text: "La Terra \xE8 il terzo pianeta dal Sole e l'unico conosciuto ad ospitare
+    vita.\r\n- Diametro: 12.756 km\r\n- Massa: 6 \xD7 10\xB2\u2074 kg\r\n- Periodo
+    orbitale: 365,25 giorni\r\n- Temperatura superficiale: media di 15 \xB0C\r\nStratificazione:
+    Composta da un nucleo esterno liquido (ferro e nichel) e un nucleo interno solido.
+    La crosta terrestre \xE8 rigida e suddivisa in placche tettoniche. L'atmosfera
+    \xE8 composta principalmente di azoto e ossigeno, con una variazione di gas come
+    argon e anidride carbonica.\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -941,7 +941,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -58.719162, y: 17.503084, z: -14.022484, w: -252.25912}
+  m_margin: {x: -66.31604, y: 17.503084, z: -14.022484, w: -252.25912}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2401,7 +2401,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -120.000244, y: 123.99985}
+  m_AnchoredPosition: {x: -120.000244, y: 126}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &88547280
@@ -2424,13 +2424,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\xC8 il pianeta pi\xF9 vicino al Sole e il pi\xF9 piccolo del Sistema
-    Solare.\r\n- Diametro: 4.879 km\r\n- Massa: 3.3 x 10^23 kg\r\n- Periodo orbitale:
-    88 giorni\r\n- Temperatura superficiale: tra i -183 \xB0C e i 473 \xB0C, con
-    escursioni termiche estremamente ampie.\r\nStratificazione: Mercurio ha un nucleo
-    metallico molto grande, composto principalmente da ferro, circondato da un mantello
-    e una crosta sottile. Non ha atmosfera significativa, quindi la superficie \xE8
-    esposta direttamente al vuoto spaziale."
+  m_text: "Saturno \xE8 il sesto pianeta dal Sole e noto per i suoi spettacolari
+    anelli.\r\n- Diametro: 120.536 km\r\n- Massa: 5.7 \xD7 10\xB2\u2076 kg\r\n- Periodo
+    orbitale: 29 anni\r\n- Temperatura superficiale: -139 \xB0C\r\nStratificazione:
+    Saturno \xE8 un gigante gassoso, con una composizione simile a quella di Giove.
+    La sua atmosfera \xE8 composta principalmente da idrogeno ed elio, con strati
+    di nubi di ammoniaca e metano. Il nucleo \xE8 probabilmente composto da materiali
+    pi\xF9 densi e rocciosi, ma la maggior parte del pianeta \xE8 formata da gas
+    e liquidi."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2495,7 +2496,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -58.719162, y: 17.503084, z: -14.022484, w: -252.25912}
+  m_margin: {x: -67.835144, y: 17.503084, z: -23.138802, w: -252.25912}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -3574,7 +3575,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 283214525}
   m_LocalRotation: {x: 0, y: -0.08080775, z: 0, w: 0.99672973}
-  m_LocalPosition: {x: 0, y: 0, z: -172}
+  m_LocalPosition: {x: 0, y: 0, z: -169}
   m_LocalScale: {x: 0.79, y: 0.79, z: 0.79}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3583,7 +3584,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: -9.27, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 111, y: 0}
+  m_AnchoredPosition: {x: 131, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &283214527
@@ -3661,13 +3662,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\xC8 il pianeta pi\xF9 vicino al Sole e il pi\xF9 piccolo del Sistema
-    Solare.\r\n- Diametro: 4.879 km\r\n- Massa: 3.3 x 10^23 kg\r\n- Periodo orbitale:
-    88 giorni\r\n- Temperatura superficiale: tra i -183 \xB0C e i 473 \xB0C, con
-    escursioni termiche estremamente ampie.\r\nStratificazione: Mercurio ha un nucleo
-    metallico molto grande, composto principalmente da ferro, circondato da un mantello
-    e una crosta sottile. Non ha atmosfera significativa, quindi la superficie \xE8
-    esposta direttamente al vuoto spaziale."
+  m_text: "Giove \xE8 il quinto pianeta dal Sole e il pi\xF9 grande del Sistema Solare.\r\n-
+    Diametro: 142.984 km\r\n- Massa: 1.9 \xD7 10\xB2\u2077 kg\r\n- Periodo orbitale:
+    11,9 anni \r\n- Temperatura superficiale: -120 \xB0C\r\nStratificazione: Giove
+    \xE8 un gigante gassoso senza una superficie solida. La sua atmosfera \xE8 composta
+    principalmente da idrogeno ed elio, con bande di nubi visibili di ammoniaca e
+    metano. Ha un nucleo probabilmente composto da metallo e roccia, ma circondato
+    da strati di gas e liquidi.\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3732,7 +3733,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -58.719162, y: 17.503084, z: -14.022484, w: -252.25912}
+  m_margin: {x: -69.35458, y: 17.503084, z: -18.58081, w: -238.6774}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -3878,13 +3879,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\xC8 il pianeta pi\xF9 vicino al Sole e il pi\xF9 piccolo del Sistema
-    Solare.\r\n- Diametro: 4.879 km\r\n- Massa: 3.3 x 10^23 kg\r\n- Periodo orbitale:
-    88 giorni\r\n- Temperatura superficiale: tra i -183 \xB0C e i 473 \xB0C, con
-    escursioni termiche estremamente ampie.\r\nStratificazione: Mercurio ha un nucleo
-    metallico molto grande, composto principalmente da ferro, circondato da un mantello
-    e una crosta sottile. Non ha atmosfera significativa, quindi la superficie \xE8
-    esposta direttamente al vuoto spaziale."
+  m_text: "Mercurio \xE8 il pianeta pi\xF9 vicino al Sole e il pi\xF9 piccolo del
+    Sistema Solare.\r\n- Diametro: 4.879 km\r\n- Massa: 3.3 x 10^23 kg\r\n- Periodo
+    orbitale: 88 giorni\r\n- Temperatura superficiale: tra i -183 \xB0C e i 473 \xB0C,
+    con escursioni termiche estremamente ampie.\r\nStratificazione: Mercurio ha un
+    nucleo metallico molto grande, composto principalmente da ferro, circondato da
+    un mantello e una crosta sottile. Non ha atmosfera significativa, quindi la superficie
+    \xE8 esposta direttamente al vuoto spaziale."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5425,7 +5426,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -120.000244, y: 123.999695}
+  m_AnchoredPosition: {x: -120.000244, y: 131}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &430820698
@@ -5448,13 +5449,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\xC8 il pianeta pi\xF9 vicino al Sole e il pi\xF9 piccolo del Sistema
-    Solare.\r\n- Diametro: 4.879 km\r\n- Massa: 3.3 x 10^23 kg\r\n- Periodo orbitale:
-    88 giorni\r\n- Temperatura superficiale: tra i -183 \xB0C e i 473 \xB0C, con
-    escursioni termiche estremamente ampie.\r\nStratificazione: Mercurio ha un nucleo
-    metallico molto grande, composto principalmente da ferro, circondato da un mantello
-    e una crosta sottile. Non ha atmosfera significativa, quindi la superficie \xE8
-    esposta direttamente al vuoto spaziale."
+  m_text: "Venere \xE8 il secondo pianeta dal Sole ed \xE8 simile per dimensioni
+    e composizione alla Terra, ma ha un clima molto pi\xF9 estremo.\r\n- Diametro:
+    12.104 km\r\n- Massa: 4.9 x 10^24 kg\r\n- Periodo orbitale: 225 giorni\r\n- Temperatura
+    superficiale: circa 462 \xB0C\r\nStratificazione: Atmosfera densa e composta
+    principalmente da anidride carbonica, con nubi di acido solforico. La superficie
+    \xE8 rocciosa con vaste pianure e vulcani. Il nucleo di Venere \xE8 probabilmente
+    simile a quello terrestre, ma la sua crosta \xE8 molto stabile e meno mobile."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5519,7 +5520,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -58.719162, y: 17.503084, z: -14.022484, w: -252.25912}
+  m_margin: {x: -67.835144, y: 17.503084, z: -20.10025, w: -252.25912}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -7156,7 +7157,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -120.327576, y: 124.33786}
+  m_AnchoredPosition: {x: -120.327576, y: 123}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &647888056
@@ -7179,13 +7180,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\xC8 il pianeta pi\xF9 vicino al Sole e il pi\xF9 piccolo del Sistema
-    Solare.\r\n- Diametro: 4.879 km\r\n- Massa: 3.3 x 10^23 kg\r\n- Periodo orbitale:
-    88 giorni\r\n- Temperatura superficiale: tra i -183 \xB0C e i 473 \xB0C, con
-    escursioni termiche estremamente ampie.\r\nStratificazione: Mercurio ha un nucleo
-    metallico molto grande, composto principalmente da ferro, circondato da un mantello
-    e una crosta sottile. Non ha atmosfera significativa, quindi la superficie \xE8
-    esposta direttamente al vuoto spaziale."
+  m_text: "Nettuno \xE8 l'ottavo pianeta dal Sole e simile a Urano, ma con una atmosfera
+    pi\xF9 attiva e venti molto veloci.\r\n- Diametro: 49.528 km\r\n- Massa: 1.02
+    \xD7 10\xB2\u2076 kg\r\n- Periodo orbitale: 165 anni\r\n- Temperatura superficiale:
+    -200 \xB0C\r\nStratificazione: Nettuno \xE8 un gigante ghiacciato, con una composizione
+    simile a quella di Urano. La sua atmosfera \xE8 dominata da idrogeno, elio e
+    metano, che conferiscono al pianeta il caratteristico colore blu. Il suo nucleo
+    \xE8 solido e circondato da un mantello di ghiacci e gas."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7250,7 +7251,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -58.719162, y: 17.503084, z: -14.022484, w: -252.25912}
+  m_margin: {x: -73.87096, y: 13.43977, z: -20.083405, w: -252.25912}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -13989,7 +13990,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -120.000244, y: 123.999695}
+  m_AnchoredPosition: {x: -120.000244, y: 129}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1368521441
@@ -14012,13 +14013,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\xC8 il pianeta pi\xF9 vicino al Sole e il pi\xF9 piccolo del Sistema
-    Solare.\r\n- Diametro: 4.879 km\r\n- Massa: 3.3 x 10^23 kg\r\n- Periodo orbitale:
-    88 giorni\r\n- Temperatura superficiale: tra i -183 \xB0C e i 473 \xB0C, con
-    escursioni termiche estremamente ampie.\r\nStratificazione: Mercurio ha un nucleo
-    metallico molto grande, composto principalmente da ferro, circondato da un mantello
-    e una crosta sottile. Non ha atmosfera significativa, quindi la superficie \xE8
-    esposta direttamente al vuoto spaziale."
+  m_text: "Marte \xE8 il quarto pianeta dal Sole e conosciuto come il \"pianeta rosso\"
+    a causa del suo suolo ricco di ossido di ferro.\r\n- Diametro: 6.779 km\r\n-
+    Massa: 6.4 \xD7 10\xB2\xB3 kg\r\n- Periodo orbitale: 687 giorni\r\n- Temperatura
+    superficiale: media di -63 \xB0C, con escursioni da -140 \xB0C a +17 \xB0C\r\nStratificazione:
+    La crosta marziana \xE8 rocciosa, il mantello \xE8 probabilmente parzialmente
+    fuso. Marte ha un'atmosfera molto sottile, composta principalmente da anidride
+    carbonica. Il pianeta ha calotte polari di ghiaccio e segni di antichi fiumi
+    e laghi."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -14083,7 +14085,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -58.719162, y: 17.503084, z: -14.022484, w: -252.25912}
+  m_margin: {x: -70.87402, y: 17.503084, z: -30.735664, w: -261.76645}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -15245,7 +15247,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -120.327576, y: 124.33786}
+  m_AnchoredPosition: {x: -120.327576, y: 121}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1480719579
@@ -15268,13 +15270,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\xC8 il pianeta pi\xF9 vicino al Sole e il pi\xF9 piccolo del Sistema
-    Solare.\r\n- Diametro: 4.879 km\r\n- Massa: 3.3 x 10^23 kg\r\n- Periodo orbitale:
-    88 giorni\r\n- Temperatura superficiale: tra i -183 \xB0C e i 473 \xB0C, con
-    escursioni termiche estremamente ampie.\r\nStratificazione: Mercurio ha un nucleo
-    metallico molto grande, composto principalmente da ferro, circondato da un mantello
-    e una crosta sottile. Non ha atmosfera significativa, quindi la superficie \xE8
-    esposta direttamente al vuoto spaziale."
+  m_text: "Urano \xE8 il settimo pianeta dal Sole e ha l'inclinazione assiale pi\xF9
+    estrema del Sistema Solare.\r\n- Diametro: 51.118 km\r\n- Massa: 8.7 \xD7 10\xB2\u2075
+    kg\r\n- Periodo orbitale: 84 anni\r\n- Temperatura superficiale: -210 \xB0C,
+    uno dei pianeti pi\xF9 freddi\r\nStratificazione: Urano \xE8 un gigante ghiacciato,
+    composto principalmente da idrogeno, elio e \"ghiaccio\" (acqua, ammoniaca e
+    metano). La sua atmosfera contiene nuvole di metano e il pianeta ha un nucleo
+    solido e una crosta composta da materiali ghiacciati.\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -15339,7 +15341,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -58.719162, y: 17.503084, z: -14.022484, w: -252.25912}
+  m_margin: {x: -70.84067, y: 12.085232, z: -21.598717, w: -246.84189}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

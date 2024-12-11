@@ -14988,11 +14988,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "La seconda legge di Keplero afferma che una linea immaginaria che collega
-    un pianeta al Sole spazza aree uguali in tempi uguali. Questo significa che i
-    pianeti si muovono a velocit\xE0 diverse lungo la loro orbita ellittica: la velocit\xE0
-    \xE8 maggiore quando il pianeta \xE8 pi\xF9 vicino al Sole (perielio) e minore
-    quando \xE8 pi\xF9 lontano (afelio)"
+  m_text: "Una linea immaginaria che collega un pianeta al Sole spazza aree uguali
+    in tempi uguali. \nQuesto significa che i pianeti si muovono a velocit\xE0 diverse
+    lungo la loro orbita ellittica: la velocit\xE0 \xE8 maggiore quando il pianeta
+    \xE8 pi\xF9 vicino al Sole (perielio) e minore quando \xE8 pi\xF9 lontano (afelio)"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -16514,7 +16513,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.4, y: 6.8}
+  m_AnchoredPosition: {x: 0.4, y: 2.8}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1583437135
@@ -16537,9 +16536,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "La prima legge di Keplero, conosciuta come legge delle orbite ellittiche, 
-    afferma che i pianeti orbitano attorno al Sole seguendo orbite ellittiche, con
-    il Sole situato in uno dei due fuochi dell'ellisse. Ci\xF2 significa che la distanza
+  m_text: "I pianeti orbitano attorno al Sole seguendo orbite ellittiche, con il
+    Sole situato in uno dei due fuochi dell'ellisse. \nCi\xF2 significa che la distanza
     tra il pianeta e il Sole cambia continuamente durante l'orbita, passando dal
     perielio (la distanza minima) all'afelio (la distanza massima)"
   m_isRightToLeft: 0
@@ -16606,7 +16604,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -242.3041, y: -96.181946, z: -251.55164, w: -85.0837}
+  m_margin: {x: -242.3041, y: -96.181946, z: -253.05795, w: -80.56774}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -17681,13 +17679,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "La legge dei periodi afferma che il periodo di rivoluzione di un pianeta
-    attorno al Sole dipende dalla sua distanza media da quest'ultimo. In particolare,
-    se esprimiamo il periodo di rivoluzione in anni e la distanza (che corrisponde
-    al semi-asse maggiore dell'orbita) in unit\xE0 astronomiche, il periodo di rivoluzione
-    al quadrato \xE8 proporzionale al semi-asse maggiore al cubo. Questo significa
-    che pi\xF9 un pianeta \xE8 lontano dal Sole, pi\xF9 tempo impiega a completare
-    un'orbita"
+  m_text: "Il periodo di rivoluzione al quadrato \xE8 proporzionale al semi-asse
+    maggiore al cubo, se esprimiamo il periodo di rivoluzione in anni e la distanza
+    (che corrisponde al semi-asse maggiore dell'orbita) in unit\xE0 astronomiche.
+    \nIl periodo di rivoluzione di un pianeta attorno al Sole dipende dalla sua distanza
+    media da quest'ultimo.\nQuesto significa che pi\xF9 un pianeta \xE8 lontano dal
+    Sole, pi\xF9 tempo impiega a completare un'orbita"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

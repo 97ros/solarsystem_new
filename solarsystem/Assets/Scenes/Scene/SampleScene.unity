@@ -10075,6 +10075,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   earth: {fileID: 1061903464}
   orbitSpeed: 10
+--- !u!114 &194806777 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6737682805100938715, guid: 03345192e5c496444a669e0b0afc41e0, type: 3}
+  m_PrefabInstance: {fileID: 1122330158}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &218228412 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4451924038575070938, guid: 81ddaef9d4697d84ba75e74a69f45a43, type: 3}
@@ -21592,6 +21603,56 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panel: {fileID: 1879916628}
+--- !u!1 &510653672
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 510653674}
+  - component: {fileID: 510653673}
+  m_Layer: 0
+  m_Name: SincronizzazioneScene
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &510653673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 510653672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 668299b9cb68e334894c6913a04e2b87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CanvaTablet: {fileID: 1772160520}
+  EventSystemTablet: {fileID: 565641605}
+  CameraTablet: {fileID: 2139611925}
+  EventSystem: {fileID: 644250169}
+  SpaceShip: {fileID: 984458953}
+  EsplorazioneButton: {fileID: 194806777}
+--- !u!4 &510653674
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 510653672}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 630, y: 560, z: 900}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &518408733
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26850,6 +26911,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 561873593}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &565641605 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6037427364087188233, guid: 9550779858de95b44bc3e30318173005, type: 3}
+  m_PrefabInstance: {fileID: 1152165024}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &571639418 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3486550564883494087, guid: 03345192e5c496444a669e0b0afc41e0, type: 3}
@@ -121805,6 +121871,11 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &2139611925 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5796324853961039201, guid: e99defbd5e3735a408f75a3a13b9c599, type: 3}
+  m_PrefabInstance: {fileID: 2126195714}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8261087192439729689
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -121914,3 +121985,4 @@ SceneRoots:
   - {fileID: 2126195714}
   - {fileID: 445222002}
   - {fileID: 1152165024}
+  - {fileID: 510653674}

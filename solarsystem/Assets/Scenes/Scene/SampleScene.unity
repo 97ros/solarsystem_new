@@ -26980,8 +26980,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: c64654204b4f143138509e34c343c511, type: 3}
-  m_Resource: {fileID: 8300000, guid: c64654204b4f143138509e34c343c511, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 311f92cd7393840c795528903f38fa95, type: 3}
+  m_Resource: {fileID: 8300000, guid: 311f92cd7393840c795528903f38fa95, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.79
   m_Pitch: 1
@@ -34504,6 +34504,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thrusterSound: {fileID: 984458958}
+  fadeSpeed: 2
 --- !u!82 &984458958
 AudioSource:
   m_ObjectHideFlags: 0
@@ -34514,9 +34515,10 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 419da64e7250d4f4d849b6c11d567c47, type: 3}
-  m_Resource: {fileID: 8300000, guid: 419da64e7250d4f4d849b6c11d567c47, type: 3}
+  m_audioClip: {fileID: 8300000, guid: ed78c96a68fb947cda286f0a538a13cf, type: 3}
+  m_Resource: {fileID: 8300000, guid: ed78c96a68fb947cda286f0a538a13cf, type: 3}
   m_PlayOnAwake: 0
+  m_Volume: 0
   m_Volume: 0.15
   m_Pitch: 1
   Loop: 1
@@ -111650,7 +111652,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 75.98898, y: 19.651154}
+  m_AnchoredPosition: {x: 75.98898, y: 19.651123}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2017136801

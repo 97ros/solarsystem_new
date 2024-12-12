@@ -119,6 +119,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &43503235 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2815524351336774688, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
+  m_PrefabInstance: {fileID: 6509986290080609768}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &120778485
 GameObject:
   m_ObjectHideFlags: 0
@@ -190,6 +195,7 @@ GameObject:
   - component: {fileID: 476389215}
   - component: {fileID: 476389217}
   - component: {fileID: 476389216}
+  - component: {fileID: 476389218}
   m_Layer: 5
   m_Name: Intro
   m_TagString: Untagged
@@ -315,6 +321,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 476389214}
   m_CullTransparentMesh: 1
+--- !u!95 &476389218
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 476389214}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3391865ec86bf4fb6a908d78183fbac4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &750876747
 GameObject:
   m_ObjectHideFlags: 0
@@ -326,6 +354,7 @@ GameObject:
   - component: {fileID: 750876748}
   - component: {fileID: 750876750}
   - component: {fileID: 750876749}
+  - component: {fileID: 750876751}
   m_Layer: 5
   m_Name: Logo
   m_TagString: Untagged
@@ -390,6 +419,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 750876747}
   m_CullTransparentMesh: 1
+--- !u!95 &750876751
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 750876747}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 283a1580a36e34715936bb0caafd597a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!224 &805364651 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7768995608812845439, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
@@ -400,12 +451,34 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2970604519926974640, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
   m_PrefabInstance: {fileID: 6509986290080609768}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 43503235}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &805364659
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 43503235}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e373e2737e269438e8e3b32606fb51f7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &949737513
 GameObject:
   m_ObjectHideFlags: 0
@@ -1028,7 +1101,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2815524351336774688, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 805364659}
   m_SourcePrefab: {fileID: 100100000, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

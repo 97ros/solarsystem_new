@@ -379,7 +379,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1076956035}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: b42cdfe31483a494ea9fca527a5d171d, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 94c7f976c1b7a4944a7ca4e7eac57fb8, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -392,7 +392,7 @@ VideoPlayer:
   m_DataSource: 0
   m_TimeUpdateMode: 2
   m_PlaybackSpeed: 1
-  m_AudioOutputMode: 2
+  m_AudioOutputMode: 0
   m_TargetAudioSources:
   - {fileID: 0}
   m_DirectAudioVolumes:
@@ -795,7 +795,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7768995608812845439, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 52.4
+      value: 52.400024
+      objectReference: {fileID: 0}
+    - target: {fileID: 7768995608812845439, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 7768995608812845439, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 4.1541305
+      objectReference: {fileID: 0}
+    - target: {fileID: 7768995608812845439, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.2571063
       objectReference: {fileID: 0}
     - target: {fileID: 7768995608812845439, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
       propertyPath: m_LocalPosition.x
@@ -831,7 +843,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7768995608812845439, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -31
       objectReference: {fileID: 0}
     - target: {fileID: 7768995608812845439, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -844,6 +856,10 @@ PrefabInstance:
     - target: {fileID: 7768995608812845439, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7768995608812845439, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

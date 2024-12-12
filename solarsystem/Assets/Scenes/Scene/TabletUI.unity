@@ -1224,12 +1224,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "La Terra \xE8 il terzo pianeta dal Sole e l'unico conosciuto ad ospitare
-    vita.\r\n- Diametro: 12.756 km\r\n- Massa: 6 \xD7 10\xB2\u2074 kg\r\n- Periodo
-    orbitale: 365,25 giorni\r\n- Temperatura superficiale: media di 15 \xB0C\r\nStratificazione:
-    Composta da un nucleo esterno liquido (ferro e nichel) e un nucleo interno solido.
-    La crosta terrestre \xE8 rigida e suddivisa in placche tettoniche. L'atmosfera
-    \xE8 composta principalmente di azoto e ossigeno, con una variazione di gas come
-    argon e anidride carbonica.\r"
+    vita.\r\n- Diametro: 12.756 km\r\n- Massa: 6 \xD7 10\xB2\u2074 kg\r\r\n- Temperatura
+    superficiale: media di 15 \xB0C\r\nStratificazione: Composta da un nucleo esterno
+    liquido (ferro e nichel) e un nucleo interno solido. La crosta terrestre \xE8
+    rigida e suddivisa in placche tettoniche. L'atmosfera \xE8 composta principalmente
+    di azoto e ossigeno, con una variazione di gas come argon e anidride carbonica.\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2944,7 +2943,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -122, y: 131}
+  m_AnchoredPosition: {x: -122, y: 128}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &88547280
@@ -2968,13 +2967,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Saturno \xE8 il sesto pianeta dal Sole ed \xE8 noto per i suoi spettacolari
-    anelli.\r\n- Diametro: 120.536 km\r\n- Massa: 5.7 \xD7 10\xB2\u2076 kg\r\n- Periodo
-    orbitale: 29 anni\r\n- Temperatura superficiale: -139 \xB0C\r\nStratificazione:
-    Saturno \xE8 un gigante gassoso, con una composizione simile a quella di Giove.
-    La sua atmosfera \xE8 composta principalmente da idrogeno ed elio, con strati
-    di nubi di ammoniaca e metano. Il nucleo \xE8 probabilmente composto da materiali
-    pi\xF9 densi e rocciosi, ma la maggior parte del pianeta \xE8 formata da gas
-    e liquidi."
+    anelli.\r\n- Diametro: 120.536 km\r\n- Massa: 5.7 \xD7 10\xB2\u2076 kg\r\r\n-
+    Temperatura superficiale: -139 \xB0C\r\nStratificazione: Saturno \xE8 un gigante
+    gassoso, con una composizione simile a quella di Giove. La sua atmosfera \xE8
+    composta principalmente da idrogeno ed elio, con strati di nubi di ammoniaca
+    e metano. Il nucleo \xE8 probabilmente composto da materiali pi\xF9 densi e rocciosi,
+    ma la maggior parte del pianeta \xE8 formata da gas e liquidi."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3039,7 +3037,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -70.87369, y: 17.503084, z: -29.21656, w: -261.76645}
+  m_margin: {x: -70.87369, y: 17.503084, z: -29.21656, w: -251.79944}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -3097,6 +3095,350 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 24c2da947f1c3194c9f180a5221d3977, type: 3}
   m_PrefabInstance: {fileID: 1764235503}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &147370905
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 229954660}
+    m_Modifications:
+    - target: {fileID: 2815524351336774688, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
+      propertyPath: m_Name
+      value: Inglese
+      objectReference: {fileID: 0}
+    - target: {fileID: 2815524351336774688, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2970604519926974640, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
+      propertyPath: m_TargetGraphic
+      value: 
+      objectReference: {fileID: 147370908}
+    - target: {fileID: 2970604519926974640, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2970604519926974640, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2970604519926974640, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1233549057}
+    - target: {fileID: 2970604519926974640, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1233549060}
+    - target: {fileID: 2970604519926974640, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2970604519926974640, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ShowUIimpostazioni
+      objectReference: {fileID: 0}
+    - target: {fileID: 2970604519926974640, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: PlaySound
+      objectReference: {fileID: 0}
+    - target: {fileID: 2970604519926974640, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MenuManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2970604519926974640, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: ButtonSound, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2970604519926974640, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6235283157159045647, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
+      propertyPath: m_text
+      value: 'Inglese
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6235283157159045647, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
+      propertyPath: m_fontSize
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 6235283157159045647, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 6235283157159045647, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
+      propertyPath: m_characterSpacing
+      value: -7.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 6235283157159045647, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
+      propertyPath: m_paragraphSpacing
+      value: -23.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 6571065583245621770, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0.6799969
+      objectReference: {fileID: 0}
+    - target: {fileID: 6571065583245621770, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.43
+      objectReference: {fileID: 0}
+    - target: {fileID: 6571065583245621770, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.24213594
+      objectReference: {fileID: 0}
+    - target: {fileID: 6571065583245621770, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.22961167
+      objectReference: {fileID: 0}
+    - target: {fileID: 6571065583245621770, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.34000206
+      objectReference: {fileID: 0}
+    - target: {fileID: 6571065583245621770, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7768995608812845439, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7768995608812845439, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7768995608812845439, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7768995608812845439, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7768995608812845439, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7768995608812845439, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7768995608812845439, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 160.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7768995608812845439, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 52.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7768995608812845439, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.1128738
+      objectReference: {fileID: 0}
+    - target: {fileID: 7768995608812845439, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.8943865
+      objectReference: {fileID: 0}
+    - target: {fileID: 7768995608812845439, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.62521
+      objectReference: {fileID: 0}
+    - target: {fileID: 7768995608812845439, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7768995608812845439, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7768995608812845439, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7768995608812845439, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7768995608812845439, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7768995608812845439, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7768995608812845439, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7768995608812845439, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 299
+      objectReference: {fileID: 0}
+    - target: {fileID: 7768995608812845439, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 7768995608812845439, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7768995608812845439, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7768995608812845439, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7768995608812845439, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2815524351336774688, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 147370910}
+    - targetCorrespondingSourceObject: {fileID: 2815524351336774688, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 147370909}
+  m_SourcePrefab: {fileID: 100100000, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
+--- !u!224 &147370906 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7768995608812845439, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
+  m_PrefabInstance: {fileID: 147370905}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &147370907 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2815524351336774688, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
+  m_PrefabInstance: {fileID: 147370905}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &147370908 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1731396647640644205, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
+  m_PrefabInstance: {fileID: 147370905}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 147370907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!82 &147370909
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 147370907}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 7bb2c27df7ada4a6fb65807d5c657a26, type: 3}
+  m_Resource: {fileID: 8300000, guid: 7bb2c27df7ada4a6fb65807d5c657a26, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &147370910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 147370907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3805ff6df13b64b1a953b8c5d832ae7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundClip: {fileID: 0}
 --- !u!1001 &154904115
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3965,7 +4307,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 334750584}
-  - {fileID: 1281473008}
+  - {fileID: 147370906}
   m_Father: {fileID: 654426080}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -4326,7 +4668,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -120.000244, y: 129}
+  m_AnchoredPosition: {x: -120.000244, y: 124}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &285942295
@@ -4350,12 +4692,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Giove \xE8 il quinto pianeta dal Sole e il pi\xF9 grande del Sistema Solare.\r\n-
-    Diametro: 142.984 km\r\n- Massa: 1.9 \xD7 10\xB2\u2077 kg\r\n- Periodo orbitale:
-    11,9 anni \r\n- Temperatura superficiale: -120 \xB0C\r\nStratificazione: Giove
-    \xE8 un gigante gassoso senza una superficie solida. La sua atmosfera \xE8 composta
-    principalmente da idrogeno ed elio, con bande di nubi visibili di ammoniaca e
-    metano. Ha un nucleo probabilmente composto da metallo e roccia, ma circondato
-    da strati di gas e liquidi.\r"
+    Diametro: 142.984 km\r\n- Massa: 1.9 \xD7 10\xB2\u2077 kg\r \r\n- Temperatura
+    superficiale: -120 \xB0C\r\nStratificazione: Giove \xE8 un gigante gassoso senza
+    una superficie solida. La sua atmosfera \xE8 composta principalmente da idrogeno
+    ed elio, con bande di nubi visibili di ammoniaca e metano. Ha un nucleo probabilmente
+    composto da metallo e roccia, ma circondato da strati di gas e liquidi.\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4567,12 +4908,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Mercurio \xE8 il pianeta pi\xF9 vicino al Sole e il pi\xF9 piccolo del
-    Sistema Solare.\r\n- Diametro: 4.879 km\r\n- Massa: 3.3 x 10^23 kg\r\n- Periodo
-    orbitale: 88 giorni\r\n- Temperatura superficiale: tra i -183 \xB0C e i 473 \xB0C,
-    con escursioni termiche estremamente ampie.\r\nStratificazione: Mercurio ha un
-    nucleo metallico molto grande, composto principalmente da ferro, circondato da
-    un mantello e una crosta sottile. Non ha atmosfera significativa, quindi la superficie
-    \xE8 esposta direttamente al vuoto spaziale."
+    Sistema Solare.\r\n- Diametro: 4.879 km\r\n- Massa: 3.3 x 10^23 kg\r\r\n- Temperatura
+    superficiale: tra i -183 \xB0C e i 473 \xB0C, con escursioni termiche estremamente
+    ampie.\r\nStratificazione: Mercurio ha un nucleo metallico molto grande, composto
+    principalmente da ferro, circondato da un mantello e una crosta sottile. Non
+    ha atmosfera significativa, quindi la superficie \xE8 esposta direttamente al
+    vuoto spaziale."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5301,11 +5642,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6235283157159045647, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
       propertyPath: m_fontSize
-      value: 30
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 6235283157159045647, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
       propertyPath: m_fontSizeBase
-      value: 30
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 6235283157159045647, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
       propertyPath: m_characterSpacing
@@ -5373,15 +5714,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7768995608812845439, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.7800001
+      value: 1.1128738
       objectReference: {fileID: 0}
     - target: {fileID: 7768995608812845439, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
       propertyPath: m_LocalScale.y
-      value: 3.0300002
+      value: 1.8943864
       objectReference: {fileID: 0}
     - target: {fileID: 7768995608812845439, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 0.62521
       objectReference: {fileID: 0}
     - target: {fileID: 7768995608812845439, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5413,7 +5754,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7768995608812845439, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 113
+      value: 106
       objectReference: {fileID: 0}
     - target: {fileID: 7768995608812845439, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -6320,7 +6661,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -123, y: 133}
+  m_AnchoredPosition: {x: -123, y: 126}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &430820698
@@ -6345,11 +6686,11 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Venere \xE8 il secondo pianeta dal Sole ed \xE8 simile per dimensioni
     e composizione alla Terra, ma ha un clima molto pi\xF9 estremo.\r\n- Diametro:
-    12.104 km\r\n- Massa: 4.9 x 10^24 kg\r\n- Periodo orbitale: 225 giorni\r\n- Temperatura
-    superficiale: circa 462 \xB0C\r\nStratificazione: Atmosfera densa e composta
-    principalmente da anidride carbonica, con nubi di acido solforico. La superficie
-    \xE8 rocciosa con vaste pianure e vulcani. Il nucleo di Venere \xE8 probabilmente
-    simile a quello terrestre, ma la sua crosta \xE8 molto stabile e meno mobile."
+    12.104 km\r\n- Massa: 4.9 x 10^24 kg\r\r\n- Temperatura superficiale: circa 462
+    \xB0C\r\nStratificazione: Atmosfera densa e composta principalmente da anidride
+    carbonica, con nubi di acido solforico. La superficie \xE8 rocciosa con vaste
+    pianure e vulcani. Il nucleo di Venere \xE8 probabilmente simile a quello terrestre,
+    ma la sua crosta \xE8 molto stabile e meno mobile."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6414,7 +6755,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -75.43167, y: 17.503084, z: -36.813774, w: -276.7064}
+  m_margin: {x: -75.43167, y: 17.503084, z: -36.813774, w: -243.93723}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -7693,7 +8034,7 @@ Light:
   serializedVersion: 11
   m_Type: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1.4
+  m_Intensity: 0.2
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -8421,7 +8762,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -120.327576, y: 128}
+  m_AnchoredPosition: {x: -120.327576, y: 125}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &647888056
@@ -8446,11 +8787,11 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Nettuno \xE8 l'ottavo pianeta dal Sole ed \xE8 simile a Urano, ma con
     una atmosfera pi\xF9 attiva e venti molto veloci.\r\n- Diametro: 49.528 km\r\n-
-    Massa: 1.02 \xD7 10\xB2\u2076 kg\r\n- Periodo orbitale: 165 anni\r\n- Temperatura
-    superficiale: -200 \xB0C\r\nStratificazione: Nettuno \xE8 un gigante ghiacciato,
-    con una composizione simile a quella di Urano. La sua atmosfera \xE8 dominata
-    da idrogeno, elio e metano, che conferiscono al pianeta il caratteristico colore
-    blu. Il suo nucleo \xE8 solido e circondato da un mantello di ghiacci e gas."
+    Massa: 1.02 \xD7 10\xB2\u2076 kg\r\r\n- Temperatura superficiale: -200 \xB0C\r\nStratificazione:
+    Nettuno \xE8 un gigante ghiacciato, con una composizione simile a quella di Urano.
+    La sua atmosfera \xE8 dominata da idrogeno, elio e metano, che conferiscono al
+    pianeta il caratteristico colore blu. Il suo nucleo \xE8 solido e circondato
+    da un mantello di ghiacci e gas."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -15607,7 +15948,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -117, y: 140}
+  m_AnchoredPosition: {x: -117, y: 129}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1368521441
@@ -15632,12 +15973,11 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Marte \xE8 il quarto pianeta dal Sole ed \xE8 conosciuto come il \"pianeta
     rosso\" a causa del suo suolo ricco di ossido di ferro.\r\n- Diametro: 6.779
-    km\r\n- Massa: 6.4 \xD7 10\xB2\xB3 kg\r\n- Periodo orbitale: 687 giorni\r\n-
-    Temperatura superficiale: media di -63 \xB0C, con escursioni da -140 \xB0C a
-    +17 \xB0C\r\nStratificazione: La crosta marziana \xE8 rocciosa, il mantello \xE8
-    probabilmente parzialmente fuso. Marte ha un'atmosfera molto sottile, composta
-    principalmente da anidride carbonica. Il pianeta ha calotte polari di ghiaccio
-    e segni di antichi fiumi e laghi."
+    km\r\n- Massa: 6.4 \xD7 10\xB2\xB3 kg\r\r\n- Temperatura superficiale: media
+    di -63 \xB0C, con escursioni da -140 \xB0C a +17 \xB0C\r\nStratificazione: La
+    crosta marziana \xE8 rocciosa, il mantello \xE8 probabilmente parzialmente fuso.
+    Marte ha un'atmosfera molto sottile, composta principalmente da anidride carbonica.
+    Il pianeta ha calotte polari di ghiaccio e segni di antichi fiumi e laghi."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -16935,7 +17275,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -123, y: 129}
+  m_AnchoredPosition: {x: -123, y: 126}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1480719579
@@ -16960,11 +17300,10 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Urano \xE8 il settimo pianeta dal Sole e ha l'inclinazione assiale pi\xF9
     estrema del Sistema Solare.\r\n- Diametro: 51.118 km\r\n- Massa: 8.7 \xD7 10\xB2\u2075
-    kg\r\n- Periodo orbitale: 84 anni\r\n- Temperatura superficiale: -210 \xB0C,
-    uno dei pianeti pi\xF9 freddi\r\nStratificazione: Urano \xE8 un gigante ghiacciato,
-    composto principalmente da idrogeno, elio e \"ghiaccio\" (acqua, ammoniaca e
-    metano). La sua atmosfera contiene nuvole di metano e il pianeta ha un nucleo
-    solido e una crosta composta da materiali ghiacciati.\r\n"
+    kg\r\r\n- Temperatura superficiale: -210 \xB0C, uno dei pianeti pi\xF9 freddi\r\nStratificazione:
+    Urano \xE8 un gigante ghiacciato, composto principalmente da idrogeno, elio e
+    \"ghiaccio\" (acqua, ammoniaca e metano). La sua atmosfera contiene nuvole di
+    metano e il pianeta ha un nucleo solido e una crosta composta da materiali ghiacciati.\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

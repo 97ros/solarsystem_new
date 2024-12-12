@@ -7,7 +7,6 @@ public class ButtonSound : MonoBehaviour
 
     // Riferimento all'AudioSource
     private AudioSource audioSource;
-    
 
     void Start()
     {
@@ -21,13 +20,12 @@ public class ButtonSound : MonoBehaviour
         // Configura l'AudioSource
         audioSource.playOnAwake = false; // Non riprodurre automaticamente
         audioSource.clip = soundClip;   // Assegna il suono scelto
-        audioSource.priority = 0; // Massima priorità
     }
 
     // Metodo per riprodurre il suono
     public void PlaySound()
     {
         Debug.LogWarning("suono");
-        audioSource.PlayOneShot(soundClip);
+        audioSource.Play();
     }
 }

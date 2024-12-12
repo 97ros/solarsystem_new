@@ -23,14 +23,14 @@ public class IntroManager : MonoBehaviour
     IEnumerator ShowIntro()
     {
         // Attendere un secondo prima di visualizzare il logo e intro
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(2f);
 
         // Mostrare il logo e l'intro
         logo.SetActive(true);
         intro.SetActive(true);
 
         // Attendere 4 secondi
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(6f);
 
         // Disattivare il logo e l'intro
         logo.SetActive(false);

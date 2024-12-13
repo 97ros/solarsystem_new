@@ -1176,7 +1176,7 @@ GameObject:
   m_Component:
   - component: {fileID: 44008384}
   m_Layer: 0
-  m_Name: TerzaLeggediKeplero
+  m_Name: TerzaLeggediKepleroING
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3106,7 +3106,7 @@ GameObject:
   m_Component:
   - component: {fileID: 121922240}
   m_Layer: 0
-  m_Name: "LeggediGravit\xE0"
+  m_Name: "LeggediGravit\xE0ING"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4338,7 +4338,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Legge di gravitazione universale
+  m_text: Law of universal gravitation
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6010,12 +6010,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Giove \xE8 il quinto pianeta dal Sole e il pi\xF9 grande del Sistema Solare.\r\n-
-    Diametro: 142.984 km\r\n- Massa: 1.9 \xD7 10\xB2\u2077 kg\r \r\n- Temperatura
-    superficiale: -120 \xB0C\r\nStratificazione: Giove \xE8 un gigante gassoso senza
-    una superficie solida. La sua atmosfera \xE8 composta principalmente da idrogeno
-    ed elio, con bande di nubi visibili di ammoniaca e metano. Ha un nucleo probabilmente
-    composto da metallo e roccia, ma circondato da strati di gas e liquidi.\r"
+  m_text: "Jupiter is the fifth planet from the Sun and the largest in the Solar
+    System.\r\n- Diameter: 142,984 km\r\n- Mass: 1.9 \xD7 10\xB2\u2077 kg\r\n- Surface
+    temperature: -120 \xB0C\r\nStratification: Jupiter is a gas giant without a solid
+    surface. Its atmosphere is composed primarily of hydrogen and helium, with visible
+    cloud bands of ammonia and methane. It has a core probably composed of metal
+    and rock, but surrounded by layers of gas and liquid."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6179,7 +6179,7 @@ GameObject:
   m_Component:
   - component: {fileID: 278436419}
   m_Layer: 0
-  m_Name: SecondaLeggediKeplero
+  m_Name: SecondaLeggediKepleroING
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8874,7 +8874,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Terra
+  m_text: Earth
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9010,7 +9010,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Seconda legge di Keplero \nLegge delle aree"
+  m_text: 'Kepler''s Second Law
+
+    Law of Areas'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -12959,9 +12961,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Il periodo di rivoluzione al quadrato \xE8 proporzionale al semi-asse
-    maggiore al cubo, se esprimiamo il periodo di rivoluzione in anni e la distanza
-    (che corrisponde al semi-asse maggiore dell'orbita) in unit\xE0 astronomiche. "
+  m_text: The period of revolution squared is proportional to the semi-major axis
+    cubed, if we express the period of revolution in years and the distance (which
+    corresponds to the semi-major axis of the orbit) in astronomical units.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -13527,7 +13529,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -102, y: 161.99994}
+  m_AnchoredPosition: {x: -114, y: 161.99994}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &628037850
@@ -13550,7 +13552,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Urano
+  m_text: Uranus
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -13615,7 +13617,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 87.36674, w: 0}
+  m_margin: {x: 0, y: 0, z: 63.61502, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -14310,7 +14312,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Marte
+  m_text: Mars
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -15051,7 +15053,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -105.00006, y: 161.99994}
+  m_AnchoredPosition: {x: -115, y: 161.99994}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &694802127
@@ -15074,7 +15076,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Giove
+  m_text: Jupiter
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -15139,7 +15141,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 87.36674, w: 0}
+  m_margin: {x: 0, y: 0, z: 69.57025, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -18976,8 +18978,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Una linea immaginaria che collega un pianeta al Sole spazza aree uguali
-    in tempi uguali. '
+  m_text: An imaginary line connecting a planet to the Sun sweeps out equal areas
+    in equal times.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -19042,7 +19044,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -242.3041, y: -86.93372, z: -236.7543, w: -70.28635}
+  m_margin: {x: -242.3041, y: -86.93372, z: -236.7543, w: 72.22401}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -19594,7 +19596,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -118, y: 161.99994}
+  m_AnchoredPosition: {x: -127, y: 161.99994}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &976375691
@@ -19617,7 +19619,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Nettuno
+  m_text: Neptune
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -19682,7 +19684,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 48.95798, w: 0}
+  m_margin: {x: 0, y: 0, z: 38.5666, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -19897,7 +19899,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Giove
+  m_text: Jupiter
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -20033,7 +20035,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Saturno
+  m_text: Saturn
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -22028,7 +22030,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1065890732
 RectTransform:
   m_ObjectHideFlags: 0
@@ -23431,7 +23433,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Venere
+  m_text: Venus
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -23852,9 +23854,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Ci\xF2 significa che la distanza tra il pianeta e il Sole cambia continuamente
-    durante l'orbita, passando dal perielio (la distanza minima) all'afelio (la distanza
-    massima)"
+  m_text: This means that the distance between the planet and the Sun changes continuously
+    during the orbit, going from perihelion (the minimum distance) to aphelion (the
+    maximum distance).
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -25861,13 +25863,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Nettuno \xE8 l'ottavo pianeta dal Sole ed \xE8 simile a Urano, ma con
-    una atmosfera pi\xF9 attiva e venti molto veloci.\r\n- Diametro: 49.528 km\r\n-
-    Massa: 1.02 \xD7 10\xB2\u2076 kg\r\r\n- Temperatura superficiale: -200 \xB0C\r\nStratificazione:
-    Nettuno \xE8 un gigante ghiacciato, con una composizione simile a quella di Urano.
-    La sua atmosfera \xE8 dominata da idrogeno, elio e metano, che conferiscono al
-    pianeta il caratteristico colore blu. Il suo nucleo \xE8 solido e circondato
-    da un mantello di ghiacci e gas."
+  m_text: "Neptune is the eighth planet from the Sun and is similar to Uranus, but
+    with a more active atmosphere and very fast winds.\r\n- Diameter: 49,528 km\r\n-
+    Mass: 1.02 \xD7 10\xB2\u2076 kg\r\n- Surface temperature: -200 \xB0C\r\nStratification:
+    Neptune is an ice giant, with a composition similar to that of Uranus. Its atmosphere
+    is dominated by hydrogen, helium and methane, which give the planet its characteristic
+    blue color. Its core is solid and surrounded by a mantle of ices and gases."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -26139,8 +26140,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'I pianeti orbitano attorno al Sole seguendo orbite ellittiche, con il
-    Sole situato in uno dei due fuochi dell''ellisse. '
+  m_text: The planets orbit the Sun in elliptical orbits, with the Sun located at
+    one of the two foci of the ellipse.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -26703,13 +26704,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Saturno \xE8 il sesto pianeta dal Sole ed \xE8 noto per i suoi spettacolari
-    anelli.\r\n- Diametro: 120.536 km\r\n- Massa: 5.7 \xD7 10\xB2\u2076 kg\r\r\n-
-    Temperatura superficiale: -139 \xB0C\r\nStratificazione: Saturno \xE8 un gigante
-    gassoso, con una composizione simile a quella di Giove. La sua atmosfera \xE8
-    composta principalmente da idrogeno ed elio, con strati di nubi di ammoniaca
-    e metano. Il nucleo \xE8 probabilmente composto da materiali pi\xF9 densi e rocciosi,
-    ma la maggior parte del pianeta \xE8 formata da gas e liquidi."
+  m_text: "Saturn is the sixth planet from the Sun and is known for its spectacular
+    rings.\r\n- Diameter: 120,536 km\r\n- Mass: 5.7 \xD7 10\xB2\u2076 kg\r\n- Surface
+    temperature: -139 \xB0C\r\nStratification: Saturn is a gas giant, with a composition
+    similar to that of Jupiter. Its atmosphere is composed primarily of hydrogen
+    and helium, with layers of ammonia and methane clouds. The core is probably composed
+    of denser, rockier materials, but most of the planet is made up of gas and liquid."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -27911,7 +27911,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1252674909}
   m_Layer: 5
-  m_Name: StratificazioneSaturno
+  m_Name: StratificazioneSaturnoING
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30000,9 +30000,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Questo significa che i pianeti si muovono a velocit\xE0 diverse lungo
-    la loro orbita ellittica: la velocit\xE0 \xE8 maggiore quando il pianeta \xE8
-    pi\xF9 vicino al Sole (perielio) e minore quando \xE8 pi\xF9 lontano (afelio)"
+  m_text: 'This means that the planets move at different speeds along their elliptical
+    orbit: the speed is greater when the planet is closer to the Sun (perihelion)
+    and less when it is further away (aphelion).'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -32433,9 +32433,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "La legge di gravitazione universale afferma che due masse, m1 e m2, si
-    attraggono con una forza, Fg,  proporzionale alle masse stesse e inversamente
-    proporzionale al quadrato della loro distanza, r, tramite una costante G:\nFg
+  m_text: "The law of universal gravitation states that two masses, m1 and m2, attract
+    each other with a force, Fg, proportional to the masses themselves and inversely
+    proportional to the square of their distance, r, through a constant G:\r\nFg
     = G \xB7 m1 \xB7 m2 / r2"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -38644,7 +38644,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Prima legge di Keplero \nLegge delle orbite ellittiche"
+  m_text: 'Kepler''s First Law
+
+    Law of Elliptical Orbits'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -39505,12 +39507,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Urano \xE8 il settimo pianeta dal Sole e ha l'inclinazione assiale pi\xF9
-    estrema del Sistema Solare.\r\n- Diametro: 51.118 km\r\n- Massa: 8.7 \xD7 10\xB2\u2075
-    kg\r\r\n- Temperatura superficiale: -210 \xB0C, uno dei pianeti pi\xF9 freddi\r\nStratificazione:
-    Urano \xE8 un gigante ghiacciato, composto principalmente da idrogeno, elio e
-    \"ghiaccio\" (acqua, ammoniaca e metano). La sua atmosfera contiene nuvole di
-    metano e il pianeta ha un nucleo solido e una crosta composta da materiali ghiacciati.\r\n"
+  m_text: "Uranus is the seventh planet from the Sun and has the most extreme axial
+    tilt in the Solar System.\r\n- Diameter: 51,118 km\r\n- Mass: 8.7 \xD7 10\xB2\u2075
+    kg\r\n- Surface temperature: -210 \xB0C, one of the coldest planets\r\nStratification:
+    Uranus is an ice giant, composed primarily of hydrogen, helium, and \"ice\" (water,
+    ammonia, and methane). Its atmosphere contains clouds of methane, and the planet
+    has a solid core and a crust composed of icy materials."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -39599,7 +39601,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1714359313}
   m_Layer: 0
-  m_Name: PrimaLeggediKeplero
+  m_Name: PrimaLeggediKepleroING
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39876,9 +39878,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Terza legge di Keplero
+  m_text: 'Kepler''s Third Law
 
-    Legge dei periodi'
+    Law of Periods'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -42677,7 +42679,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Nettuno
+  m_text: 'Neptune
 
 '
   m_isRightToLeft: 0
@@ -42815,7 +42817,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Saturno
+  m_text: Saturn
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -43380,7 +43382,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Urano
+  m_text: Uranus
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -43688,7 +43690,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Mercurio
+  m_text: Mercury
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -47290,7 +47292,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2077497435}
   m_Layer: 5
-  m_Name: StratificazioneNettuno
+  m_Name: StratificazioneNettunoING
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -47520,9 +47522,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Il periodo di rivoluzione di un pianeta attorno al Sole dipende dalla
-    sua distanza media da quest'ultimo.\nQuesto significa che pi\xF9 un pianeta \xE8
-    lontano dal Sole, pi\xF9 tempo impiega a completare un'orbita"
+  m_text: 'The period of revolution of a planet around the Sun depends on its average
+    distance from the Sun.
+
+    This means that the farther a planet is from the
+    Sun, the longer it takes to complete an orbit.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -48248,7 +48252,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2111529122}
   m_Layer: 5
-  m_Name: StratificazioneUrano
+  m_Name: StratificazioneUranoING
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48941,7 +48945,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2129439473}
   m_Layer: 5
-  m_Name: UIinformazioni
+  m_Name: UIinformazioniING
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

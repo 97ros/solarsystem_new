@@ -6650,14 +6650,14 @@ RectTransform:
   m_GameObject: {fileID: 301091331}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1.1186999, z: 1}
+  m_LocalScale: {x: 1.03, y: 1.06, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1242202272}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -120.00033, y: 128}
+  m_AnchoredPosition: {x: -120.00033, y: 122}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &301091333
@@ -6680,10 +6680,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Mercurio \xE8 il pianeta pi\xF9 vicino al Sole e il pi\xF9 piccolo del
+  m_text: "Mercurio\xE8 il pianeta pi\xF9 vicino al Sole e il pi\xF9 piccolo del
     Sistema Solare.\r\n- Diametro: 4.879 km\r\n- Massa: 3.3 x 10^23 kg\r\r\n- Temperatura
     superficiale: tra i -183 \xB0C e i 473 \xB0C, con escursioni termiche estremamente
-    ampie.\r\nStratificazione: Mercurio ha un nucleo metallico molto grande, composto
+    ampie.\n\r\nStratificazione: Mercurio ha un nucleo metallico molto grande, composto
     principalmente da ferro, circondato da un mantello e una crosta sottile. Non
     ha atmosfera significativa, quindi la superficie \xE8 esposta direttamente al
     vuoto spaziale."
@@ -7967,14 +7967,14 @@ RectTransform:
   m_GameObject: {fileID: 331380374}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.0693874, y: 0.26790646, z: 0.26790646}
+  m_LocalScale: {x: 1.19, y: 0.21, z: 0.2613186}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 403586650}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 4, y: -14.9}
+  m_AnchoredPosition: {x: 4, y: -14}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &331380376
@@ -10387,14 +10387,14 @@ RectTransform:
   m_GameObject: {fileID: 451848579}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.1158983, y: 0.2954486, z: 0.2954486}
+  m_LocalScale: {x: 1.27, y: 0.24, z: 0.19826671}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1945874546}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -16}
+  m_AnchoredPosition: {x: 0, y: -15.6}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &451848581
@@ -16351,15 +16351,15 @@ RectTransform:
   m_GameObject: {fileID: 797525835}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.774689, y: 0.41572705, z: 0.28982294}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.86, y: 0.42, z: 0.28982294}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1832705833}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -3, y: -22.8}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -0.30499908, y: -22.8}
+  m_SizeDelta: {x: 0.61000186, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &797525837
 MonoBehaviour:
@@ -17669,15 +17669,15 @@ RectTransform:
   m_GameObject: {fileID: 889835649}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.1844732, y: 0.3432104, z: 0.38671595}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1.5, y: 0.33600003, z: 0.46405917}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1126185705}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1, y: -18.5}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -6, y: -18.21}
+  m_SizeDelta: {x: 0, y: 0.58000183}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &889835651
 MonoBehaviour:
@@ -23653,14 +23653,14 @@ RectTransform:
   m_GameObject: {fileID: 1121498208}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1.1186999, z: 1}
+  m_LocalScale: {x: 1.08, y: 1.15, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1242202272}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -129, y: 162}
+  m_AnchoredPosition: {x: -119, y: 152.7}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1121498210
@@ -23720,7 +23720,7 @@ MonoBehaviour:
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
-  m_characterSpacing: 0
+  m_characterSpacing: -1.89
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -27044,7 +27044,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1242202272
 RectTransform:
   m_ObjectHideFlags: 0
@@ -27808,14 +27808,14 @@ RectTransform:
   m_GameObject: {fileID: 1258054025}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.1816571, y: 0.27522, z: 0.27522}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1.36, y: 0.23559056, z: 0.21231712}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 168434323}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 1, y: -15.200001}
+  m_AnchoredPosition: {x: 1, y: -14.9}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1258054027
@@ -35239,8 +35239,8 @@ RectTransform:
   m_GameObject: {fileID: 1512204206}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.9971159, y: 0.21463734, z: 0.21463734}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1.09, y: 0.16627121, z: 0.19826671}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 10893555}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -35561,15 +35561,15 @@ RectTransform:
   m_GameObject: {fileID: 1518404669}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5802555, y: 0.40150297, z: 0.5787513}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1.94, y: 0.33902916, z: 0.5450377}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1989596177}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 2, y: -16.8}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 7.6800003, y: -16.8}
+  m_SizeDelta: {x: 0.6399994, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1518404671
 MonoBehaviour:
@@ -40861,8 +40861,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Comandi: \n- M mappa \n- V visuali (1^, 3^v, 3^l)\n- Q E ruotare\n- W
-    A S D movimento"
+  m_text: "Comandi: \n- M: mappa \n- V: 3 visuali differenti\n- Q/E: rotazione a
+    sinistra e a destra\n- D/A/W/S o freccine tastiera: movimenti \n  destra, sinistra,
+    avanti, indietro"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -40889,13 +40890,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 22
-  m_fontSizeBase: 22
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 3
+  m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -48215,8 +48216,8 @@ RectTransform:
   m_GameObject: {fileID: 2129214590}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.0124867, y: 0.2811051, z: 0.43666133}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1.21, y: 0.27, z: 0.43666133}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1417611422}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

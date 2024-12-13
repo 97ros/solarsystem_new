@@ -5990,7 +5990,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -120.000244, y: 124}
+  m_AnchoredPosition: {x: -120.000244, y: 125}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &262446280
@@ -6015,10 +6015,10 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Jupiter is the fifth planet from the Sun and the largest in the Solar
     System.\r\n- Diameter: 142,984 km\r\n- Mass: 1.9 \xD7 10\xB2\u2077 kg\r\n- Surface
-    temperature: -120 \xB0C\r\nStratification: Jupiter is a gas giant without a solid
-    surface. Its atmosphere is composed primarily of hydrogen and helium, with visible
-    cloud bands of ammonia and methane. It has a core probably composed of metal
-    and rock, but surrounded by layers of gas and liquid."
+    temperature: -120 \xB0C\n\r\nStratification: Jupiter is a gas giant without a
+    solid surface. Its atmosphere is composed primarily of hydrogen and helium, with
+    visible cloud bands of ammonia and methane. It has a core probably composed of
+    metal and rock, but surrounded by layers of gas and liquid."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6083,7 +6083,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -69.35458, y: 17.503084, z: -18.58081, w: -260.40848}
+  m_margin: {x: -69.35458, y: 17.503084, z: -22.420631, w: -247.82303}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -6442,7 +6442,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -120.000244, y: 131}
+  m_AnchoredPosition: {x: -120.000244, y: 128}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &292880403
@@ -6467,10 +6467,10 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Earth is the third planet from the Sun and the only one known to support
     life.\r\n- Diameter: 12,756 km\r\n- Mass: 6 \xD7 10\xB2\u2074 kg\r\n- Surface
-    temperature: average 15 \xB0C\r\nStratification: Composed of a liquid outer core
-    (iron and nickel) and a solid inner core. The Earth's crust is rigid and divided
-    into tectonic plates. The atmosphere is composed primarily of nitrogen and oxygen,
-    with a variation of gases such as argon and carbon dioxide."
+    temperature: average 15 \xB0C\n\r\nStratification: Composed of a liquid outer
+    core (iron and nickel) and a solid inner core. The Earth's crust is rigid and
+    divided into tectonic plates. The atmosphere is composed primarily of nitrogen
+    and oxygen, with a variation of gases such as argon and carbon dioxide."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9594,7 +9594,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -123, y: 126}
+  m_AnchoredPosition: {x: -123, y: 129}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &413567554
@@ -9619,7 +9619,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Venus is the second planet from the Sun and is similar in size and composition
     to Earth, but has a much more extreme climate.\r\n- Diameter: 12,104 km\r\n-
-    Mass: 4.9 x 10^24 kg\r\n- Surface temperature: about 462 \xB0C\r\nStratification:
+    Mass: 4.9 x 10^24 kg\r\n- Surface temperature: about 462 \xB0C\n\r\nStratification:
     Dense atmosphere composed mainly of carbon dioxide, with clouds of sulfuric acid.
     The surface is rocky with vast plains and volcanoes. The core of Venus is probably
     similar to that of Earth, but its crust is very stable and less mobile."
@@ -9687,7 +9687,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -72.46562, y: 17.503084, z: -30.881676, w: -243.93723}
+  m_margin: {x: -72.46562, y: 17.503084, z: -30.881676, w: -257.66693}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -13533,7 +13533,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -114, y: 161.99994}
+  m_AnchoredPosition: {x: -112, y: 161.99994}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &628037850
@@ -15057,7 +15057,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -115, y: 161.99994}
+  m_AnchoredPosition: {x: -112, y: 161.99994}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &694802127
@@ -19258,7 +19258,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -127, y: 161.99994}
+  m_AnchoredPosition: {x: -125, y: 161.99994}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &976375691
@@ -21503,7 +21503,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -105.00006, y: 161.99994}
+  m_AnchoredPosition: {x: -95, y: 161.99994}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1051443347
@@ -25485,7 +25485,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -120.327576, y: 125}
+  m_AnchoredPosition: {x: -120.327576, y: 126}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1189437186
@@ -25510,7 +25510,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Neptune is the eighth planet from the Sun and is similar to Uranus, but
     with a more active atmosphere and very fast winds.\r\n- Diameter: 49,528 km\r\n-
-    Mass: 1.02 \xD7 10\xB2\u2076 kg\r\n- Surface temperature: -200 \xB0C\r\nStratification:
+    Mass: 1.02 \xD7 10\xB2\u2076 kg\r\n- Surface temperature: -200 \xB0C\n\r\nStratification:
     Neptune is an ice giant, with a composition similar to that of Uranus. Its atmosphere
     is dominated by hydrogen, helium and methane, which give the planet its characteristic
     blue color. Its core is solid and surrounded by a mantle of ices and gases."
@@ -25578,7 +25578,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -73.87096, y: 13.43977, z: -24.629349, w: -252.25912}
+  m_margin: {x: -73.87096, y: 13.43977, z: -29.735306, w: -252.25912}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -26350,11 +26350,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Saturn is the sixth planet from the Sun and is known for its spectacular
-    rings.\r\n- Diameter: 120,536 km\r\n- Mass: 5.7 \xD7 10\xB2\u2076 kg\r\n- Surface
-    temperature: -139 \xB0C\r\nStratification: Saturn is a gas giant, with a composition
-    similar to that of Jupiter. Its atmosphere is composed primarily of hydrogen
-    and helium, with layers of ammonia and methane clouds. The core is probably composed
-    of denser, rockier materials, but most of the planet is made up of gas and liquid."
+    rings.\r\n- Diameter: 120,536 km\r\n- Mass: 5.7 \xD7 10^28 kg\r\n- Surface temperature:
+    -139 \xB0C\n\r\nStratification: Saturn is a gas giant, with a composition similar
+    to that of Jupiter. Its atmosphere is composed primarily of hydrogen and helium,
+    with layers of ammonia and methane clouds. The core is probably composed of denser,
+    rockier materials, but most of the planet is made up of gas and liquid."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -37495,7 +37495,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -105.00006, y: 161.99994}
+  m_AnchoredPosition: {x: -99, y: 161.99994}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1635425602
@@ -38832,7 +38832,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -117, y: 129}
+  m_AnchoredPosition: {x: -117, y: 132}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1678740473
@@ -38858,7 +38858,7 @@ MonoBehaviour:
   m_text: "Mars is the fourth planet from the Sun and is known as the \"red planet\"
     because of its iron oxide-rich soil.\r\n- Diameter: 6,779 km\r\n- Mass: 6.4 \xD7
     10\xB2\xB3 kg\r\n- Surface temperature: average -63 \xB0C, with ranges from -140
-    \xB0C to +17 \xB0C\r\nStratification: The Martian crust is rocky, the mantle
+    \xB0C to +17 \xB0C\n\r\nStratification: The Martian crust is rocky, the mantle
     is probably partially molten. Mars has a very thin atmosphere, composed mainly
     of carbon dioxide. The planet has ice caps and signs of ancient rivers and lakes."
   m_isRightToLeft: 0
@@ -38925,7 +38925,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -75.43201, y: 17.503084, z: -9.973068, w: -226.46011}
+  m_margin: {x: -75.43201, y: 17.503084, z: -16.372978, w: -259.64038}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -38998,7 +38998,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Uranus is the seventh planet from the Sun and has the most extreme axial
     tilt in the Solar System.\r\n- Diameter: 51,118 km\r\n- Mass: 8.7 \xD7 10\xB2\u2075
-    kg\r\n- Surface temperature: -210 \xB0C, one of the coldest planets\r\nStratification:
+    kg\r\n- Surface temperature: -210 \xB0C, one of the coldest planets\n\r\nStratification:
     Uranus is an ice giant, composed primarily of hydrogen, helium, and \"ice\" (water,
     ammonia, and methane). Its atmosphere contains clouds of methane, and the planet
     has a solid core and a crust composed of icy materials."
@@ -39066,7 +39066,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -70.84067, y: 12.085232, z: -32.205925, w: -246.84189}
+  m_margin: {x: -70.84067, y: 12.085232, z: -32.205925, w: -259.3934}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -42272,7 +42272,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -124, y: 161.99979}
+  m_AnchoredPosition: {x: -114, y: 161.99979}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1859478478
@@ -46750,7 +46750,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -120.00033, y: 128}
+  m_AnchoredPosition: {x: -120.00033, y: 133}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2078324261
@@ -46775,7 +46775,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Mercury is the closest planet to the Sun and the smallest in the Solar
     System.\r\n- Diameter: 4,879 km\r\n- Mass: 3.3 x 10^23 kg\r\n- Surface temperature:
-    between -183 \xB0C and 473 \xB0C, with extremely large temperature ranges.\r\nStratification:
+    between -183 \xB0C and 473 \xB0C, with extremely large temperature ranges.\n\r\nStratification:
     Mercury has a very large metallic core, composed mainly of iron, surrounded by
     a mantle and a thin crust. It has no significant atmosphere, so the surface is
     directly exposed to the vacuum of space."
@@ -46843,7 +46843,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -66.31604, y: 17.503084, z: -20.099915, w: -252.25912}
+  m_margin: {x: -66.31604, y: 17.503084, z: -20.099915, w: -260.2681}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

@@ -5874,7 +5874,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Mercurio
+  m_text: Mercury
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6461,12 +6461,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "La Terra \xE8 il terzo pianeta dal Sole e l'unico conosciuto ad ospitare
-    vita.\r\n- Diametro: 12.756 km\r\n- Massa: 6 \xD7 10\xB2\u2074 kg\r\r\n- Temperatura
-    superficiale: media di 15 \xB0C\r\nStratificazione: Composta da un nucleo esterno
-    liquido (ferro e nichel) e un nucleo interno solido. La crosta terrestre \xE8
-    rigida e suddivisa in placche tettoniche. L'atmosfera \xE8 composta principalmente
-    di azoto e ossigeno, con una variazione di gas come argon e anidride carbonica.\r"
+  m_text: "Earth is the third planet from the Sun and the only one known to support
+    life.\r\n- Diameter: 12,756 km\r\n- Mass: 6 \xD7 10\xB2\u2074 kg\r\n- Surface
+    temperature: average 15 \xB0C\r\nStratification: Composed of a liquid outer core
+    (iron and nickel) and a solid inner core. The Earth's crust is rigid and divided
+    into tectonic plates. The atmosphere is composed primarily of nitrogen and oxygen,
+    with a variation of gases such as argon and carbon dioxide."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9611,13 +9611,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Venere \xE8 il secondo pianeta dal Sole ed \xE8 simile per dimensioni
-    e composizione alla Terra, ma ha un clima molto pi\xF9 estremo.\r\n- Diametro:
-    12.104 km\r\n- Massa: 4.9 x 10^24 kg\r\r\n- Temperatura superficiale: circa 462
-    \xB0C\r\nStratificazione: Atmosfera densa e composta principalmente da anidride
-    carbonica, con nubi di acido solforico. La superficie \xE8 rocciosa con vaste
-    pianure e vulcani. Il nucleo di Venere \xE8 probabilmente simile a quello terrestre,
-    ma la sua crosta \xE8 molto stabile e meno mobile."
+  m_text: "Venus is the second planet from the Sun and is similar in size and composition
+    to Earth, but has a much more extreme climate.\r\n- Diameter: 12,104 km\r\n-
+    Mass: 4.9 x 10^24 kg\r\n- Surface temperature: about 462 \xB0C\r\nStratification:
+    Dense atmosphere composed mainly of carbon dioxide, with clouds of sulfuric acid.
+    The surface is rocky with vast plains and volcanoes. The core of Venus is probably
+    similar to that of Earth, but its crust is very stable and less mobile."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9682,7 +9681,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -75.43167, y: 17.503084, z: -36.813774, w: -243.93723}
+  m_margin: {x: -72.46562, y: 17.503084, z: -30.881676, w: -243.93723}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -11845,7 +11844,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2815524351336774688, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
       propertyPath: m_Name
-      value: Impostazioni
+      value: ImpostazioniING
       objectReference: {fileID: 0}
     - target: {fileID: 2815524351336774688, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
       propertyPath: m_IsActive
@@ -13829,7 +13828,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2815524351336774688, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
       propertyPath: m_Name
-      value: SecondaLeggediKeplero
+      value: SecondaLeggediKepleroING
       objectReference: {fileID: 0}
     - target: {fileID: 2815524351336774688, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
       propertyPath: m_IsActive
@@ -13893,7 +13892,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6235283157159045647, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
       propertyPath: m_text
-      value: Seconda legge di Keplero
+      value: Kepler's second law
       objectReference: {fileID: 0}
     - target: {fileID: 6235283157159045647, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
       propertyPath: m_fontSize
@@ -17606,7 +17605,7 @@ GameObject:
   m_Component:
   - component: {fileID: 888405709}
   m_Layer: 5
-  m_Name: StratificazioneMarte
+  m_Name: StratificazioneMarteING
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20418,7 +20417,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2815524351336774688, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
       propertyPath: m_Name
-      value: "LeggediGravit\xE0"
+      value: "LeggediGravit\xE0ING"
       objectReference: {fileID: 0}
     - target: {fileID: 2815524351336774688, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
       propertyPath: m_IsActive
@@ -20482,7 +20481,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6235283157159045647, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
       propertyPath: m_text
-      value: "Legge di gravit\xE0"
+      value: Law of gravity
       objectReference: {fileID: 0}
     - target: {fileID: 6235283157159045647, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
       propertyPath: m_fontSize
@@ -21502,7 +21501,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2815524351336774688, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
       propertyPath: m_Name
-      value: Esplorazione
+      value: EsplorazioneING
       objectReference: {fileID: 0}
     - target: {fileID: 2815524351336774688, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
       propertyPath: m_IsActive
@@ -21880,7 +21879,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Marte
+  m_text: Mars
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -22024,12 +22023,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1065890732}
   m_Layer: 5
-  m_Name: StratificazioneGiove
+  m_Name: StratificazioneGioveING
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1065890732
 RectTransform:
   m_ObjectHideFlags: 0
@@ -24904,7 +24903,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2815524351336774688, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
       propertyPath: m_Name
-      value: InformazioniPianeti
+      value: InformazioniPianetiING
       objectReference: {fileID: 0}
     - target: {fileID: 2815524351336774688, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
       propertyPath: m_IsActive
@@ -26230,7 +26229,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1206679271}
   m_Layer: 5
-  m_Name: StratificazioneTerra
+  m_Name: StratificazioneTerraING
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26540,7 +26539,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1212996991}
   m_Layer: 5
-  m_Name: UIleggi
+  m_Name: UIleggiING
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32153,7 +32152,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1401957563}
   m_Layer: 5
-  m_Name: StratificazioneVenere
+  m_Name: StratificazioneVenereING
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33295,7 +33294,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1455019484}
   m_Layer: 5
-  m_Name: UIiniziale
+  m_Name: UIinizialeING
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34022,7 +34021,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2815524351336774688, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
       propertyPath: m_Name
-      value: PrimaLeggediKeplero
+      value: PrimaLeggediKepleroING
       objectReference: {fileID: 0}
     - target: {fileID: 2815524351336774688, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
       propertyPath: m_IsActive
@@ -34086,7 +34085,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6235283157159045647, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
       propertyPath: m_text
-      value: Prima legge di Keplero
+      value: Kepler's first law
       objectReference: {fileID: 0}
     - target: {fileID: 6235283157159045647, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
       propertyPath: m_fontSize
@@ -38030,7 +38029,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Terra
+  m_text: Earth
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -38781,7 +38780,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Venere
+  m_text: Venus
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -39365,13 +39364,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Marte \xE8 il quarto pianeta dal Sole ed \xE8 conosciuto come il \"pianeta
-    rosso\" a causa del suo suolo ricco di ossido di ferro.\r\n- Diametro: 6.779
-    km\r\n- Massa: 6.4 \xD7 10\xB2\xB3 kg\r\r\n- Temperatura superficiale: media
-    di -63 \xB0C, con escursioni da -140 \xB0C a +17 \xB0C\r\nStratificazione: La
-    crosta marziana \xE8 rocciosa, il mantello \xE8 probabilmente parzialmente fuso.
-    Marte ha un'atmosfera molto sottile, composta principalmente da anidride carbonica.
-    Il pianeta ha calotte polari di ghiaccio e segni di antichi fiumi e laghi."
+  m_text: "Mars is the fourth planet from the Sun and is known as the \"red planet\"
+    because of its iron oxide-rich soil.\r\n- Diameter: 6,779 km\r\n- Mass: 6.4 \xD7
+    10\xB2\xB3 kg\r\n- Surface temperature: average -63 \xB0C, with ranges from -140
+    \xB0C to +17 \xB0C\r\nStratification: The Martian crust is rocky, the mantle
+    is probably partially molten. Mars has a very thin atmosphere, composed mainly
+    of carbon dioxide. The planet has ice caps and signs of ancient rivers and lakes."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -39436,7 +39434,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -75.43201, y: 17.503084, z: -30.735664, w: -282.13904}
+  m_margin: {x: -75.43201, y: 17.503084, z: -9.973068, w: -226.46011}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -40397,7 +40395,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1757524757}
   m_Layer: 5
-  m_Name: UIimpostazioni
+  m_Name: UIimpostazioniING
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43004,7 +43002,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2815524351336774688, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
       propertyPath: m_Name
-      value: Leggi
+      value: LeggiING
       objectReference: {fileID: 0}
     - target: {fileID: 2815524351336774688, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
       propertyPath: m_IsActive
@@ -44213,7 +44211,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2815524351336774688, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
       propertyPath: m_Name
-      value: TerzaLeggediKeplero
+      value: TerzaLeggediKepleroING
       objectReference: {fileID: 0}
     - target: {fileID: 2815524351336774688, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
       propertyPath: m_IsActive
@@ -44277,7 +44275,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6235283157159045647, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
       propertyPath: m_text
-      value: Terza legge di Keplero
+      value: Kepler's third law
       objectReference: {fileID: 0}
     - target: {fileID: 6235283157159045647, guid: 9158eb2174d994573bfe557f10c875de, type: 3}
       propertyPath: m_fontSize
@@ -45162,7 +45160,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1979339522}
   m_Layer: 5
-  m_Name: StratificazioneMercurio
+  m_Name: StratificazioneMercurioING
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -47381,13 +47379,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Mercurio \xE8 il pianeta pi\xF9 vicino al Sole e il pi\xF9 piccolo del
-    Sistema Solare.\r\n- Diametro: 4.879 km\r\n- Massa: 3.3 x 10^23 kg\r\r\n- Temperatura
-    superficiale: tra i -183 \xB0C e i 473 \xB0C, con escursioni termiche estremamente
-    ampie.\r\nStratificazione: Mercurio ha un nucleo metallico molto grande, composto
-    principalmente da ferro, circondato da un mantello e una crosta sottile. Non
-    ha atmosfera significativa, quindi la superficie \xE8 esposta direttamente al
-    vuoto spaziale."
+  m_text: "Mercury is the closest planet to the Sun and the smallest in the Solar
+    System.\r\n- Diameter: 4,879 km\r\n- Mass: 3.3 x 10^23 kg\r\n- Surface temperature:
+    between -183 \xB0C and 473 \xB0C, with extremely large temperature ranges.\r\nStratification:
+    Mercury has a very large metallic core, composed mainly of iron, surrounded by
+    a mantle and a thin crust. It has no significant atmosphere, so the surface is
+    directly exposed to the vacuum of space."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

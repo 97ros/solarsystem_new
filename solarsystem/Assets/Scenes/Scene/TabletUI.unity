@@ -1232,7 +1232,7 @@ RectTransform:
   m_GameObject: {fileID: 48974595}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1.1186907, z: 1}
+  m_LocalScale: {x: 1, y: 1.06, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 495520693}
@@ -1262,7 +1262,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "La Terra \xE8 il terzo pianeta dal Sole e l'unico conosciuto ad ospitare
+  m_text: "Terra \xE8 il terzo pianeta dal Sole e l'unico conosciuto ad ospitare
     vita.\r\n- Diametro: 12.756 km\r\n- Massa: 6 \xD7 10\xB2\u2074 kg\r\r\n- Temperatura
     superficiale: media di 15 \xB0C\n\r\nStratificazione: Composta da un nucleo esterno
     liquido (ferro e nichel) e un nucleo interno solido. La crosta terrestre \xE8
@@ -1332,7 +1332,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -71.929184, y: 17.503084, z: -25.248772, w: -259.12427}
+  m_margin: {x: -71.929184, y: 17.503084, z: -24.205353, w: -259.12427}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2976,7 +2976,7 @@ RectTransform:
   m_GameObject: {fileID: 88547278}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1.1186906, z: 1}
+  m_LocalScale: {x: 1, y: 1.06, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1676391439}
@@ -3007,12 +3007,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Saturno \xE8 il sesto pianeta dal Sole ed \xE8 noto per i suoi spettacolari
-    anelli.\r\n- Diametro: 120.536 km\r\n- Massa: 5.7 \xD7 10\xB2\u2076 kg\r\r\n-
-    Temperatura superficiale: -139 \xB0C\n\r\nStratificazione: Saturno \xE8 un gigante
-    gassoso, con una composizione simile a quella di Giove. La sua atmosfera \xE8
-    composta principalmente da idrogeno ed elio, con strati di nubi di ammoniaca
-    e metano. Il nucleo \xE8 probabilmente composto da materiali pi\xF9 densi e rocciosi,
-    ma la maggior parte del pianeta \xE8 formata da gas e liquidi."
+    anelli.\r\n- Diametro: 120.536 km\r\n- Massa: 5.7 \xD7 10^26 kg\r\r\n- Temperatura
+    superficiale: -139 \xB0C\n\r\nStratificazione: Saturno \xE8 un gigante gassoso,
+    con una composizione simile a quella di Giove. La sua atmosfera \xE8 composta
+    principalmente da idrogeno ed elio, con strati di nubi di ammoniaca e metano.
+    Il nucleo \xE8 probabilmente composto da materiali pi\xF9 densi e rocciosi, ma
+    la maggior parte del pianeta \xE8 formata da gas e liquidi."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3077,7 +3077,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -70.87369, y: 17.503084, z: -29.21656, w: -263.24094}
+  m_margin: {x: -68.78685, y: 17.503084, z: -29.21656, w: -263.24094}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -5883,7 +5883,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -110, y: 95.17}
+  m_AnchoredPosition: {x: -124, y: 95.17}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &229954661
@@ -6313,14 +6313,14 @@ RectTransform:
   m_GameObject: {fileID: 262446278}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1.1186907, z: 1}
+  m_LocalScale: {x: 1, y: 1.06, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1065890732}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -120.000244, y: 125}
+  m_AnchoredPosition: {x: -118, y: 125}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &262446280
@@ -6413,7 +6413,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -69.35458, y: 17.503084, z: -22.420631, w: -247.82303}
+  m_margin: {x: -69.35458, y: 17.503084, z: -20.334114, w: -261.60315}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -6702,7 +6702,7 @@ RectTransform:
   m_GameObject: {fileID: 285942293}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1.1186907, z: 1}
+  m_LocalScale: {x: 1, y: 1.06, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 84122493}
@@ -6803,7 +6803,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -70.63431, y: 17.503084, z: -24.9804, w: -260.40848}
+  m_margin: {x: -69.5909, y: 18.64732, z: -23.937302, w: -261.5527}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -6844,7 +6844,7 @@ RectTransform:
   m_GameObject: {fileID: 292880401}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1.1186907, z: 1}
+  m_LocalScale: {x: 1, y: 1.07, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1206679271}
@@ -6944,7 +6944,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -71.929184, y: 17.503084, z: -25.248772, w: -252.25912}
+  m_margin: {x: -70.88576, y: 17.503084, z: -22.119148, w: -249.33392}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -7300,7 +7300,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -55, y: -110}
+  m_AnchoredPosition: {x: -72, y: -110}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!82 &309680951
@@ -10219,7 +10219,7 @@ RectTransform:
   m_GameObject: {fileID: 413567552}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1.1186907, z: 1}
+  m_LocalScale: {x: 1, y: 1.06, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1401957563}
@@ -10319,7 +10319,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -72.46562, y: 17.503084, z: -30.881676, w: -257.66693}
+  m_margin: {x: -69.33536, y: 17.503084, z: -30.881676, w: -257.66693}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -10435,7 +10435,7 @@ RectTransform:
   m_GameObject: {fileID: 430820696}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1.1186907, z: 1}
+  m_LocalScale: {x: 1, y: 1.06, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 944204871}
@@ -10536,7 +10536,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -75.43167, y: 17.503084, z: -36.813774, w: -259.95538}
+  m_margin: {x: -71.258316, y: 17.503084, z: -31.597008, w: -275.70392}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -13376,8 +13376,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: The period of revolution squared is proportional to the semi-major axis
-    cubed, if we express the period of revolution in years and the distance (which
-    corresponds to the semi-major axis of the orbit) in astronomical units.
+    cubed, if we express the period of revolution in years and the distance in astronomical
+    units.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -13411,7 +13411,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 8
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -13442,7 +13442,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -242.3041, y: -96.181946, z: -281.146, w: 24.097597}
+  m_margin: {x: -237.08763, y: -96.181946, z: -259.23578, w: 53.31047}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -13629,7 +13629,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 8
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -14072,14 +14072,14 @@ RectTransform:
   m_GameObject: {fileID: 647888054}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.0027239, y: 1.1217417, z: 1.0027239}
+  m_LocalScale: {x: 1.0027239, y: 1.06, z: 1.0027239}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1381573970}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -120.327576, y: 125}
+  m_AnchoredPosition: {x: -120.327576, y: 129}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &647888056
@@ -14104,7 +14104,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Nettuno \xE8 l'ottavo pianeta dal Sole ed \xE8 simile a Urano, ma con
     una atmosfera pi\xF9 attiva e venti molto veloci.\r\n- Diametro: 49.528 km\r\n-
-    Massa: 1.02 \xD7 10\xB2\u2076 kg\r\r\n- Temperatura superficiale: -200 \xB0C\n\r\nStratificazione:
+    Massa: 1.02 \xD7 10^26 kg\r\r\n- Temperatura superficiale: -200 \xB0C\n\r\nStratificazione:
     Nettuno \xE8 un gigante ghiacciato, con una composizione simile a quella di Urano.
     La sua atmosfera \xE8 dominata da idrogeno, elio e metano, che conferiscono al
     pianeta il caratteristico colore blu. Il suo nucleo \xE8 solido e circondato
@@ -14173,7 +14173,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -73.87096, y: 13.43977, z: -24.629349, w: -259.1056}
+  m_margin: {x: -71.789795, y: 13.43977, z: -24.629349, w: -276.82254}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -15467,7 +15467,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -112, y: 161.99994}
+  m_AnchoredPosition: {x: -109, y: 161.99994}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &694802127
@@ -19160,7 +19160,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 8
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -19191,7 +19191,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -242.3041, y: -86.93372, z: -236.7543, w: 72.22401}
+  m_margin: {x: -229.78432, y: -86.93372, z: -236.7543, w: 72.22401}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -19668,7 +19668,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -125, y: 161.99994}
+  m_AnchoredPosition: {x: -124, y: 161.99994}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &976375691
@@ -22230,7 +22230,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -95, y: 161.99994}
+  m_AnchoredPosition: {x: -93, y: 161.99994}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1051443347
@@ -24272,7 +24272,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 8
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -24667,7 +24667,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -42.2, y: -5.9}
+  m_AnchoredPosition: {x: -41, y: -7.5}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1131538940
@@ -25695,7 +25695,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 8
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -26215,7 +26215,7 @@ RectTransform:
   m_GameObject: {fileID: 1189437184}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.0027239, y: 1.1217417, z: 1.0027239}
+  m_LocalScale: {x: 1.0027239, y: 1.06, z: 1.0027239}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2077497435}
@@ -26247,7 +26247,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Neptune is the eighth planet from the Sun and is similar to Uranus, but
     with a more active atmosphere and very fast winds.\r\n- Diameter: 49,528 km\r\n-
-    Mass: 1.02 \xD7 10\xB2\u2076 kg\r\n- Surface temperature: -200 \xB0C\n\r\nStratification:
+    Mass: 1.02 \xD7 10^26 kg\r\n- Surface temperature: -200 \xB0C\n\r\nStratification:
     Neptune is an ice giant, with a composition similar to that of Uranus. Its atmosphere
     is dominated by hydrogen, helium and methane, which give the planet its characteristic
     blue color. Its core is solid and surrounded by a mantle of ices and gases."
@@ -26315,7 +26315,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -73.87096, y: 13.43977, z: -29.735306, w: -252.25912}
+  m_margin: {x: -72.83006, y: 13.43977, z: -29.735306, w: -259.14932}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -26588,7 +26588,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -242.3041, y: -96.181946, z: -253.05795, w: 53.06112}
+  m_margin: {x: -242.3041, y: -96.181946, z: -253.05795, w: 80.187485}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -27056,7 +27056,7 @@ RectTransform:
   m_GameObject: {fileID: 1223841026}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1.1186906, z: 1}
+  m_LocalScale: {x: 1, y: 1.06, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1252674909}
@@ -27156,7 +27156,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -70.87369, y: 17.503084, z: -29.21656, w: -251.79944}
+  m_margin: {x: -68.78685, y: 17.503084, z: -27.130035, w: -264.59518}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -30047,7 +30047,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 8
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -30078,7 +30078,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -242.3041, y: -86.93372, z: 68.54882, w: -86.9392}
+  m_margin: {x: -245.43428, y: -86.93372, z: 68.54882, w: -86.9392}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -31584,7 +31584,7 @@ RectTransform:
   m_GameObject: {fileID: 1368521439}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1.1186907, z: 1}
+  m_LocalScale: {x: 1, y: 1.06, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2133144494}
@@ -31686,7 +31686,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -75.43201, y: 17.503084, z: -30.735985, w: -282.13904}
+  m_margin: {x: -74.388596, y: 17.503084, z: -23.432999, w: -282.13904}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -32453,7 +32453,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 8
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -32484,7 +32484,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -242.3041, y: -96.181946, z: 5.642754, w: -123.70154}
+  m_margin: {x: -242.3041, y: -100.35499, z: 12.946053, w: -111.1821}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -33222,7 +33222,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 8
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -33253,7 +33253,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -242.3041, y: -86.93372, z: -236.7543, w: -70.28635}
+  m_margin: {x: -228.12407, y: -86.93372, z: -236.7543, w: 74.09355}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -33428,7 +33428,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -42.3, y: 6.2}
+  m_AnchoredPosition: {x: -43.1, y: 6.2}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1470772417
@@ -34126,7 +34126,7 @@ RectTransform:
   m_GameObject: {fileID: 1480719577}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.0027239, y: 1.1217417, z: 1.0027239}
+  m_LocalScale: {x: 1.0027239, y: 1.06, z: 1.0027239}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1717355717}
@@ -34226,7 +34226,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -70.84067, y: 12.085232, z: -32.205925, w: -257.11145}
+  m_margin: {x: -70.84067, y: 12.085232, z: -30.12539, w: -257.11145}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -36992,7 +36992,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -242.3041, y: -96.181946, z: -253.05795, w: 53.06112}
+  m_margin: {x: -242.3041, y: -96.181946, z: -253.05795, w: 86.41203}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -38293,7 +38293,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -112, y: 161.99994}
+  m_AnchoredPosition: {x: -107, y: 161.99994}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1650016309
@@ -38719,7 +38719,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -55, y: -110}
+  m_AnchoredPosition: {x: -68, y: -110}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1675521691
@@ -39156,7 +39156,7 @@ RectTransform:
   m_GameObject: {fileID: 1678740471}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1.1186907, z: 1}
+  m_LocalScale: {x: 1, y: 1.06, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 888405709}
@@ -39256,7 +39256,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -75.43201, y: 17.503084, z: -16.372978, w: -259.64038}
+  m_margin: {x: -73.34517, y: 17.503084, z: -17.416397, w: -277.3576}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -39297,7 +39297,7 @@ RectTransform:
   m_GameObject: {fileID: 1690415289}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.0027239, y: 1.1217417, z: 1.0027239}
+  m_LocalScale: {x: 1.0027239, y: 1.06, z: 1.0027239}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2111529122}
@@ -39397,7 +39397,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -70.84067, y: 12.085232, z: -32.205925, w: -259.3934}
+  m_margin: {x: -70.84067, y: 12.085232, z: -27.003632, w: -259.3934}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -42423,7 +42423,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -114, y: 161.99979}
+  m_AnchoredPosition: {x: -111, y: 161.99979}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1859478478
@@ -46746,7 +46746,7 @@ RectTransform:
   m_GameObject: {fileID: 2078324259}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1.1186999, z: 1}
+  m_LocalScale: {x: 1, y: 1.06, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1979339522}
@@ -46894,7 +46894,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.8000069, y: -11.6}
+  m_AnchoredPosition: {x: 1.8000069, y: -9.1}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2089458220
@@ -46955,7 +46955,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 8
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -46986,7 +46986,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -242.3041, y: -96.181946, z: 5.653603, w: -88.7741}
+  m_margin: {x: -237.08739, y: -96.181946, z: 5.653603, w: -38.69529}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -47034,7 +47034,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.4, y: 5.9}
+  m_AnchoredPosition: {x: 0.4, y: 7.3}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2099885903
@@ -47094,7 +47094,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 8
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0

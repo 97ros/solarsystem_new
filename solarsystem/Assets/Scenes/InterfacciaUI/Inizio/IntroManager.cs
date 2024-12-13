@@ -32,10 +32,13 @@ public class IntroManager : MonoBehaviour
         // Attendere 4 secondi
         yield return new WaitForSeconds(6f);
 
-        // Disattivare il logo e l'intro
-        logo.SetActive(false);
+        // Disattivare l'intro
         intro.SetActive(false);
 
+        yield return new WaitForSeconds(0.5f);
+        logo.SetActive(false);
+
+        //yield return new WaitForSeconds(0.5f);
         // Attivare il bottone "Inizio"
         inizioButton.gameObject.SetActive(true);
     }

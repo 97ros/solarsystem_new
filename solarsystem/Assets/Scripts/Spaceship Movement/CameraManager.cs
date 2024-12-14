@@ -24,6 +24,9 @@ public class CameraManager : MonoBehaviour
     [Header("Player Spaceship")]
     public PlayerSpaceship playerSpaceship;
 
+    // Variabile per tenere traccia se la topDownVirtCam è attiva
+    public bool IsTopDownCamActive { get; private set; } = false;
+
     void Start()
     {
         currentCam = startCamera;
@@ -90,33 +93,43 @@ public class CameraManager : MonoBehaviour
     }
 
     public void SwitchCamera(CinemachineVirtualCamera newCam)
+{
+    currentCam = newCam;
+    for (int i = 0; i < cameras.Length; i++)
     {
-        currentCam = newCam;
-        for (int i = 0; i < cameras.Length; i++)
+        if (cameras[i] == currentCam)
         {
-            if (cameras[i] == currentCam)
-            {
-                cameras[i].Priority = 200;
-            }
-            else
-            {
-                cameras[i].Priority = 10;
-            }
-        }
-
-        if (newCam == topDownVirtCam)
-        {
-            StartCoroutine(SwitchToTopDownCamera());
-            playerSpaceship.SetControls(false); // Disabilita i controlli della navicella
-            Cursor.lockState = CursorLockMode.None; // Sblocca il cursore
+            cameras[i].Priority = 200;
         }
         else
         {
-            StartCoroutine(SwitchBackToMainSolarSystem());
-            playerSpaceship.SetControls(true); // Riabilita i controlli della navicella
-            Cursor.lockState = CursorLockMode.Locked; // Blocca il cursore
+            cameras[i].Priority = 10;
         }
     }
+
+    if (newCam == topDownVirtCam)
+    {
+        StartCoroutine(SwitchToTopDownCamera());
+        playerSpaceship.SetControls(false, false);
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        IsTopDownCamActive = true;
+    }
+    else
+    {
+        StartCoroutine(SwitchBackToMainSolarSystem());
+        playerSpaceship.SetControls(true, true);
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+        IsTopDownCamActive = false;
+
+        if (playerSpaceship.gameObject != null)
+        {
+            playerSpaceship.gameObject.SetActive(true);
+        }
+    }
+}
+
 
     private IEnumerator SwitchToTopDownCamera()
     {

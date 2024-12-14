@@ -16397,7 +16397,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: -5, y: 0}
+  m_AnchoredPosition: {x: -5.0000153, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &379568905
@@ -16712,6 +16712,7 @@ MonoBehaviour:
   massText: {fileID: 393342748}
   temperatureText: {fileID: 1298544344}
   closeButton: {fileID: 268501509}
+  planetPanelAnimator: {fileID: 1703364881}
   planets:
   - name: Mercurio
     size: 4880
@@ -22381,7 +22382,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -72.10004, y: -30.200012}
+  m_AnchoredPosition: {x: -72.1001, y: -30.199951}
   m_SizeDelta: {x: 221.08502, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &512140195
@@ -41368,8 +41369,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 78.1, y: 33.9}
-  m_SizeDelta: {x: 247.34, y: 50}
+  m_AnchoredPosition: {x: 82.3, y: 39}
+  m_SizeDelta: {x: 271.27, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1063172020
 MonoBehaviour:
@@ -41391,7 +41392,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Rotation speed
+  m_text: "Velocit\xE0 di Rotazione"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -92806,6 +92807,7 @@ GameObject:
   - component: {fileID: 1703364878}
   - component: {fileID: 1703364880}
   - component: {fileID: 1703364879}
+  - component: {fileID: 1703364881}
   m_Layer: 0
   m_Name: InfoPanel
   m_TagString: Untagged
@@ -92878,6 +92880,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1703364877}
   m_CullTransparentMesh: 1
+--- !u!95 &1703364881
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1703364877}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2930df4df42ae204ea0a07e5f04d57df, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1707363069
 GameObject:
   m_ObjectHideFlags: 0
@@ -98094,7 +98118,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_UiScaleMode: 1
-  m_ReferencePixelsPerUnit: 100
+  m_ReferencePixelsPerUnit: 1143.7
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1024, y: 768}
   m_ScreenMatchMode: 0
@@ -108802,7 +108826,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -74.100006, y: -55.200012}
+  m_AnchoredPosition: {x: -74.099976, y: -55.19995}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1835464063
@@ -114383,8 +114407,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 75.98898, y: 19.651123}
-  m_SizeDelta: {x: 160, y: 20}
+  m_AnchoredPosition: {x: 96.2, y: 19.651123}
+  m_SizeDelta: {x: 252.4939, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2017136801
 MonoBehaviour:

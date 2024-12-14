@@ -8,14 +8,15 @@ public class PlanetMenu : MonoBehaviour
     public GameObject planetInfoPanel;
     public TMP_Text nameText, sizeText, distanceText, rotationTimeText, massText, temperatureText;
     public Button closeButton;
+    public Animator planetPanelAnimator;
 
     [System.Serializable]
     public struct PlanetInfo
     {
         public string name;
         public float size;
-        public float distanceFromSunValue; // Valore numerico della distanza dal sole
-        public string distanceFromSunUnit; // Unità di misura della distanza (milioni o miliardi di km)
+        public float distanceFromSunValue;
+        public string distanceFromSunUnit;
         public float rotationTimeValue;
         public string rotationTimeUnit;
         public float massValue;
@@ -53,6 +54,7 @@ public class PlanetMenu : MonoBehaviour
 
     void OnPlanetSelected(int index)
     {
+        Debug.Log("OnPlanetSelected chiamato con indice: " + index);
         if (index > 0)
         {
             // Chiama UpdatePlanetInfoPanel solo se l'indice è valido (non "Select a planet")
@@ -67,14 +69,19 @@ public class PlanetMenu : MonoBehaviour
 
     void UpdatePlanetInfoPanel(int index)
     {
+        Debug.Log("UpdatePlanetInfoPanel chiamato");
+
         // Mostra il pannello delle informazioni
         planetInfoPanel.SetActive(true);
+
+        // Attiva l'animazione di apertura
+        planetPanelAnimator.SetTrigger("OpenPanel");
 
         // Aggiorna le informazioni del pianeta selezionato
         PlanetInfo selectedPlanet = planets[index - 1];
         nameText.text = selectedPlanet.name;
         sizeText.text = "Dimensione (diametro): " + selectedPlanet.size + " km";
-        distanceText.text = "Distanza media dal Sole: " + selectedPlanet.distanceFromSunValue + " " + selectedPlanet.distanceFromSunUnit + " di km";
+        distanceText.text = "Distanza media dal Sole: " + selectedPlanet.distanceFromSunValue + " " + selectedPlanet.distanceFromSunUnit;
         rotationTimeText.text = "Durata dell'orbita: " + selectedPlanet.rotationTimeValue + " " + selectedPlanet.rotationTimeUnit + " terrestri";
         massText.text = "Massa: " + selectedPlanet.massValue + " x 10^" + selectedPlanet.massExponent + " kg";
         temperatureText.text = "Temperatura media superficiale: " + selectedPlanet.surfaceTemperature + " °C";
@@ -83,10 +90,36 @@ public class PlanetMenu : MonoBehaviour
     // Metodo per chiudere il pannello
     void ClosePanel()
     {
+        Debug.Log("ClosePanel chiamato");
+
+        // Attiva l'animazione di chiusura
+        planetPanelAnimator.SetTrigger("ClosePanel");
+    }
+
+    // Metodo chiamato da LateUpdate quando l'animazione di chiusura è terminata
+    void ClosePanelAnimationComplete()
+    {
+        Debug.Log("ClosePanelAnimationComplete chiamato");
+
         planetInfoPanel.SetActive(false);  // Nascondi il pannello
+
+        // Disabilita temporaneamente il listener per evitare di innescare onValueChanged
+        planetDropdown.onValueChanged.RemoveListener(OnPlanetSelected);
 
         // Reimposta il dropdown su "Select a planet"
         planetDropdown.value = 0;
         planetDropdown.RefreshShownValue();
+
+        // Riabilita il listener
+        planetDropdown.onValueChanged.AddListener(OnPlanetSelected);
+    }
+
+    void LateUpdate()
+    {
+        if (planetPanelAnimator.GetCurrentAnimatorStateInfo(0).IsName("PanelClose") &&
+            planetPanelAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
+        {
+            ClosePanelAnimationComplete();
+        }
     }
 }

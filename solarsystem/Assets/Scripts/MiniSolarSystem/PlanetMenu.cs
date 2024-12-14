@@ -80,11 +80,11 @@ public class PlanetMenu : MonoBehaviour
         // Aggiorna le informazioni del pianeta selezionato
         PlanetInfo selectedPlanet = planets[index - 1];
         nameText.text = selectedPlanet.name;
-        sizeText.text = "Dimensione (diametro): " + selectedPlanet.size + " km";
-        distanceText.text = "Distanza media dal Sole: " + selectedPlanet.distanceFromSunValue + " " + selectedPlanet.distanceFromSunUnit;
-        rotationTimeText.text = "Durata dell'orbita: " + selectedPlanet.rotationTimeValue + " " + selectedPlanet.rotationTimeUnit + " terrestri";
-        massText.text = "Massa: " + selectedPlanet.massValue + " x 10^" + selectedPlanet.massExponent + " kg";
-        temperatureText.text = "Temperatura media superficiale: " + selectedPlanet.surfaceTemperature + " °C";
+        sizeText.text = "- Dimensione (diametro): " + selectedPlanet.size + " km";
+        distanceText.text = "- Distanza media dal Sole: " + selectedPlanet.distanceFromSunValue + " " + selectedPlanet.distanceFromSunUnit;
+        rotationTimeText.text = "- Durata dell'orbita: " + selectedPlanet.rotationTimeValue + " " + selectedPlanet.rotationTimeUnit + " terrestri";
+        massText.text = "- Massa: " + selectedPlanet.massValue + " x 10^" + selectedPlanet.massExponent + " kg";
+        temperatureText.text = "- Temperatura media superficiale: " + selectedPlanet.surfaceTemperature + " °C";
     }
 
     // Metodo per chiudere il pannello

@@ -1,6 +1,6 @@
 using UnityEngine;
-using UnityEngine.EventSystems;  // Per lavorare con il sistema di eventi
-using UnityEngine.UI;  // Per lavorare con UI
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class SceneManagerController : MonoBehaviour
 {
@@ -10,16 +10,25 @@ public class SceneManagerController : MonoBehaviour
     public GameObject EventSystem;
     public GameObject SpaceShip;
     public Button EsplorazioneButton;
-    
-    // Variabile per tenere traccia se il cursore è attivo o meno
+
+    // Riferimento a TopDownCameraController
+    public TopDownCameraController topDownCameraController;
+
+    // Riferimento a CameraManager
+    public CameraManager cameraManager;
+
+    // Variabile per tenere traccia se il cursore deve essere attivo o meno
     private bool isCursorEnabled = false;
+
+    // Variabile per tenere traccia se TopDownCameraController era attivo prima di premere ESC
+    private bool wasTopDownCamControllerEnabled = false;
 
     // Start è chiamato prima del primo frame
     void Start()
     {
         // Assicuriamoci che la scena parta con le impostazioni corrette
         InitializeScene();
-        
+
         // Colleghiamo il bottone per l'azione di Esplorazione
         if (EsplorazioneButton != null)
         {
@@ -33,7 +42,7 @@ public class SceneManagerController : MonoBehaviour
         // Disabilitiamo EventSystem e SpaceShip
         EventSystem.SetActive(false);
         SpaceShip.SetActive(false);
-        
+
         // Abilitiamo CanvaTablet e disabilitiamo EventSystemTablet
         CanvaTablet.SetActive(true);
         EventSystemTablet.SetActive(true);
@@ -47,36 +56,49 @@ public class SceneManagerController : MonoBehaviour
 
     // Quando viene cliccato il bottone "Esplorazione"
     public void OnEsplorazioneButtonClicked()
+{
+    CanvaTablet.SetActive(false);
+    EventSystemTablet.SetActive(false);
+
+    EventSystem.SetActive(true);
+
+    if (wasTopDownCamControllerEnabled)
     {
-        // Disabilitiamo CanvaTablet ed EventSystemTablet
-        CanvaTablet.SetActive(false);
-        EventSystemTablet.SetActive(false);
-
-        // Abilitiamo EventSystem e SpaceShip
-        EventSystem.SetActive(true);
-        SpaceShip.SetActive(true);
-
-        // Disabilitiamo il cursore del mouse per tornare alla scena originale
-        EnableMouseCursor(false);
-
-        // Abilitiamo la tastiera per SpaceShip
-        EnableKeyboard();
+        topDownCameraController.SetShouldLockCursor(false);
+        topDownCameraController.enabled = true;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        wasTopDownCamControllerEnabled = false;
     }
+    else if (cameraManager != null && !cameraManager.IsTopDownCamActive)
+    {
+        SpaceShip.SetActive(true);
+        EnableKeyboard();
+        if (SpaceShip.TryGetComponent<PlayerSpaceship>(out var playerSpaceship))
+        {
+            playerSpaceship.SetControls(true);
+        }
 
-    // Metodo per abilitare/disabilitare il cursore del mouse
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
+}
+
+
+    // Metodo per abilitare/disabilitare il cursore del mouse (MODIFICATO)
     void EnableMouseCursor(bool enable)
     {
-        if (enable)
+        isCursorEnabled = enable;
+
+        if (isCursorEnabled)
         {
-            Cursor.lockState = CursorLockMode.None;  // Rende il cursore visibile
+            Cursor.lockState = CursorLockMode.None;  // Rende il cursore visibile e non bloccato
             Cursor.visible = true;
-            isCursorEnabled = true;
         }
         else
         {
-            Cursor.lockState = CursorLockMode.Locked;  // Blocca il cursore
-            Cursor.visible = false;
-            isCursorEnabled = false;
+            Cursor.lockState = CursorLockMode.Locked;  // Blocca il cursore al centro
+            Cursor.visible = false; // Nasconde il cursore
         }
     }
 
@@ -100,6 +122,16 @@ public class SceneManagerController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
+            // Se siamo in modalità topDownVirtCam, disattiva TopDownCameraController
+            if (cameraManager != null && cameraManager.IsTopDownCamActive)
+            {
+                wasTopDownCamControllerEnabled = topDownCameraController.enabled;
+                topDownCameraController.enabled = false;
+                // Imposta isCursorEnabled a true per mostrare il cursore quando si preme ESC
+                isCursorEnabled = true;
+                EnableMouseCursor(isCursorEnabled);
+            }
+
             // Riattiviamo CanvaTablet e EventSystemTablet
             CanvaTablet.SetActive(true);
             EventSystemTablet.SetActive(true);

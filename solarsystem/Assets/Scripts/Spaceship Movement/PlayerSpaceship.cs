@@ -66,6 +66,9 @@ public class PlayerSpaceship : MonoBehaviour
     // Variabili per la gestione della repulsione
     private Vector3 repulsionDirection;
 
+    // Variabile per tenere traccia se i controlli devono essere riattivati dopo la chiusura del tablet
+    private bool shouldReactivateControls = true;
+
     void Start()
     {
         spaceshipRB = GetComponent<Rigidbody>();
@@ -75,7 +78,8 @@ public class PlayerSpaceship : MonoBehaviour
         currentThirdPersonFOV = defaultThirdPersonFOV;
         currentThirdPersonFOVBoosted = defaultThirdPersonFOVBoosted;
 
-        SetControls(true); // Assicura che i controlli siano abilitati all'inizio
+        // Imposta i controlli come attivi all'inizio, ma con shouldReactivateControls a false
+        SetControls(true, false);
     }
 
     void Update()
@@ -168,9 +172,10 @@ public class PlayerSpaceship : MonoBehaviour
         }
     }
 
-    public void SetControls(bool enabled)
+    public void SetControls(bool enabled, bool reactivateAfterTablet = true)
     {
         controlsEnabled = enabled;
+        shouldReactivateControls = reactivateAfterTablet;
 
         if (controlsEnabled)
         {
@@ -207,4 +212,3 @@ public class PlayerSpaceship : MonoBehaviour
         spaceshipRB.AddForce(repulsionDirection * collisionRepulsionForce, ForceMode.Impulse);
     }
 }
-

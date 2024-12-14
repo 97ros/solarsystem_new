@@ -31,7 +31,9 @@ public class TopDownCameraController : MonoBehaviour
 
     // Riferimento allo slider
     public Slider speedSlider;
-    
+
+    private bool shouldLockCursor = true;
+
     void Start()
     {
         mainCamera = Camera.main;
@@ -53,34 +55,43 @@ public class TopDownCameraController : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+
+        if (!shouldLockCursor)
+        {
+            Cursor.lockState = CursorLockMode.None; // Rendi il cursore visibile
+        }
+        else
+        {
+            Cursor.lockState = CursorLockMode.Locked; // Blocca il cursore solo se richiesto
+        }
     }
 
     void OnDisable()
     {
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        if (shouldLockCursor)
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+        }
+    }
+
+    public void SetShouldLockCursor(bool value)
+    {
+        shouldLockCursor = value;
     }
 
     void Update()
     {
-        // Verifica se il cursore è sopra lo slider
         if (IsMouseOverSlider())
         {
-            isDragging = false;  // Disabilita il drag della telecamera se il mouse è sopra lo slider
-            return;  // Esci dalla funzione Update per evitare che il movimento della telecamera continui
+            isDragging = false;
+            return;
         }
 
-        // Il codice per il movimento e zoom della telecamera rimane invariato
         float dragScale = Mathf.Lerp(1f, 0.1f, (transform.position.z - minZ) / (maxZ - minZ));
 
-        // Gestione trascinamento
         if (Input.GetMouseButtonDown(0))
         {
-            if (!isDragging && currentVelocity.magnitude > 0.01f)
-            {
-                isDragging = false;
-            }
-
             lastMousePosition = Input.mousePosition;
             isDragging = true;
         }
@@ -111,7 +122,6 @@ public class TopDownCameraController : MonoBehaviour
             isDragging = false;
         }
 
-        // Inerzia dopo il rilascio del mouse
         if (!isDragging)
         {
             currentVelocity = Vector3.Lerp(currentVelocity, Vector3.zero, Time.deltaTime * 2.5f);
@@ -127,7 +137,6 @@ public class TopDownCameraController : MonoBehaviour
             }
         }
 
-        // Zoom con rotella del mouse
         float scrollInput = Input.GetAxis("Mouse ScrollWheel");
         if (scrollInput != 0)
         {
@@ -137,26 +146,8 @@ public class TopDownCameraController : MonoBehaviour
 
         float smoothZoom = Mathf.Lerp(transform.position.z, targetZoom, Time.deltaTime * 5f);
         transform.position = new Vector3(transform.position.x, transform.position.y, smoothZoom);
-
-        // Zoom con touchpad
-        if (Input.touchCount > 1)
-        {
-            Touch touch1 = Input.GetTouch(0);
-            Touch touch2 = Input.GetTouch(1);
-
-            float prevDistance = (touch1.position - touch2.position).magnitude - touch1.deltaPosition.magnitude;
-            float currentDistance = (touch1.position - touch2.position).magnitude;
-
-            if (Mathf.Abs(currentDistance - prevDistance) > 1f)
-            {
-                float zoomDelta = (currentDistance - prevDistance) * zoomSpeed * 0.01f;
-                targetZoom -= zoomDelta;
-                targetZoom = Mathf.Clamp(targetZoom, minZ, maxZ);
-            }
-        }
     }
 
-    // Funzione che verifica se il cursore è sopra lo slider
     private bool IsMouseOverSlider()
     {
         RectTransform rectTransform = speedSlider.GetComponent<RectTransform>();

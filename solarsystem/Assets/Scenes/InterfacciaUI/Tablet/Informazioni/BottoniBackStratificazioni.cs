@@ -18,7 +18,7 @@ public class BottoniBackStratificazioni : MonoBehaviour
         }
         else
         {
-            Debug.LogError("UIiniziale non è assegnato nello script TabletButtonHandler.");
+            Debug.LogError("UIinformazioni non è assegnato nello script BottoniBackStratificazioni.");
         }
     }
 }

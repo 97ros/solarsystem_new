@@ -2,23 +2,23 @@ using UnityEngine;
 
 public class BottoniBackStratificazioniING : MonoBehaviour
 {
-    // Riferimento al GameObject UIiniziale
+    // Riferimento all'oggetto UIinformazioni
     public GameObject UIinformazioniING;
 
-    // Metodo da assegnare al bottone Tablet
-    public void OnTabletButtonClick()
+    // Metodo da assegnare al pulsante Back
+    public void OnBackButtonPressed()
     {
-        // Disattiva il GameObject parent (la scena corrente)
-        transform.parent.gameObject.SetActive(false);
+        // Disattiva l'oggetto corrente
+        gameObject.transform.parent.gameObject.SetActive(false);
 
-        // Attiva UIiniziale
+        // Attiva l'oggetto UIinformazioni
         if (UIinformazioniING != null)
         {
             UIinformazioniING.SetActive(true);
         }
         else
         {
-            Debug.LogError("UIinizialeING non è assegnato nello script BottoniBackStratificazioniING.");
+            Debug.LogWarning("UIinformazioniING non è assegnato!");
         }
     }
 }

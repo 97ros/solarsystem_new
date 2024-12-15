@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class BottoniBackING : MonoBehaviour
+public class BottoniBackLeggiING : MonoBehaviour
 {
     // Riferimento al GameObject UIiniziale
     public GameObject UIleggiING;

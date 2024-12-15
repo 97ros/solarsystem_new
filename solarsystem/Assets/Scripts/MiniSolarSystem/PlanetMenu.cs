@@ -1,27 +1,33 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Video; // Necessario per lavorare con VideoPlayer
 
 public class PlanetMenu : MonoBehaviour
 {
     public TMP_Dropdown planetDropdown;
     public GameObject planetInfoPanel;
-    public TMP_Text nameText, sizeText, distanceText, rotationTimeText, massText, temperatureText;
+    public TMP_Text nameText, distanceText, rotationTimeText, descriptionText; // Aggiungi descriptionText per la descrizione
     public Button closeButton;
     public Animator planetPanelAnimator;
+    public TMP_Text funFactText; // Reference to the fun fact text UI element
+    public Image planetImage; // Reference to the planet image UI element (Image for the planet's image)
+    public RawImage videoDisplay; // Reference to RawImage for displaying video
+    public VideoPlayer planetVideoPlayer; // Reference to the VideoPlayer component
+    public RenderTexture renderTexture; // Render texture to display the video
 
     [System.Serializable]
     public struct PlanetInfo
     {
         public string name;
-        public float size;
         public float distanceFromSunValue;
         public string distanceFromSunUnit;
         public float rotationTimeValue;
         public string rotationTimeUnit;
-        public float massValue;
-        public int massExponent;
-        public float surfaceTemperature;
+        public string funFact; // Add a field for the fun fact
+        public Sprite planetImage; // Add a field for the planet's image (This should be Sprite, not Image)
+        public VideoClip planetVideo; // Add a field for the planet's video (This should be VideoClip, but only for Neptune)
+        public string description; // New field for the description of the planet
     }
 
     public PlanetInfo[] planets;
@@ -80,11 +86,35 @@ public class PlanetMenu : MonoBehaviour
         // Aggiorna le informazioni del pianeta selezionato
         PlanetInfo selectedPlanet = planets[index - 1];
         nameText.text = selectedPlanet.name;
-        sizeText.text = "- Dimensione (diametro): " + selectedPlanet.size + " km";
         distanceText.text = "- Distanza media dal Sole: " + selectedPlanet.distanceFromSunValue + " " + selectedPlanet.distanceFromSunUnit;
         rotationTimeText.text = "- Durata dell'orbita: " + selectedPlanet.rotationTimeValue + " " + selectedPlanet.rotationTimeUnit + " terrestri";
-        massText.text = "- Massa: " + selectedPlanet.massValue + " x 10^" + selectedPlanet.massExponent + " kg";
-        temperatureText.text = "- Temperatura media superficiale: " + selectedPlanet.surfaceTemperature + " °C";
+        funFactText.text = "Lo sapevi?\n" + selectedPlanet.funFact;
+
+        // Visualizza la descrizione del pianeta
+        descriptionText.text = selectedPlanet.description; // Aggiungi la descrizione al pannello
+
+        // Visualizza l'immagine del pianeta
+        planetImage.sprite = selectedPlanet.planetImage;
+
+        // Se il pianeta è Nettuno, mostra il video
+        if (selectedPlanet.name == "Nettuno" && selectedPlanet.planetVideo != null)
+        {
+            // Se c'è un video per Nettuno, mostralo
+            videoDisplay.gameObject.SetActive(true); // Mostra il RawImage per il video
+            planetImage.gameObject.SetActive(false); // Nascondi l'Image per l'immagine del pianeta
+
+            // Impostare correttamente il renderMode a RenderTexture
+            planetVideoPlayer.renderMode = VideoRenderMode.RenderTexture; // Impostato a RenderTexture correttamente
+            planetVideoPlayer.targetTexture = renderTexture; // Collega la RenderTexture per visualizzare il video
+            planetVideoPlayer.clip = selectedPlanet.planetVideo; // Imposta il video di Nettuno
+            planetVideoPlayer.Play(); // Avvia il video
+        }
+        else
+        {
+            // Se non è Nettuno o non c'è un video, nascondi il video e mostra solo l'immagine
+            videoDisplay.gameObject.SetActive(false); // Nascondi il RawImage
+            planetImage.gameObject.SetActive(true); // Mostra l'immagine
+        }
     }
 
     // Metodo per chiudere il pannello
@@ -94,6 +124,9 @@ public class PlanetMenu : MonoBehaviour
 
         // Attiva l'animazione di chiusura
         planetPanelAnimator.SetTrigger("ClosePanel");
+
+        // Ferma la riproduzione del video quando si chiude il pannello
+        planetVideoPlayer.Stop();
     }
 
     // Metodo chiamato da LateUpdate quando l'animazione di chiusura è terminata

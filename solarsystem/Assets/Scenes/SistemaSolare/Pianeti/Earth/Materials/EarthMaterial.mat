@@ -150,7 +150,7 @@ Material:
     - _RimColor: {r: 0, g: 0.27520287, b: 0.5955882, a: 0}
     - _SpecColor: {r: 0.08823532, g: 0.08823532, b: 0.08823532, a: 1}
     - _SunColor: {r: 1, g: 1, b: 1, a: 1}
-    - _SunDir: {r: 0.93030155, g: 0.021202952, b: -0.36618242, a: 0}
+    - _SunDir: {r: 0.06, g: 0.28, b: -1, a: 0}
     - _TintColor: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

@@ -21,7 +21,7 @@ public class SceneManagerControllerING : MonoBehaviour
     private bool isCursorEnabled = false;
 
     // Variabile per tenere traccia se TopDownCameraController era attivo prima di premere ESC
-    private bool wasTopDownCamControllerEnabled = false;
+    // private bool wasTopDownCamControllerEnabled = false; // Rimossa
 
     // Start è chiamato prima del primo frame
     void Start()
@@ -62,15 +62,16 @@ public class SceneManagerControllerING : MonoBehaviour
 
         EventSystem.SetActive(true);
 
-        if (wasTopDownCamControllerEnabled)
-        {
-            topDownCameraController.SetShouldLockCursor(false);
-            topDownCameraController.enabled = true;
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
-            wasTopDownCamControllerEnabled = false;
-        }
-        else if (cameraManager != null && !CameraManager.IsTopDownCamActive) // Usa CameraManager.IsTopDownCamActive
+        // if (wasTopDownCamControllerEnabled) // Modificato: non serve più controllare wasTopDownCamControllerEnabled
+        // {
+        //     topDownCameraController.SetShouldLockCursor(false);
+        //     topDownCameraController.enabled = true;
+        //     Cursor.lockState = CursorLockMode.None;
+        //     Cursor.visible = true;
+        //     wasTopDownCamControllerEnabled = false;
+        // }
+        // else 
+        if (cameraManager != null && !CameraManager.IsTopDownCamActive)
         {
             SpaceShip.SetActive(true);
             EnableKeyboard();
@@ -124,9 +125,8 @@ public class SceneManagerControllerING : MonoBehaviour
             // Controlla se la telecamera top-down è attiva
             if (cameraManager != null && CameraManager.IsTopDownCamActive)
             {
-                // NON APRIRE IL TABLET, GESTISCI SOLO topDownCameraController
-                wasTopDownCamControllerEnabled = topDownCameraController.enabled;
-                topDownCameraController.enabled = false;
+                // NON APRIRE IL TABLET, GESTISCI SOLO il cursore
+                // NON disattivare più topDownCameraController
                 isCursorEnabled = true;
                 EnableMouseCursor(isCursorEnabled);
             }

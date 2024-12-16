@@ -93,43 +93,42 @@ public class CameraManager : MonoBehaviour
     }
 
     public void SwitchCamera(CinemachineVirtualCamera newCam)
-{
-    currentCam = newCam;
-    for (int i = 0; i < cameras.Length; i++)
     {
-        if (cameras[i] == currentCam)
+        currentCam = newCam;
+        for (int i = 0; i < cameras.Length; i++)
         {
-            cameras[i].Priority = 200;
+            if (cameras[i] == currentCam)
+            {
+                cameras[i].Priority = 200;
+            }
+            else
+            {
+                cameras[i].Priority = 10;
+            }
+        }
+
+        if (newCam == topDownVirtCam)
+        {
+            StartCoroutine(SwitchToTopDownCamera());
+            playerSpaceship.SetControls(false, false);
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+            IsTopDownCamActive = true;
         }
         else
         {
-            cameras[i].Priority = 10;
+            StartCoroutine(SwitchBackToMainSolarSystem());
+            playerSpaceship.SetControls(true, true);
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+            IsTopDownCamActive = false;
+
+            if (playerSpaceship.gameObject != null)
+            {
+                playerSpaceship.gameObject.SetActive(true);
+            }
         }
     }
-
-    if (newCam == topDownVirtCam)
-    {
-        StartCoroutine(SwitchToTopDownCamera());
-        playerSpaceship.SetControls(false, false);
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
-        IsTopDownCamActive = true;
-    }
-    else
-    {
-        StartCoroutine(SwitchBackToMainSolarSystem());
-        playerSpaceship.SetControls(true, true);
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
-        IsTopDownCamActive = false;
-
-        if (playerSpaceship.gameObject != null)
-        {
-            playerSpaceship.gameObject.SetActive(true);
-        }
-    }
-}
-
 
     private IEnumerator SwitchToTopDownCamera()
     {
@@ -147,5 +146,14 @@ public class CameraManager : MonoBehaviour
 
         yield return new WaitForSeconds(0.01f);
         mainSolarSystem.SetActive(true);
+    }
+
+    // Metodo per disattivare la topDownVirtCam e tornare alla telecamera precedente
+    public void DeactivateTopDownCamera()
+    {
+        if (IsTopDownCamActive)
+        {
+            SwitchCamera(lastActiveCam);
+        }
     }
 }

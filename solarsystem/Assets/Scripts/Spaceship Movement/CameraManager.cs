@@ -13,9 +13,9 @@ public class CameraManager : MonoBehaviour
 
     public CinemachineVirtualCamera startCamera;
     private CinemachineVirtualCamera currentCam;
-    private CinemachineVirtualCamera lastActiveCam; // Memorizza l'ultima telecamera attiva prima di passare a topDownVirtCam
+    private CinemachineVirtualCamera lastActiveCam;
 
-    private int activeCameraIndex = -1; // Indice della telecamera attiva (-1 iniziale per nessuna telecamera ciclica attiva)
+    private int activeCameraIndex = -1;
 
     [Header("Solar Systems")]
     public GameObject mainSolarSystem;
@@ -24,13 +24,13 @@ public class CameraManager : MonoBehaviour
     [Header("Player Spaceship")]
     public PlayerSpaceship playerSpaceship;
 
-    // Variabile per tenere traccia se la topDownVirtCam è attiva
-    public bool IsTopDownCamActive { get; private set; } = false;
+    // Variabile per tenere traccia se la topDownVirtCam è attiva (public static)
+    public static bool IsTopDownCamActive { get; private set; } = false;
 
     void Start()
     {
         currentCam = startCamera;
-        lastActiveCam = currentCam; // Imposta la telecamera iniziale come ultima telecamera attiva
+        lastActiveCam = currentCam;
         for (int i = 0; i < cameras.Length; i++)
         {
             if (cameras[i] == currentCam)
@@ -74,10 +74,8 @@ public class CameraManager : MonoBehaviour
 
     private void CycleThroughCameras()
     {
-        // Incrementa l'indice della telecamera attiva
         activeCameraIndex = (activeCameraIndex + 1) % 3;
 
-        // Seleziona la telecamera in base all'indice
         switch (activeCameraIndex)
         {
             case 0:
@@ -93,43 +91,42 @@ public class CameraManager : MonoBehaviour
     }
 
     public void SwitchCamera(CinemachineVirtualCamera newCam)
-{
-    currentCam = newCam;
-    for (int i = 0; i < cameras.Length; i++)
     {
-        if (cameras[i] == currentCam)
+        currentCam = newCam;
+        for (int i = 0; i < cameras.Length; i++)
         {
-            cameras[i].Priority = 200;
+            if (cameras[i] == currentCam)
+            {
+                cameras[i].Priority = 200;
+            }
+            else
+            {
+                cameras[i].Priority = 10;
+            }
+        }
+
+        if (newCam == topDownVirtCam)
+        {
+            StartCoroutine(SwitchToTopDownCamera());
+            playerSpaceship.SetControls(false, false);
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+            IsTopDownCamActive = true;
         }
         else
         {
-            cameras[i].Priority = 10;
+            StartCoroutine(SwitchBackToMainSolarSystem());
+            playerSpaceship.SetControls(true, true);
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+            IsTopDownCamActive = false;
+
+            if (playerSpaceship.gameObject != null)
+            {
+                playerSpaceship.gameObject.SetActive(true);
+            }
         }
     }
-
-    if (newCam == topDownVirtCam)
-    {
-        StartCoroutine(SwitchToTopDownCamera());
-        playerSpaceship.SetControls(false, false);
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
-        IsTopDownCamActive = true;
-    }
-    else
-    {
-        StartCoroutine(SwitchBackToMainSolarSystem());
-        playerSpaceship.SetControls(true, true);
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
-        IsTopDownCamActive = false;
-
-        if (playerSpaceship.gameObject != null)
-        {
-            playerSpaceship.gameObject.SetActive(true);
-        }
-    }
-}
-
 
     private IEnumerator SwitchToTopDownCamera()
     {
@@ -147,5 +144,14 @@ public class CameraManager : MonoBehaviour
 
         yield return new WaitForSeconds(0.01f);
         mainSolarSystem.SetActive(true);
+    }
+
+    // Metodo per disattivare la topDownVirtCam e tornare alla telecamera precedente
+    public void DeactivateTopDownCamera()
+    {
+        if (IsTopDownCamActive)
+        {
+            SwitchCamera(lastActiveCam);
+        }
     }
 }

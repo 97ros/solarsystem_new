@@ -1,116 +1,146 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Video;
+using System.Collections;
 
 public class PlanetMenu : MonoBehaviour
 {
     public TMP_Dropdown planetDropdown;
     public GameObject planetInfoPanel;
-    public TMP_Text nameText, sizeText, distanceText, rotationTimeText, massText, temperatureText;
+    public TMP_Text nameText, distanceText, rotationTimeText, descriptionText;
     public Button closeButton;
     public Animator planetPanelAnimator;
+    public TMP_Text funFactText;
+    public Image planetImage;
+    public RawImage videoDisplay;
+    public VideoPlayer planetVideoPlayer;
+    public RenderTexture renderTexture;
+    public CanvasGroup infoPanelCanvasGroup; // Aggiunto Canvas Group
 
     [System.Serializable]
     public struct PlanetInfo
     {
         public string name;
-        public float size;
         public float distanceFromSunValue;
         public string distanceFromSunUnit;
         public float rotationTimeValue;
         public string rotationTimeUnit;
-        public float massValue;
-        public int massExponent;
-        public float surfaceTemperature;
+        public string funFact;
+        public Sprite planetImage;
+        public VideoClip planetVideo;
+        public string description;
     }
 
     public PlanetInfo[] planets;
 
     void Start()
     {
-        // Aggiungi l'opzione vuota come primo elemento
         planetDropdown.ClearOptions();
         planetDropdown.options.Add(new TMP_Dropdown.OptionData("Select a planet"));
 
-        // Aggiungi i pianeti al dropdown
         foreach (var planet in planets)
         {
             planetDropdown.options.Add(new TMP_Dropdown.OptionData(planet.name));
         }
 
-        // Aggiungi il listener per il cambiamento di selezione nel dropdown
         planetDropdown.onValueChanged.AddListener(OnPlanetSelected);
-
-        // Impostiamo il valore del dropdown su 0 per la "Select a planet" DOPO aver aggiunto il listener
         planetDropdown.value = 0;
-        planetDropdown.RefreshShownValue(); // Aggiorna la visualizzazione del dropdown
+        planetDropdown.RefreshShownValue();
 
-        // Nascondi il pannello delle informazioni inizialmente
         planetInfoPanel.SetActive(false);
-
-        // Aggiungi il listener per il pulsante di chiusura del pannello
         closeButton.onClick.AddListener(ClosePanel);
     }
 
     void OnPlanetSelected(int index)
     {
-        Debug.Log("OnPlanetSelected chiamato con indice: " + index);
         if (index > 0)
         {
-            // Chiama UpdatePlanetInfoPanel solo se l'indice è valido (non "Select a planet")
             UpdatePlanetInfoPanel(index);
         }
         else
         {
-            // Se l'utente seleziona "Select a planet", nascondi il pannello
             planetInfoPanel.SetActive(false);
         }
     }
 
     void UpdatePlanetInfoPanel(int index)
     {
-        Debug.Log("UpdatePlanetInfoPanel chiamato");
+        if (planetInfoPanel.activeSelf)
+        {
+            StartCoroutine(FadeOutInInfoPanel(index));
+        }
+        else
+        {
+            planetInfoPanel.SetActive(true);
+            UpdatePlanetInfo(index);
+            planetPanelAnimator.SetTrigger("OpenPanel");
+        }
+    }
 
-        // Mostra il pannello delle informazioni
-        planetInfoPanel.SetActive(true);
 
-        // Attiva l'animazione di apertura
-        planetPanelAnimator.SetTrigger("OpenPanel");
+    private IEnumerator FadeOutInInfoPanel(int index)
+    {
+        float fadeOutDuration = 0.5f;
+        for (float t = 0.0f; t < 1.0f; t += Time.deltaTime / fadeOutDuration)
+        {
+            infoPanelCanvasGroup.alpha = Mathf.Lerp(1f, 0f, t);
+            yield return null;
+        }
+        infoPanelCanvasGroup.alpha = 0f;
 
-        // Aggiorna le informazioni del pianeta selezionato
+        UpdatePlanetInfo(index);
+
+
+        float fadeInDuration = 0.5f;
+        for (float t = 0.0f; t < 1.0f; t += Time.deltaTime / fadeInDuration)
+        {
+            infoPanelCanvasGroup.alpha = Mathf.Lerp(0f, 1f, t);
+            yield return null;
+        }
+        infoPanelCanvasGroup.alpha = 1f;
+
+    }
+
+
+     void UpdatePlanetInfo(int index) {
+
         PlanetInfo selectedPlanet = planets[index - 1];
         nameText.text = selectedPlanet.name;
-        sizeText.text = "- Dimensione (diametro): " + selectedPlanet.size + " km";
         distanceText.text = "- Distanza media dal Sole: " + selectedPlanet.distanceFromSunValue + " " + selectedPlanet.distanceFromSunUnit;
         rotationTimeText.text = "- Durata dell'orbita: " + selectedPlanet.rotationTimeValue + " " + selectedPlanet.rotationTimeUnit + " terrestri";
-        massText.text = "- Massa: " + selectedPlanet.massValue + " x 10^" + selectedPlanet.massExponent + " kg";
-        temperatureText.text = "- Temperatura media superficiale: " + selectedPlanet.surfaceTemperature + " °C";
+        funFactText.text = "Lo sapevi?\n" + selectedPlanet.funFact;
+        descriptionText.text = selectedPlanet.description;
+        planetImage.sprite = selectedPlanet.planetImage;
+
+        if (selectedPlanet.name == "Nettuno" && selectedPlanet.planetVideo != null)
+        {
+            videoDisplay.gameObject.SetActive(true);
+            planetImage.gameObject.SetActive(false);
+            planetVideoPlayer.renderMode = VideoRenderMode.RenderTexture;
+            planetVideoPlayer.targetTexture = renderTexture;
+            planetVideoPlayer.clip = selectedPlanet.planetVideo;
+            planetVideoPlayer.Play();
+        }
+        else
+        {
+            videoDisplay.gameObject.SetActive(false);
+            planetImage.gameObject.SetActive(true);
+        }
     }
 
-    // Metodo per chiudere il pannello
     void ClosePanel()
     {
-        Debug.Log("ClosePanel chiamato");
-
-        // Attiva l'animazione di chiusura
         planetPanelAnimator.SetTrigger("ClosePanel");
+        planetVideoPlayer.Stop();
     }
 
-    // Metodo chiamato da LateUpdate quando l'animazione di chiusura è terminata
     void ClosePanelAnimationComplete()
     {
-        Debug.Log("ClosePanelAnimationComplete chiamato");
-
-        planetInfoPanel.SetActive(false);  // Nascondi il pannello
-
-        // Disabilita temporaneamente il listener per evitare di innescare onValueChanged
+        planetInfoPanel.SetActive(false);
         planetDropdown.onValueChanged.RemoveListener(OnPlanetSelected);
-
-        // Reimposta il dropdown su "Select a planet"
         planetDropdown.value = 0;
         planetDropdown.RefreshShownValue();
-
-        // Riabilita il listener
         planetDropdown.onValueChanged.AddListener(OnPlanetSelected);
     }
 

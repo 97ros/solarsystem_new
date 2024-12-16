@@ -1,14 +1,30 @@
 using UnityEngine;
+using UnityEngine.UI; // Aggiungi il namespace per UI
 
 public class PanelController : MonoBehaviour
 {
     public GameObject panel; // Assegna il tuo Panel dal Canvas
+    public Button esplorazioneButton; // Riferimento al bottone Esplorazione
     private Animator panelAnimator;
 
     void Start()
     {
         // Ottieni il componente Animator dal pannello
         panelAnimator = panel.GetComponent<Animator>();
+        
+        // Assicurati che il pannello sia inizialmente disattivato
+        panel.SetActive(false);
+
+        // Aggiungi l'evento di click al bottone Esplorazione
+        if (esplorazioneButton != null)
+        {
+            esplorazioneButton.onClick.AddListener(OnEsplorazioneClick);
+        }
+    }
+
+    // Questo metodo verrà chiamato quando l'utente clicca il bottone Esplorazione
+    public void OnEsplorazioneClick()
+    {
         ShowPanel();
     }
 
@@ -18,7 +34,7 @@ public class PanelController : MonoBehaviour
         // Attiva l'animazione di apertura
         panelAnimator.SetTrigger("OpenPanel");
         // Dopo 8 secondi, attiva la chiusura
-        Invoke("StartCloseAnimation", 8f);
+        Invoke("StartCloseAnimation", 4f);
     }
 
     void StartCloseAnimation()

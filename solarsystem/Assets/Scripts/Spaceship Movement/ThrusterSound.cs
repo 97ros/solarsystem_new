@@ -5,7 +5,7 @@ public class ThrusterSound : MonoBehaviour
     public AudioSource thrusterSound; // L'AudioSource per il suono del propulsore
     private Rigidbody rb; // Per rilevare il movimento della navicella
 
-    public float fadeSpeed = 5.0f; // Velocità di fade del volume
+    public float fadeSpeed = 7.0f; // Velocità di fade del volume
     private float targetVolume = 0f; // Volume desiderato
     private bool isThrusting = false; // Indica se i tasti di movimento sono premuti
 
@@ -35,7 +35,7 @@ void Update()
 
         if (isThrusting)
         {
-            targetVolume = 0.03f; // Imposta il volume target al massimo
+            targetVolume = 0.08f; // Imposta il volume target al massimo
 
             // Avvia il suono se non è già attivo
             if (!thrusterSound.isPlaying)

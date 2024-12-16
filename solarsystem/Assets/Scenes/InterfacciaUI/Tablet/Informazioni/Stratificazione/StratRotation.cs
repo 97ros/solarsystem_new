@@ -7,17 +7,17 @@ public class StratRotation : MonoBehaviour
 
     void Update()
     {
-        // Controlla se il pulsante sinistro del mouse è premuto
-        if (Input.GetMouseButtonDown(0))
+        // Controlla se il tasto sinistro del mouse è premuto
+        if (Input.GetMouseButtonDown(0)) // 0 = Tasto sinistro del mouse
         {
             isRotating = true; // Inizia la rotazione
         }
-        else if (Input.GetMouseButtonUp(0))
+        else if (Input.GetMouseButtonUp(0)) // Rilascia il tasto sinistro
         {
             isRotating = false; // Ferma la rotazione
         }
 
-        // Effettua la rotazione se il mouse è premuto
+        // Effettua la rotazione se il tasto sinistro è premuto
         if (isRotating)
         {
             float mouseX = Input.GetAxis("Mouse X"); // Movimento del mouse sull'asse X

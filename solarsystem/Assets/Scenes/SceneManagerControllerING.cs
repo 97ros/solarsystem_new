@@ -56,36 +56,35 @@ public class SceneManagerControllerING : MonoBehaviour
 
     // Quando viene cliccato il bottone "Esplorazione"
     public void OnEsplorazioneButtonClicked()
-{
-    CanvaTabletInglese.SetActive(false);
-    EventSystemTablet.SetActive(false);
-
-    EventSystem.SetActive(true);
-
-    if (wasTopDownCamControllerEnabled)
     {
-        topDownCameraController.SetShouldLockCursor(false);
-        topDownCameraController.enabled = true;
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
-        wasTopDownCamControllerEnabled = false;
-    }
-    else if (cameraManager != null && !cameraManager.IsTopDownCamActive)
-    {
-        SpaceShip.SetActive(true);
-        EnableKeyboard();
-        if (SpaceShip.TryGetComponent<PlayerSpaceship>(out var playerSpaceship))
+        CanvaTabletInglese.SetActive(false);
+        EventSystemTablet.SetActive(false);
+
+        EventSystem.SetActive(true);
+
+        if (wasTopDownCamControllerEnabled)
         {
-            playerSpaceship.SetControls(true);
+            topDownCameraController.SetShouldLockCursor(false);
+            topDownCameraController.enabled = true;
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+            wasTopDownCamControllerEnabled = false;
         }
+        else if (cameraManager != null && !CameraManager.IsTopDownCamActive) // Usa CameraManager.IsTopDownCamActive
+        {
+            SpaceShip.SetActive(true);
+            EnableKeyboard();
+            if (SpaceShip.TryGetComponent<PlayerSpaceship>(out var playerSpaceship))
+            {
+                playerSpaceship.SetControls(true);
+            }
 
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+        }
     }
-}
 
-
-    // Metodo per abilitare/disabilitare il cursore del mouse (MODIFICATO)
+    // Metodo per abilitare/disabilitare il cursore del mouse
     void EnableMouseCursor(bool enable)
     {
         isCursorEnabled = enable;
@@ -122,29 +121,33 @@ public class SceneManagerControllerING : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            // Se siamo in modalità topDownVirtCam, disattiva TopDownCameraController
-            if (cameraManager != null && cameraManager.IsTopDownCamActive)
+            // Controlla se la telecamera top-down è attiva
+            if (cameraManager != null && CameraManager.IsTopDownCamActive)
             {
+                // NON APRIRE IL TABLET, GESTISCI SOLO topDownCameraController
                 wasTopDownCamControllerEnabled = topDownCameraController.enabled;
                 topDownCameraController.enabled = false;
-                // Imposta isCursorEnabled a true per mostrare il cursore quando si preme ESC
                 isCursorEnabled = true;
                 EnableMouseCursor(isCursorEnabled);
             }
+            else
+            {
+                // Siamo in modalità normale, apri il tablet come al solito
 
-            // Riattiviamo CanvaTablet e EventSystemTablet
-            CanvaTabletInglese.SetActive(true);
-            EventSystemTablet.SetActive(true);
+                // Riattiviamo CanvaTablet e EventSystemTablet
+                CanvaTabletInglese.SetActive(true);
+                EventSystemTablet.SetActive(true);
 
-            // Disattiviamo EventSystem e SpaceShip
-            EventSystem.SetActive(false);
-            SpaceShip.SetActive(false);
+                // Disattiviamo EventSystem e SpaceShip
+                EventSystem.SetActive(false);
+                SpaceShip.SetActive(false);
 
-            // Riattiviamo il cursore del mouse su CanvaTablet
-            EnableMouseCursor(true);
+                // Riattiviamo il cursore del mouse su CanvaTablet
+                EnableMouseCursor(true);
 
-            // Disabilitiamo la tastiera
-            DisableKeyboard();
+                // Disabilitiamo la tastiera
+                DisableKeyboard();
+            }
         }
     }
 }

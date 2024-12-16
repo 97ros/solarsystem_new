@@ -118,36 +118,37 @@ public class SceneManagerController : MonoBehaviour
 
     // Metodo chiamato quando il tasto Esc viene premuto
     void Update()
+{
+    if (Input.GetKeyDown(KeyCode.Escape))
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        // Controlla se la telecamera top-down è attiva
+        if (cameraManager != null && CameraManager.IsTopDownCamActive)
         {
-            // Controlla se la telecamera top-down è attiva
-            if (cameraManager != null && CameraManager.IsTopDownCamActive)
-            {
-                // NON APRIRE IL TABLET, GESTISCI SOLO topDownCameraController
-                wasTopDownCamControllerEnabled = topDownCameraController.enabled;
-                topDownCameraController.enabled = false;
-                isCursorEnabled = true;
-                EnableMouseCursor(isCursorEnabled);
-            }
-            else
-            {
-                // Siamo in modalità normale, apri il tablet come al solito
+            // NON APRIRE IL TABLET, GESTISCI SOLO il cursore
+            // NON disattivare più topDownCameraController
+            // wasTopDownCamControllerEnabled = topDownCameraController.enabled;  // Rimuovi questa riga
+            // topDownCameraController.enabled = false; // Rimuovi questa riga
+            isCursorEnabled = true;
+            EnableMouseCursor(isCursorEnabled);
+        }
+        else
+        {
+            // Siamo in modalità normale, apri il tablet come al solito
 
-                // Riattiviamo CanvaTablet e EventSystemTablet
-                CanvaTablet.SetActive(true);
-                EventSystemTablet.SetActive(true);
+            // Riattiviamo CanvaTablet e EventSystemTablet
+            CanvaTablet.SetActive(true);
+            EventSystemTablet.SetActive(true);
 
-                // Disattiviamo EventSystem e SpaceShip
-                EventSystem.SetActive(false);
-                SpaceShip.SetActive(false);
+            // Disattiviamo EventSystem e SpaceShip
+            EventSystem.SetActive(false);
+            SpaceShip.SetActive(false);
 
-                // Riattiviamo il cursore del mouse su CanvaTablet
-                EnableMouseCursor(true);
+            // Riattiviamo il cursore del mouse su CanvaTablet
+            EnableMouseCursor(true);
 
-                // Disabilitiamo la tastiera
-                DisableKeyboard();
-            }
+            // Disabilitiamo la tastiera
+            DisableKeyboard();
         }
     }
+}
 }

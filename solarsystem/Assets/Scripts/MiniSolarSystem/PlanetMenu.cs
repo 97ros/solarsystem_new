@@ -16,7 +16,12 @@ public class PlanetMenu : MonoBehaviour
     public RawImage videoDisplay;
     public VideoPlayer planetVideoPlayer;
     public RenderTexture renderTexture;
-    public CanvasGroup infoPanelCanvasGroup; // Aggiunto Canvas Group
+    public CanvasGroup infoPanelCanvasGroup;
+
+    // Aggiunte per Urano
+    public RawImage uranusVideoDisplay;
+    public VideoPlayer uranusVideoPlayer;
+    public RenderTexture uranusRenderTexture;
 
     [System.Serializable]
     public struct PlanetInfo
@@ -78,7 +83,6 @@ public class PlanetMenu : MonoBehaviour
         }
     }
 
-
     private IEnumerator FadeOutInInfoPanel(int index)
     {
         float fadeOutDuration = 0.5f;
@@ -91,7 +95,6 @@ public class PlanetMenu : MonoBehaviour
 
         UpdatePlanetInfo(index);
 
-
         float fadeInDuration = 0.5f;
         for (float t = 0.0f; t < 1.0f; t += Time.deltaTime / fadeInDuration)
         {
@@ -102,9 +105,8 @@ public class PlanetMenu : MonoBehaviour
 
     }
 
-
-     void UpdatePlanetInfo(int index) {
-
+    void UpdatePlanetInfo(int index)
+    {
         PlanetInfo selectedPlanet = planets[index - 1];
         nameText.text = selectedPlanet.name;
         distanceText.text = "- Distanza media dal Sole: " + selectedPlanet.distanceFromSunValue + " " + selectedPlanet.distanceFromSunUnit;
@@ -113,19 +115,46 @@ public class PlanetMenu : MonoBehaviour
         descriptionText.text = selectedPlanet.description;
         planetImage.sprite = selectedPlanet.planetImage;
 
+        // Gestione video con due RawImage e due RenderTexture
         if (selectedPlanet.name == "Nettuno" && selectedPlanet.planetVideo != null)
         {
             videoDisplay.gameObject.SetActive(true);
+            uranusVideoDisplay.gameObject.SetActive(false); // Nascondi Urano
             planetImage.gameObject.SetActive(false);
+
+            planetVideoPlayer.gameObject.SetActive(true);
             planetVideoPlayer.renderMode = VideoRenderMode.RenderTexture;
-            planetVideoPlayer.targetTexture = renderTexture;
+            planetVideoPlayer.targetTexture = renderTexture; // Usa la render texture di Nettuno
             planetVideoPlayer.clip = selectedPlanet.planetVideo;
             planetVideoPlayer.Play();
+
+            uranusVideoPlayer.Stop();
+            uranusVideoPlayer.gameObject.SetActive(false);
+        }
+        else if (selectedPlanet.name == "Urano" && selectedPlanet.planetVideo != null)
+        {
+            videoDisplay.gameObject.SetActive(false); // Nascondi Nettuno
+            uranusVideoDisplay.gameObject.SetActive(true);
+            planetImage.gameObject.SetActive(false);
+
+            uranusVideoPlayer.gameObject.SetActive(true);
+            uranusVideoPlayer.renderMode = VideoRenderMode.RenderTexture;
+            uranusVideoPlayer.targetTexture = uranusRenderTexture; // Usa la render texture di Urano
+            uranusVideoPlayer.clip = selectedPlanet.planetVideo;
+            uranusVideoPlayer.Play();
+
+            planetVideoPlayer.Stop();
+            planetVideoPlayer.gameObject.SetActive(false);
         }
         else
         {
             videoDisplay.gameObject.SetActive(false);
+            uranusVideoDisplay.gameObject.SetActive(false);
             planetImage.gameObject.SetActive(true);
+            planetVideoPlayer.Stop();
+            uranusVideoPlayer.Stop();
+            planetVideoPlayer.gameObject.SetActive(false);
+            uranusVideoPlayer.gameObject.SetActive(false);
         }
     }
 
@@ -133,6 +162,7 @@ public class PlanetMenu : MonoBehaviour
     {
         planetPanelAnimator.SetTrigger("ClosePanel");
         planetVideoPlayer.Stop();
+        uranusVideoPlayer.Stop();
     }
 
     void ClosePanelAnimationComplete()

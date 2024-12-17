@@ -42,7 +42,7 @@ public class PlanetMenu : MonoBehaviour
     void Start()
     {
         planetDropdown.ClearOptions();
-        planetDropdown.options.Add(new TMP_Dropdown.OptionData("Select a planet"));
+        planetDropdown.options.Add(new TMP_Dropdown.OptionData("Seleziona Pianeta"));
 
         foreach (var planet in planets)
         {

@@ -41,7 +41,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160.2, y: 52.4}
+  m_SizeDelta: {x: 119.1, y: 14.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1584137384979005677
 CanvasRenderer:
@@ -71,7 +71,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 33d88d87985a747af8753b3e5a245f65, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 639bdfd1c49f046d8b73b99d1f899bfa, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -124,19 +124,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1731396647640644205}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: CambioScena, Assembly-CSharp
-        m_MethodName: GoToScene
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &5407752635257280000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -191,7 +179,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2815524351336774688}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c59e22362e4d84251bd46e50481b228b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2b7ff3849154e4b89b9395ee4c8dc0a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   glowAnimator: {fileID: 4293197397021788695}
@@ -207,7 +195,6 @@ GameObject:
   - component: {fileID: 3489404230781911726}
   - component: {fileID: 6235283157159045647}
   - component: {fileID: 1017771983612247141}
-  - component: {fileID: 2230775462392164149}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -378,19 +365,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &2230775462392164149
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3387930021454102493}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c59e22362e4d84251bd46e50481b228b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  glowAnimator: {fileID: 4293197397021788695}
 --- !u!1 &3581543903502274355
 GameObject:
   m_ObjectHideFlags: 0
@@ -428,7 +402,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 129.3, y: 82.9}
+  m_SizeDelta: {x: 101.3, y: 27.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7048808336359178059
 CanvasRenderer:
@@ -458,7 +432,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 14c12efefdcde480aba62260ba377e5c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e968de44d2a46401abd0bdd7be94ee0f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -497,9 +471,9 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3581543903502274355}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c59e22362e4d84251bd46e50481b228b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2b7ff3849154e4b89b9395ee4c8dc0a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   glowAnimator: {fileID: 0}
@@ -538,7 +512,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 129.3, y: 81.7}
+  m_SizeDelta: {x: 101.3, y: 27.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8862606146563060392
 CanvasRenderer:
@@ -568,7 +542,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: bed0ffb6c1d0443fda59a629181a4788, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8288bb91b0c8e4285bf3fb0da05371f9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

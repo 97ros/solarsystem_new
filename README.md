@@ -29,6 +29,7 @@ Solsys Explorer è un'applicazione interattiva che permette di esplorare il Sist
     *   **Trascinamento:** Sposta la visuale sul Sistema Solare.
     *   **Rotellina/Touchpad con due dita:** Zooma avanti e indietro.
 *   **Click su icona Astronave (in modalità Miniatura):** Torna alla modalità Esplorazione con Navicella.
+*   **Trascinamento slider (in modalità Miniatura):** Aumenta o diminuisci la velocità di rotazione dei pianeti attorno al sole.
 
 ## Interfaccia Utente
 

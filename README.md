@@ -45,7 +45,16 @@ Solsys Explorer è stato sviluppato come progetto per l'esame di Ingegneria del 
 
 ## Installazione
 
-*   Scaricare il file installer in base al sistema operativo su cui si deve installare l'applicazione e seguire le istruzioni a schermo.
+Per installare Solsys Explorer:
+
+* Vai alla sezione [[Releases](https://github.com/97ros/solarsystem_new/releases)] di questa repository.
+
+* Scarica il file di installazione corretto per il tuo sistema operativo:
+   * **Windows:** SolSys Explorer Setup (Windows x64).exe (o il nome del tuo installer per Windows)
+   * **MacOS:** SolSys Explorer (MacOS ARM).dmg (o il nome del tuo installer per macOS)
+   * **Linux:** SolSys Explorer Setup (Linux x64)
+
+* Apri il file scaricato e segui le istruzioni a schermo per completare l'installazione.
 
 ## Ringraziamenti
 Un ringraziamento speciale ai membri del team per il loro contributo a questo progetto:

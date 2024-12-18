@@ -22,9 +22,10 @@ Solsys Explorer è un'applicazione interattiva che permette di esplorare il Sist
 ## Comandi
 
 *   **V:** Cambia la visuale della navicella (prima persona, terza persona, terza persona con FOV allargato).
+*   **WASD o tasti direzionali:** Sposta la navicella rispettivamente avanti, sinistra, dietro, destra.
 *   **ESC:** Apre il tablet (non disponibile in modalità Miniatura).
 *   **M:** Passa dalla modalità Esplorazione con Navicella alla modalità Sistema Solare in Miniatura e viceversa.
-*   **Mouse (in modalità Miniatura):**
+*   **Mouse o touchpad (in modalità Miniatura):**
     *   **Trascinamento:** Sposta la visuale sul Sistema Solare.
     *   **Rotellina/Touchpad con due dita:** Zooma avanti e indietro.
 *   **Click su icona Astronave (in modalità Miniatura):** Torna alla modalità Esplorazione con Navicella.

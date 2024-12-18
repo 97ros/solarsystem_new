@@ -1,7 +1,7 @@
 # Solsys Explorer
 ![Testo alternativo](solarsystem/Assets/SolSysPresent.png)
 
-Solsys Explorer è un'applicazione interattiva che permette di esplorare il Sistema Solare in 3D. Sviluppato da un team di quattro studenti di Ingegneria Informatica e dell'Automazione al Politecnico di Bari (@auroraaelia, @97ros, @Cesare0903, @StivenC03) per il progetto d'esame di Ingegneria del Software che sarà presentato il 17 Gennaio 2025, Solsys Explorer offre un'esperienza immersiva e didattica, adatta a chiunque sia affascinato dallo spazio.
+Solsys Explorer è un'applicazione interattiva che permette di esplorare il Sistema Solare in 3D. Sviluppato da un team di quattro studenti di Ingegneria Informatica e dell'Automazione al Politecnico di Bari (Aurora Elia, Rossana Lasorsa, Cesare Alexander Genco, Stiven Cfarku) per il progetto d'esame di Ingegneria del Software che sarà presentato il 17 Gennaio 2025, Solsys Explorer offre un'esperienza immersiva e didattica, adatta a chiunque sia affascinato dallo spazio.
 
 ## Caratteristiche Principali
 
@@ -49,10 +49,10 @@ Solsys Explorer è stato sviluppato come progetto per l'esame di Ingegneria del 
 
 ## Ringraziamenti
 Un ringraziamento speciale ai membri del team per il loro contributo a questo progetto:
-*   @auroraaelia
-*   @97ros
-*   @Cesare0903
-*   @StivenC03
+*   Aurora Elia - @auroraaelia
+*   Rossana Lasorsa - @97ros
+*   Cesare Alexander Genco - @Cesare0903
+*   Stiven Cfarku - @StivenC03
 
 ## Feedback e Supporto
 

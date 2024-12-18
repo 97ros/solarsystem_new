@@ -1,6 +1,5 @@
 # Solsys Explorer
-
-[![Immagine rappresentativa](Inserisci qui il link a una immagine o GIF del gioco)]
+![Testo alternativo](solarsystem/Assets/SolSysPresent.png)
 
 Solsys Explorer è un'applicazione interattiva che permette di esplorare il Sistema Solare in 3D. Sviluppato da un team di quattro studenti di Ingegneria del Software (@auroraaelia, @97ros, @Cesare0903, @StivenC03) per il progetto d'esame che sarà presentato il 17 Gennaio 2024, Solsys Explorer offre un'esperienza immersiva e didattica, adatta a chiunque sia affascinato dallo spazio.
 
@@ -40,11 +39,11 @@ Solsys Explorer è stato sviluppato come progetto per l'esame di Ingegneria del 
 
 ## Requisiti di Sistema
 
-*   [Inserire qui i requisiti minimi e consigliati per far girare l'applicazione, ad esempio: Sistema Operativo, Processore, RAM, Scheda Grafica, Spazio su Disco]
+*   Sistemi Operativi Supportati: Windows (x64), MacOS (X64) (ARM), Linux (x64).
 
 ## Installazione
 
-*   [Inserire qui le istruzioni per l'installazione, ad esempio: Scaricare il file installer dal tab "Releases" e seguire le istruzioni a schermo.]
+*   Scaricare il file installer in base al sistema operativo su cui si deve installare l'applicazione e seguire le istruzioni a schermo.
 
 ## Ringraziamenti
 Un ringraziamento speciale ai membri del team per il loro contributo a questo progetto:

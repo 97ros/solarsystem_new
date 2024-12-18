@@ -1,27 +1,43 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class ButtonGlowEffectHome : MonoBehaviour
+public class ButtonGlowEffecrHome : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
 {
-    public Animator glowAnimator; // Riferimento all'Animator di GlowEffect
+    public Animator glowAnimator;
 
-    public void OnMouseEnter()
+    private static readonly string GlowExpandHome = "GlowExpand_home";
+    private static readonly string GlowShrinkHome = "GlowShrink_home";
+
+    private void OnEnable()
     {
+        // Quando il GameObject diventa attivo, forziamo il glow a restringersi
         if (glowAnimator != null)
         {
-            //glowAnimator.ResetTrigger("Shrink"); // Resetta il trigger precedente
-            //glowAnimator.Se(tTrigger("Expand"); // Attiva l'espansione
-            glowAnimator.Play("GlowExpand_home");
+            glowAnimator.Play(GlowShrinkHome, 0, 1f);
         }
     }
 
-    public void OnMouseExit()
+    public void OnPointerEnter(PointerEventData eventData)
     {
         if (glowAnimator != null)
         {
-            //glowAnimator.ResetTrigger("Expand"); // Resetta il trigger precedente
-            //glowAnimator.SetTrigger("Shrink"); // Attiva la contrazione
-            glowAnimator.Play("GlowShrink_home");
+            glowAnimator.Play(GlowExpandHome);
+        }
+    }
 
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        if (glowAnimator != null)
+        {
+            glowAnimator.Play(GlowShrinkHome);
+        }
+    }
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        if (glowAnimator != null)
+        {
+            glowAnimator.Play(GlowShrinkHome); // Restringe il glow al clic
         }
     }
 }

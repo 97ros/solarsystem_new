@@ -13,9 +13,17 @@ public class UIController : MonoBehaviour
     {
         // Disattiva tutte le UI all'inizio
         DisattivaTutteLeUI();
-        
-        // Attiva solo l'UI iniziale
-        UIiniziale.SetActive(true);
+
+        // Attiva solo l'UI iniziale in base alla lingua
+        if (LanguageManager.CurrentLanguage == LanguageManager.Language.Italian) // Usa LanguageManager.Language
+        {
+            UIiniziale.SetActive(true);
+        }
+        else
+        {
+            // Se la lingua è inglese, non fare nulla qui
+            // L'UI iniziale inglese verrà attivata da SceneManagerController
+        }
     }
 
     // Metodo che disattiva tutte le UI

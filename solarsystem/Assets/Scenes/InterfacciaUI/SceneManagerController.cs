@@ -5,7 +5,8 @@ using UnityEngine.UI;
 public class SceneManagerController : MonoBehaviour
 {
     // Riferimenti agli oggetti
-    public GameObject CanvaTablet;
+    public GameObject CanvaTablet; // Canvas italiano
+    public GameObject CanvaTabletInglese; // Canvas inglese
     public GameObject EventSystemTablet;
     public GameObject EventSystem;
     public GameObject SpaceShip;
@@ -17,11 +18,12 @@ public class SceneManagerController : MonoBehaviour
     // Riferimento a CameraManager
     public CameraManager cameraManager;
 
+    // Riferimenti ai Graphic Raycaster dei due Canvas
+    public GraphicRaycaster raycasterCanvasTablet;
+    public GraphicRaycaster raycasterCanvasTabletInglese;
+
     // Variabile per tenere traccia se il cursore deve essere attivo o meno
     private bool isCursorEnabled = false;
-
-    // Variabile per tenere traccia se TopDownCameraController era attivo prima di premere ESC
-    private bool wasTopDownCamControllerEnabled = false;
 
     // Start è chiamato prima del primo frame
     void Start()
@@ -43,8 +45,11 @@ public class SceneManagerController : MonoBehaviour
         EventSystem.SetActive(false);
         SpaceShip.SetActive(false);
 
-        // Abilitiamo CanvaTablet e disabilitiamo EventSystemTablet
-        CanvaTablet.SetActive(true);
+        // Imposta la lingua iniziale
+        LanguageManager.SetLanguage(LanguageManager.Language.Italian); // O leggi dalle preferenze del giocatore
+
+        // Abilitiamo il Canvas corretto in base alla lingua e disabilitiamo EventSystemTablet
+        UpdateTabletLanguage();
         EventSystemTablet.SetActive(true);
 
         // Abilitiamo il cursore del mouse per l'oggetto CanvaTablet
@@ -57,20 +62,22 @@ public class SceneManagerController : MonoBehaviour
     // Quando viene cliccato il bottone "Esplorazione"
     public void OnEsplorazioneButtonClicked()
     {
-        CanvaTablet.SetActive(false);
+        // Disattiva il tablet attivo in base alla lingua e il suo Graphic Raycaster
+        if (LanguageManager.CurrentLanguage == LanguageManager.Language.Italian)
+        {
+            CanvaTablet.SetActive(false);
+            raycasterCanvasTablet.enabled = false; // Disattiva il Graphic Raycaster
+        }
+        else
+        {
+            CanvaTabletInglese.SetActive(false);
+            raycasterCanvasTabletInglese.enabled = false; // Disattiva il Graphic Raycaster
+        }
         EventSystemTablet.SetActive(false);
 
         EventSystem.SetActive(true);
 
-        if (wasTopDownCamControllerEnabled)
-        {
-            topDownCameraController.SetShouldLockCursor(false);
-            topDownCameraController.enabled = true;
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
-            wasTopDownCamControllerEnabled = false;
-        }
-        else if (cameraManager != null && !CameraManager.IsTopDownCamActive) // Correzione qui
+        if (cameraManager != null)
         {
             SpaceShip.SetActive(true);
             EnableKeyboard();
@@ -118,37 +125,69 @@ public class SceneManagerController : MonoBehaviour
 
     // Metodo chiamato quando il tasto Esc viene premuto
     void Update()
-{
-    if (Input.GetKeyDown(KeyCode.Escape))
     {
-        // Controlla se la telecamera top-down è attiva
-        if (cameraManager != null && CameraManager.IsTopDownCamActive)
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
-            // NON APRIRE IL TABLET, GESTISCI SOLO il cursore
-            // NON disattivare più topDownCameraController
-            // wasTopDownCamControllerEnabled = topDownCameraController.enabled;  // Rimuovi questa riga
-            // topDownCameraController.enabled = false; // Rimuovi questa riga
-            isCursorEnabled = true;
-            EnableMouseCursor(isCursorEnabled);
-        }
-        else
-        {
-            // Siamo in modalità normale, apri il tablet come al solito
+            // Controlla se uno dei due tablet è già attivo
+            if (CanvaTablet.activeInHierarchy || CanvaTabletInglese.activeInHierarchy)
+            {
+                // Se un tablet è già attivo, non fare nulla
+                return;
+            }
 
-            // Riattiviamo CanvaTablet e EventSystemTablet
-            CanvaTablet.SetActive(true);
-            EventSystemTablet.SetActive(true);
+            // Controlla se la telecamera top-down è attiva
+            if (cameraManager != null && CameraManager.IsTopDownCamActive)
+            {
+                // NON APRIRE IL TABLET, GESTISCI SOLO il cursore
+                isCursorEnabled = true;
+                EnableMouseCursor(isCursorEnabled);
+            }
+            else
+            {
+                // Siamo in modalità normale, apri il tablet come al solito
 
-            // Disattiviamo EventSystem e SpaceShip
-            EventSystem.SetActive(false);
-            SpaceShip.SetActive(false);
+                // Riattiviamo il Canvas corretto in base alla lingua e EventSystemTablet
+                UpdateTabletLanguage();
+                EventSystemTablet.SetActive(true);
 
-            // Riattiviamo il cursore del mouse su CanvaTablet
-            EnableMouseCursor(true);
+                // Disattiviamo EventSystem e SpaceShip
+                EventSystem.SetActive(false);
+                SpaceShip.SetActive(false);
 
-            // Disabilitiamo la tastiera
-            DisableKeyboard();
+                // Riattiviamo il cursore del mouse su CanvaTablet
+                EnableMouseCursor(true);
+
+                // Disabilitiamo la tastiera
+                DisableKeyboard();
+            }
         }
     }
-}
+
+    // Metodo per attivare il Canvas corretto in base alla lingua
+    public void UpdateTabletLanguage()
+    {
+        if (LanguageManager.CurrentLanguage == LanguageManager.Language.Italian)
+        {
+            CanvaTablet.SetActive(true);
+            raycasterCanvasTablet.enabled = true; // Attiva il Graphic Raycaster
+            CanvaTabletInglese.SetActive(false);
+            raycasterCanvasTabletInglese.enabled = false; // Disattiva il Graphic Raycaster
+            // Assicurati che la UI iniziale italiana sia attiva
+            CanvaTablet.transform.Find("UIiniziale").gameObject.SetActive(true);
+            // Disattiva altre UI italiane se necessario
+            CanvaTablet.transform.Find("UIimpostazioni").gameObject.SetActive(false);
+
+        }
+        else // if (LanguageManager.CurrentLanguage == LanguageManager.Language.English)
+        {
+            CanvaTablet.SetActive(false);
+            raycasterCanvasTablet.enabled = false; // Disattiva il Graphic Raycaster
+            CanvaTabletInglese.SetActive(true);
+            raycasterCanvasTabletInglese.enabled = true; // Attiva il Graphic Raycaster
+            // Assicurati che la UI iniziale inglese sia attiva
+            CanvaTabletInglese.transform.Find("UIinizialeING").gameObject.SetActive(true);
+            // Disattiva altre UI inglesi se necessario
+            CanvaTabletInglese.transform.Find("UIimpostazioniING").gameObject.SetActive(false);
+        }
+    }
 }

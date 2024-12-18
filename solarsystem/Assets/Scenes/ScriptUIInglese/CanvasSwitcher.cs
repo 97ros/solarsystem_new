@@ -8,14 +8,12 @@ public class CanvasSwitcher : MonoBehaviour
     // Metodo per attivare CanvaTabletInglese e disattivare CanvaTablet
     public void SwitchToEnglish()
     {
-        canvaTablet.SetActive(false);
-        canvaTabletInglese.SetActive(true);
+        LanguageManager.SetLanguage(LanguageManager.Language.English); // Usa LanguageManager.Language
     }
 
     // Metodo per attivare CanvaTablet e disattivare CanvaTabletInglese
     public void SwitchToItalian()
     {
-        canvaTablet.SetActive(true);
-        canvaTabletInglese.SetActive(false);
+        LanguageManager.SetLanguage(LanguageManager.Language.Italian); // Usa LanguageManager.Language
     }
 }

@@ -20,6 +20,7 @@ public class CameraManager : MonoBehaviour
     [Header("Solar Systems")]
     public GameObject mainSolarSystem;
     public GameObject miniSolarSystem;
+    private Animator miniSolarSystemAnimator; // Riferimento all'Animator
 
     [Header("Player Spaceship")]
     public PlayerSpaceship playerSpaceship;
@@ -45,6 +46,7 @@ public class CameraManager : MonoBehaviour
 
         miniSolarSystem.SetActive(false);
         mainSolarSystem.SetActive(true);
+        miniSolarSystemAnimator = miniSolarSystem.GetComponent<Animator>(); // Ottieni il componente Animator
     }
 
     void Update()
@@ -132,6 +134,7 @@ public class CameraManager : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
         miniSolarSystem.SetActive(true);
+        miniSolarSystemAnimator.SetTrigger("OpenUI"); // Attiva l'animazione UiOpen
 
         yield return new WaitForSeconds(1.5f);
         mainSolarSystem.SetActive(false);
@@ -140,6 +143,7 @@ public class CameraManager : MonoBehaviour
     private IEnumerator SwitchBackToMainSolarSystem()
     {
         yield return new WaitForSeconds(0.5f);
+        miniSolarSystemAnimator.SetTrigger("CloseUI"); // Attiva l'animazione UiClose
         miniSolarSystem.SetActive(false);
 
         yield return new WaitForSeconds(0.01f);

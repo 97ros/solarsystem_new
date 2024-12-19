@@ -42,7 +42,7 @@ Solsys Explorer è stato sviluppato come progetto per l'esame di Ingegneria del 
 
 ## Requisiti di Sistema
 
-*   Sistemi Operativi Supportati: Windows (x64), MacOS (X64) (ARM), Linux (x64).
+*   Sistemi Operativi Supportati: Windows (x64), MacOS (X64-ARM), Linux (x64-debian).
 
 ## Installazione
 

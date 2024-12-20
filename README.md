@@ -23,6 +23,7 @@ SolSys Explorer è un'applicazione interattiva che permette di esplorare il Sist
 
 *   **V:** Cambia la visuale della navicella (prima persona, terza persona, terza persona con FOV allargato).
 *   **WASD o tasti direzionali:** Sposta la navicella rispettivamente avanti, sinistra, dietro, destra.
+*   **QE:** Ruota la visuale a sinistra e a destra rispettivamente.
 *   **Shift:** Aumenta la velocità della navicella.
 *   **ESC:** Apre il tablet (non disponibile in modalità Miniatura).
 *   **M:** Passa dalla modalità Esplorazione con Navicella alla modalità Sistema Solare in Miniatura e viceversa.

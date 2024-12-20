@@ -109,7 +109,7 @@ public class PlanetMenu : MonoBehaviour
     {
         PlanetInfo selectedPlanet = planets[index - 1];
         nameText.text = selectedPlanet.name;
-        distanceText.text = "- Distanza media dal Sole: " + selectedPlanet.distanceFromSunValue + " " + selectedPlanet.distanceFromSunUnit;
+        distanceText.text = "- Distanza media dal Sole: " + selectedPlanet.distanceFromSunValue + " " + selectedPlanet.distanceFromSunUnit + " di km";
         rotationTimeText.text = "- Durata dell'orbita: " + selectedPlanet.rotationTimeValue + " " + selectedPlanet.rotationTimeUnit + " terrestri";
         funFactText.text = "Lo sapevi?\n" + selectedPlanet.funFact;
         descriptionText.text = selectedPlanet.description;

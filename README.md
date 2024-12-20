@@ -45,7 +45,7 @@ Solsys Explorer è stato sviluppato come progetto per l'esame di Ingegneria del 
 
 * Sistemi Operativi Supportati:
    * Windows (x64)
-   * macOS (X64-ARM)
+   * macOS (X64)
    * Linux (x64 debian)
 
 ## Installazione
@@ -55,9 +55,10 @@ Per installare Solsys Explorer:
 * Vai alla sezione [[Releases](https://github.com/97ros/solarsystem_new/releases)] di questa repository.
 
 * Scarica il file di installazione corretto della versione più recente per il tuo sistema operativo:
-   * **Windows:** SolSys.Explorer.Setup.Windows.x64.exe
-   * **macOS:** SolSys.Explorer.v1.3-release.macOS.x64.app.zip
-   * **Linux:** solsys-explorer-linux.deb (x64)
+   * **Windows:** "SolSys.Explorer.Setup.Windows.x64.exe"
+   * **macOS:** "SolSys.Explorer.v1.3-release.macOS.x64.app.zip" | "SolSys.Explorer.v1.3-release.macOS.ARM.app.zip"
+
+   * **Linux:** "solsys-explorer-linux.deb (x64)"
 
 * Apri il file scaricato e segui le istruzioni a schermo per completare l'installazione.
 

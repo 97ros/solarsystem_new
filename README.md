@@ -6,7 +6,7 @@ SolSys Explorer è un'applicazione interattiva che permette di esplorare il Sist
 
 ## Caratteristiche Principali
 
-*   **Esplorazione 3D Dettagliata del Sistema Solare:**  Pilota una navicella spaziale attraverso una riproduzione fedele e in scala del Sistema Solare, con pianeti accuratamente dettagliati, inclusi i loro satelliti naturali e asteroidi.
+*   **Esplorazione 3D Dettagliata del Sistema Solare:**  Pilota una navicella spaziale attraverso una riproduzione fedele del Sistema Solare, con pianeti accuratamente dettagliati, inclusi i loro satelliti naturali e asteroidi.
 *   **Due Modalità di Visualizzazione:**
     *   **Esplorazione con Navicella:**  Sperimenta il volo attraverso il sistema solare con visuali in prima persona, terza persona e terza persona con campo visivo (FOV) allargato, per un'esperienza di volo completamente immersiva. I controlli della navicella sono intuitivi e reattivi.
     *   **Sistema Solare in Miniatura:** Ottieni una panoramica dall'alto dell'intero Sistema Solare, con la possibilità di spostarti liberamente trascinando il mouse e di zoomare utilizzando la rotellina del mouse o il touchpad.

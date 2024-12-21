@@ -56,8 +56,8 @@ Per installare SolSys Explorer:
 1. Visita la sezione [Releases](https://github.com/97ros/solarsystem_new/releases) di questa repository.
 2. Scarica il file di installazione corretto per il tuo sistema operativo:
     *   **Windows:** `SolSys.Explorer.Setup.Windows.x64.exe`
-    *   **macOS (Intel):** `SolSys.Explorer.v1.3-release.macOS.x64.app.zip`
-    *   **macOS (ARM):** `SolSys.Explorer.v1.3-release.macOS.ARM.app.zip`
+    *   **macOS (Intel):** `SolSys.Explorer.v1.x-release.macOS.x64.app.zip`
+    *   **macOS (ARM):** `SolSys.Explorer.v1.x-release.macOS.ARM.app.zip`
     *   **Linux (Debian):** `solsys-explorer-linux.deb`
 3. Apri il file scaricato e segui le istruzioni visualizzate per completare l'installazione.
 

@@ -58,7 +58,7 @@ Per installare SolSys Explorer:
     *   **Windows:** `SolSys.Explorer.Setup.Windows.x64.exe`
     *   **macOS (Intel):** `SolSys.Explorer.v1.x-release.macOS.x64.app.zip`
     *   **macOS (ARM):** `SolSys.Explorer.v1.x-release.macOS.ARM.app.zip`
-    *   **Linux (Debian):** `solsys-explorer-linux.deb`
+    *   **Linux (Debian):** `solsys-explorer.deb`
 3. Apri il file scaricato e segui le istruzioni visualizzate per completare l'installazione.
 
 ## Ringraziamenti

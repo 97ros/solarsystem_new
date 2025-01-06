@@ -8,10 +8,14 @@ public class AudioToggleControllerING : MonoBehaviour
 
     private void Start()
     {
-        // Assicura che il metodo venga chiamato quando lo stato del toggle cambia
+        // Controlla che il Toggle sia assegnato
         if (audioToggle != null)
         {
+            // Aggiunge un listener per rilevare i cambiamenti nello stato del toggle
             audioToggle.onValueChanged.AddListener(OnToggleAudioChanged);
+
+            // Imposta lo stato iniziale in base al Toggle
+            OnToggleAudioChanged(audioToggle.isOn);
         }
         else
         {
@@ -19,23 +23,21 @@ public class AudioToggleControllerING : MonoBehaviour
         }
     }
 
-    // Metodo chiamato quando il toggle cambia
+    // Metodo chiamato quando lo stato del toggle cambia
     public void OnToggleAudioChanged(bool isOn)
 {
-    // Trova tutti i componenti AudioSource nella scena
+    // Trova tutti gli AudioSource nella scena
     AudioSource[] audioSources = FindObjectsOfType<AudioSource>();
 
-    // Abilita o disabilita l'audio in base allo stato del toggle
+    // Disattiva o attiva tutti gli AudioSource
     foreach (AudioSource audioSource in audioSources)
     {
-        audioSource.mute = !isOn;
+        audioSource.enabled = isOn; // Abilita o disabilita il componente AudioSource
     }
 
-    // Disabilita l'AudioListener se il toggle è spento
-    AudioListener audioListener = FindObjectOfType<AudioListener>();
-    if (audioListener != null)
-    {
-        audioListener.enabled = isOn;
-    }
+    // Disattiva il volume globale anziché l'AudioListener
+    AudioListener.volume = isOn ? 1f : 0f; // Volume 0 quando è spento, 1 quando è acceso
+
+    Debug.Log($"Audio {(isOn ? "attivato" : "disattivato")} per {audioSources.Length} AudioSource nella scena.");
 }
 }

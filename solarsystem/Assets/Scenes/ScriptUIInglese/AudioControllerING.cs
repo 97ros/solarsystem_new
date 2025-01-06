@@ -1,41 +1,75 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class AudioToggleControllerING : MonoBehaviour
+public class AudioControllerING : MonoBehaviour
 {
-    // Riferimento al Toggle Audio
-    public Toggle audioToggle;
+    // Riferimenti ai Toggle Audio nei rispettivi canvas
+    public Toggle audioToggleIT;  // Toggle per CanvaTablet (italiano)
+    public Toggle audioToggleEN;  // Toggle per CanvaTabletING (inglese)
 
     private void Start()
     {
-        // Assicura che il metodo venga chiamato quando lo stato del toggle cambia
-        if (audioToggle != null)
+        // Verifica che i toggle siano assegnati
+        if (audioToggleIT != null && audioToggleEN != null)
         {
-            audioToggle.onValueChanged.AddListener(OnToggleAudioChanged);
+            // Aggiunge listener per monitorare i cambiamenti di stato dei toggle
+            audioToggleIT.onValueChanged.AddListener(OnToggleAudioChangedIT);
+            audioToggleEN.onValueChanged.AddListener(OnToggleAudioChangedEN);
+
+            // Imposta lo stato iniziale dei toggle in base a quello di uno dei due
+            SyncToggles(audioToggleIT.isOn);
         }
         else
         {
-            Debug.LogError("Il Toggle Audio non è assegnato nello script.");
+            Debug.LogError("I Toggle Audio non sono assegnati correttamente nello script.");
         }
     }
 
-    // Metodo chiamato quando il toggle cambia
+    // Metodo per sincronizzare entrambi i toggle
+    private void SyncToggles(bool isOn)
+    {
+        audioToggleIT.isOn = isOn; // Imposta il toggle italiano
+        audioToggleEN.isOn = isOn; // Imposta il toggle inglese
+
+        // Chiamata per attivare/disattivare l'audio
+        OnToggleAudioChanged(isOn);
+    }
+
+    // Metodo chiamato quando cambia lo stato del toggle italiano
+    private void OnToggleAudioChangedIT(bool isOn)
+    {
+        // Sincronizza lo stato dell'altro toggle (inglese)
+        audioToggleEN.isOn = isOn;
+        
+        // Chiamata per attivare/disattivare l'audio
+        OnToggleAudioChanged(isOn);
+    }
+
+    // Metodo chiamato quando cambia lo stato del toggle inglese
+    private void OnToggleAudioChangedEN(bool isOn)
+    {
+        // Sincronizza lo stato dell'altro toggle (italiano)
+        audioToggleIT.isOn = isOn;
+        
+        // Chiamata per attivare/disattivare l'audio
+        OnToggleAudioChanged(isOn);
+    }
+
+    // Metodo per attivare/disattivare l'audio in base allo stato del toggle
     public void OnToggleAudioChanged(bool isOn)
-{
-    // Trova tutti i componenti AudioSource nella scena
-    AudioSource[] audioSources = FindObjectsOfType<AudioSource>();
-
-    // Abilita o disabilita l'audio in base allo stato del toggle
-    foreach (AudioSource audioSource in audioSources)
     {
-        audioSource.mute = !isOn;
-    }
+        // Trova tutti gli AudioSource nella scena
+        AudioSource[] audioSources = FindObjectsOfType<AudioSource>();
 
-    // Disabilita l'AudioListener se il toggle è spento
-    AudioListener audioListener = FindObjectOfType<AudioListener>();
-    if (audioListener != null)
-    {
-        audioListener.enabled = isOn;
+        // Attiva o disattiva tutti gli AudioSource
+        foreach (AudioSource audioSource in audioSources)
+        {
+            audioSource.enabled = isOn; // Abilita o disabilita il componente AudioSource
+        }
+
+        // Modifica il volume globale (AudioListener)
+        AudioListener.volume = isOn ? 1f : 0f; // Volume 0 quando è spento, 1 quando è acceso
+
+        Debug.Log($"Audio {(isOn ? "attivato" : "disattivato")} per {audioSources.Length} AudioSource nella scena.");
     }
-}
 }
